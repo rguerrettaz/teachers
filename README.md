@@ -15,7 +15,7 @@ Epics
 -----
 - A user can come to the site and see information about education pulled from many online sources.
 - A teacher can sign up for our service and are then able to publish/broadcast out from our site out to other platforms.
-- Signed in users can votes and help curate resources and news. 
+- Signed in users can vote and help curate resources and news. 
 - Set up profile pages with hard data for each school.
 - Be able to comment on all aspects of schools statistics.
 - Ability for teachers to comment and discuss topics, trends and specific schools.
