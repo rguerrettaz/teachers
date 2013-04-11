@@ -17,7 +17,7 @@ Epics
 - A teacher can sign up for our service and are then able to publish/broadcast out from our site out to other platforms.
 - Signed in users can vote and help curate resources and news. 
 - Set up profile pages with hard data for each school.
-- Be able to comment on all aspects of schools statistics.
+- Be able to comment on all aspects of schools' statistics.
 - Ability for teachers to comment and discuss topics, trends and specific schools.
 - Users can sign-up and use Oauth to sign-up through tumblr and twitter.
 - Users can view a school profile page with LOTS of data...
@@ -26,7 +26,11 @@ Epics
 
 Models
 ------
-- Users Sessions Schools Districts State
+- Users
+- Sessions
+- Schools
+- Districts
+- State
 
 Postables 
 ---------
