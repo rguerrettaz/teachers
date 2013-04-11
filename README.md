@@ -19,7 +19,6 @@ Epics
 - Set up profile pages with hard data for each school.
 - Be able to comment on all aspects of schools statistics.
 - Ability for teachers to comment and discuss topics, trends and specific schools.
-
 - Users can sign-up and use Oauth to sign-up through tumblr and twitter.
 - Users can view a school profile page with LOTS of data...
 - Users can save/favorite schools in their area.
