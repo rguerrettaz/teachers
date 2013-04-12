@@ -1,7 +1,10 @@
 class NewsItemsController < ApplicationController
 
   def index
-    @tweets = Twitter.search('#edchat OR #education')
+
+
+    @tweets = Twitter.search('#edchat OR #education', :count => 10, :result_type => 'popular').statuses
+
 
     client = Tumblr::Client.new
 
@@ -12,6 +15,7 @@ class NewsItemsController < ApplicationController
     embedly_api = Embedly::API.new :key => '2ed47f41ebd743b1a2a04f95e93ad430'
 
     @obj = embedly_api.oembed :url => url
+
 
   end
 

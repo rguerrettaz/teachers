@@ -1,3 +1,5 @@
 config/initializers/twitter.rb
 config/initializers/tumblr.rb
 tmp/
+.DS_Store
+log/

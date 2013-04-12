@@ -9,7 +9,9 @@ gem 'pg'
 
 gem 'bcrypt-ruby'
 gem 'json'
+
 gem 'twitter'
+gem 'ruby-oembed'
 gem 'tumblr_client'
 gem 'embedly'
 
