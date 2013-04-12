@@ -12,6 +12,8 @@ gem 'json'
 
 gem 'twitter'
 gem 'ruby-oembed'
+gem 'tumblr_client'
+gem 'embedly'
 
 
 # Gems used only for assets and not required
