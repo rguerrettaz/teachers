@@ -6,9 +6,6 @@ class SchoolsController < ApplicationController
 
 	def show
 		@school = School.new
-
-
 	end
-
 
 end

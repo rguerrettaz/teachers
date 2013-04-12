@@ -1,6 +1,9 @@
 TeacherGap::Application.routes.draw do
 
-resources :schools
+  resources :schools
+
+  root :to => 'news_items#index'
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
