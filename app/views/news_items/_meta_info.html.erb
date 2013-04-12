@@ -1,0 +1,11 @@
+<div class = "meta">
+  <%= link_to post["blog_name"], post["post_url"] %> <br>
+    <%= post["note_count"] %><br>
+
+    <% post["tags"].each do |tag| %>
+      <%=link_to tag , "http://www.tumblr.com/tagged/" + tag %>
+    <% end %>
+
+</div>
+
+

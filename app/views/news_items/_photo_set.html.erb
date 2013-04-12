@@ -1,0 +1,8 @@
+<% post["photos"].each do |photo| %>
+  <%= link_to image_tag(photo["original_size"]["url"]), post["post_url"] %>
+  
+  <p><%= truncate_html post["caption"], :length => 300, :separator => '.' %>
+    <span><%= link_to "More", post['post_url'] %></span>
+  </p>
+
+<% end %>

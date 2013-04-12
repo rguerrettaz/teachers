@@ -1,13 +1,33 @@
 
 
 <h1>Tweets</h1>
-<% @tweets.each do |t| %>
-  <%= embed_tweet(t.id) %>
-<% end %>
+<%# @tweets.each do |t| %>
+  <%#= embed_tweet(t.id) %>
+<%# end %>
 
 <h1>Tumbles</h1>
 
 
 
 
-<%= @obj %>   
+<% @tumbles.each do |post| %>
+    
+  <% if post["type"] == "photo" %>
+
+    <%= render 'photo_set', :post => post %>
+
+  <% elsif post["type"] == "text" %>
+
+    <%= render 'text', :post => post %>
+
+  <% end %>
+
+
+    <%= render 'meta_info', :post => post %>
+
+
+<% end %>
+
+
+
+<%#= @tumbles %>
