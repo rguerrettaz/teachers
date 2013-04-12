@@ -10,6 +10,7 @@ gem 'pg'
 gem 'bcrypt-ruby'
 gem 'json'
 gem 'twitter'
+gem 'ruby-oembed'
 
 # Gems used only for assets and not required
 # in production environments by default.
