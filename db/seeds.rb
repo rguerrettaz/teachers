@@ -14,7 +14,7 @@ alaska = JSON.parse(open("http://api.education.com/service/service.php?resf=json
 
 alaska.each do |s| School.create( 	:schoolid             =>  s['school']["schoolid"],
 																		:schoolname           =>  s['school']["schoolname"],              
-																		:zip                  =>  s['school']["30331"],
+																		:zip                  =>  s['school']["zip"],
 																		:address              =>  s['school']["address"],
 																		:city                 =>  s['school']["city"],
 																		:districtid           =>  s['school']["districtid"],
