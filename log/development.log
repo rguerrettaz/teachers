@@ -10417,3 +10417,1925 @@ Served asset /application.css - 304 Not Modified (0ms)
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-11 22:15:55 -0700
 Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-04-11 22:17:07 -0700
+Processing by NewsItemsController#index as HTML
+  Rendered news_items/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 540ms (Views: 3.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-11 22:17:07 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-11 22:17:07 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-11 22:17:07 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-11 22:17:07 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-04-12 08:03:31 -0700
+Processing by NewsItemsController#index as HTML
+  Rendered news_items/index.html.erb within layouts/application (17.6ms)
+Completed 200 OK in 690ms (Views: 91.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-12 08:03:32 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-12 08:03:32 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-12 08:03:32 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-12 08:03:32 -0700
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-04-12 08:19:14 -0700
+Processing by NewsItemsController#index as HTML
+  Rendered news_items/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 229ms (Views: 8.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-12 08:19:14 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-12 08:19:14 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-12 08:19:14 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-12 08:19:14 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-04-12 08:19:45 -0700
+Processing by NewsItemsController#index as HTML
+  Rendered news_items/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 627ms (Views: 4.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-12 08:19:46 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-12 08:19:46 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-12 08:19:46 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-12 08:19:46 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-04-12 08:47:56 -0700
+Processing by NewsItemsController#index as HTML
+  Rendered news_items/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 239ms (Views: 6.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-12 08:47:56 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-12 08:47:56 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-12 08:47:56 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-12 08:47:56 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-04-12 08:48:02 -0700
+Processing by NewsItemsController#index as HTML
+  Rendered news_items/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 155ms (Views: 7.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-12 08:48:02 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-12 08:48:02 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-12 08:48:02 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-12 08:48:02 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-04-12 08:48:30 -0700
+Processing by NewsItemsController#index as HTML
+ERROR: compiling _app_views_news_items_index_html_erb__3520234066528807314_70184395435240 RAISED /Users/gavin/teachers/app/views/news_items/index.html.erb:11: syntax error, unexpected keyword_ensure, expecting $end
+Function body:           def _app_views_news_items_index_html_erb__3520234066528807314_70184395435240(local_assigns, output_buffer)
+            _old_virtual_path, @virtual_path = @virtual_path, "news_items/index";_old_output_buffer = @output_buffer;;@output_buffer = output_buffer || ActionView::OutputBuffer.new;@output_buffer.safe_concat('<h1>Tweets</h1>
+'); @tweets.statuses.each do |t| 
+   linkify_tweet(t) 
+@output_buffer.safe_concat('    <ul>
+      <li><img src="');@output_buffer.append= ( t.user.profile_image_url_https );@output_buffer.safe_concat('">');@output_buffer.append= ( t.user.name );@output_buffer.safe_concat('</li>
+      <li>');@output_buffer.append= ( @raw_text );@output_buffer.safe_concat('</li>
+    </ul>
+');   end 
+ end 
+@output_buffer.to_s
+          ensure
+            @virtual_path, @output_buffer = _old_virtual_path, _old_output_buffer
+          end
+
+Backtrace: /Users/gavin/.rvm/gems/ruby-1.9.3-p0@global/gems/actionpack-3.2.13/lib/action_view/template.rb:297:in `module_eval'
+/Users/gavin/.rvm/gems/ruby-1.9.3-p0@global/gems/actionpack-3.2.13/lib/action_view/template.rb:297:in `compile'
+/Users/gavin/.rvm/gems/ruby-1.9.3-p0@global/gems/actionpack-3.2.13/lib/action_view/template.rb:244:in `block in compile!'
+<internal:prelude>:10:in `synchronize'
+/Users/gavin/.rvm/gems/ruby-1.9.3-p0@global/gems/actionpack-3.2.13/lib/action_view/template.rb:232:in `compile!'
+/Users/gavin/.rvm/gems/ruby-1.9.3-p0@global/gems/actionpack-3.2.13/lib/action_view/template.rb:144:in `block in render'
+/Users/gavin/.rvm/gems/ruby-1.9.3-p0@global/gems/activesupport-3.2.13/lib/active_support/notifications.rb:125:in `instrument'
+/Users/gavin/.rvm/gems/ruby-1.9.3-p0@global/gems/actionpack-3.2.13/lib/action_view/template.rb:143:in `render'
+/Users/gavin/.rvm/gems/ruby-1.9.3-p0@global/gems/actionpack-3.2.13/lib/action_view/renderer/template_renderer.rb:47:in `block (2 levels) in render_template'
+/Users/gavin/.rvm/gems/ruby-1.9.3-p0@global/gems/actionpack-3.2.13/lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+/Users/gavin/.rvm/gems/ruby-1.9.3-p0@global/gems/activesupport-3.2.13/lib/active_support/notifications.rb:123:in `block in instrument'
+/Users/gavin/.rvm/gems/ruby-1.9.3-p0@global/gems/activesupport-3.2.13/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/Users/gavin/.rvm/gems/ruby-1.9.3-p0@global/gems/activesupport-3.2.13/lib/active_support/notifications.rb:123:in `instrument'
+/Users/gavin/.rvm/gems/ruby-1.9.3-p0@global/gems/actionpack-3.2.13/lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+/Users/gavin/.rvm/gems/ruby-1.9.3-p0@global/gems/actionpack-3.2.13/lib/action_view/renderer/template_renderer.rb:46:in `block in render_template'
+/Users/gavin/.rvm/gems/ruby-1.9.3-p0@global/gems/actionpack-3.2.13/lib/action_view/renderer/template_renderer.rb:54:in `render_with_layout'
+/Users/gavin/.rvm/gems/ruby-1.9.3-p0@global/gems/actionpack-3.2.13/lib/action_view/renderer/template_renderer.rb:45:in `render_template'
+/Users/gavin/.rvm/gems/ruby-1.9.3-p0@global/gems/actionpack-3.2.13/lib/action_view/renderer/template_renderer.rb:18:in `render'
+/Users/gavin/.rvm/gems/ruby-1.9.3-p0@global/gems/actionpack-3.2.13/lib/action_view/renderer/renderer.rb:36:in `render_template'
+/Users/gavin/.rvm/gems/ruby-1.9.3-p0@global/gems/actionpack-3.2.13/lib/action_view/renderer/renderer.rb:17:in `render'
+/Users/gavin/.rvm/gems/ruby-1.9.3-p0@global/gems/actionpack-3.2.13/lib/abstract_controller/rendering.rb:110:in `_render_template'
+/Users/gavin/.rvm/gems/ruby-1.9.3-p0@global/gems/actionpack-3.2.13/lib/action_controller/metal/streaming.rb:225:in `_render_template'
+/Users/gavin/.rvm/gems/ruby-1.9.3-p0@global/gems/actionpack-3.2.13/lib/abstract_controller/rendering.rb:103:in `render_to_body'
+/Users/gavin/.rvm/gems/ruby-1.9.3-p0@global/gems/actionpack-3.2.13/lib/action_controller/metal/renderers.rb:28:in `render_to_body'
+/Users/gavin/.rvm/gems/ruby-1.9.3-p0@global/gems/actionpack-3.2.13/lib/action_controller/metal/compatibility.rb:50:in `render_to_body'
+/Users/gavin/.rvm/gems/ruby-1.9.3-p0@global/gems/actionpack-3.2.13/lib/abstract_controller/rendering.rb:88:in `render'
+/Users/gavin/.rvm/gems/ruby-1.9.3-p0@global/gems/actionpack-3.2.13/lib/action_controller/metal/rendering.rb:16:in `render'
+/Users/gavin/.rvm/gems/ruby-1.9.3-p0@global/gems/actionpack-3.2.13/lib/action_controller/metal/instrumentation.rb:40:in `block (2 levels) in render'
+/Users/gavin/.rvm/gems/ruby-1.9.3-p0@global/gems/activesupport-3.2.13/lib/active_support/core_ext/benchmark.rb:5:in `block in ms'
+/Users/gavin/.rvm/rubies/ruby-1.9.3-p0/lib/ruby/1.9.1/benchmark.rb:295:in `realtime'
+/Users/gavin/.rvm/gems/ruby-1.9.3-p0@global/gems/activesupport-3.2.13/lib/active_support/core_ext/benchmark.rb:5:in `ms'
+/Users/gavin/.rvm/gems/ruby-1.9.3-p0@global/gems/actionpack-3.2.13/lib/action_controller/metal/instrumentation.rb:40:in `block in render'
+/Users/gavin/.rvm/gems/ruby-1.9.3-p0@global/gems/actionpack-3.2.13/lib/action_controller/metal/instrumentation.rb:83:in `cleanup_view_runtime'
+/Users/gavin/.rvm/gems/ruby-1.9.3-p0@global/gems/activerecord-3.2.13/lib/active_record/railties/controller_runtime.rb:24:in `cleanup_view_runtime'
+/Users/gavin/.rvm/gems/ruby-1.9.3-p0@global/gems/actionpack-3.2.13/lib/action_controller/metal/instrumentation.rb:39:in `render'
+/Users/gavin/.rvm/gems/ruby-1.9.3-p0@global/gems/actionpack-3.2.13/lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+/Users/gavin/.rvm/gems/ruby-1.9.3-p0@global/gems/actionpack-3.2.13/lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+/Users/gavin/.rvm/gems/ruby-1.9.3-p0@global/gems/actionpack-3.2.13/lib/abstract_controller/base.rb:167:in `process_action'
+/Users/gavin/.rvm/gems/ruby-1.9.3-p0@global/gems/actionpack-3.2.13/lib/action_controller/metal/rendering.rb:10:in `process_action'
+/Users/gavin/.rvm/gems/ruby-1.9.3-p0@global/gems/actionpack-3.2.13/lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+/Users/gavin/.rvm/gems/ruby-1.9.3-p0@global/gems/activesupport-3.2.13/lib/active_support/callbacks.rb:414:in `_run__1355385782169123711__process_action__2850653484723380458__callbacks'
+/Users/gavin/.rvm/gems/ruby-1.9.3-p0@global/gems/activesupport-3.2.13/lib/active_support/callbacks.rb:405:in `__run_callback'
+/Users/gavin/.rvm/gems/ruby-1.9.3-p0@global/gems/activesupport-3.2.13/lib/active_support/callbacks.rb:385:in `_run_process_action_callbacks'
+/Users/gavin/.rvm/gems/ruby-1.9.3-p0@global/gems/activesupport-3.2.13/lib/active_support/callbacks.rb:81:in `run_callbacks'
+/Users/gavin/.rvm/gems/ruby-1.9.3-p0@global/gems/actionpack-3.2.13/lib/abstract_controller/callbacks.rb:17:in `process_action'
+/Users/gavin/.rvm/gems/ruby-1.9.3-p0@global/gems/actionpack-3.2.13/lib/action_controller/metal/rescue.rb:29:in `process_action'
+/Users/gavin/.rvm/gems/ruby-1.9.3-p0@global/gems/actionpack-3.2.13/lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+/Users/gavin/.rvm/gems/ruby-1.9.3-p0@global/gems/activesupport-3.2.13/lib/active_support/notifications.rb:123:in `block in instrument'
+/Users/gavin/.rvm/gems/ruby-1.9.3-p0@global/gems/activesupport-3.2.13/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/Users/gavin/.rvm/gems/ruby-1.9.3-p0@global/gems/activesupport-3.2.13/lib/active_support/notifications.rb:123:in `instrument'
+/Users/gavin/.rvm/gems/ruby-1.9.3-p0@global/gems/actionpack-3.2.13/lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+/Users/gavin/.rvm/gems/ruby-1.9.3-p0@global/gems/actionpack-3.2.13/lib/action_controller/metal/params_wrapper.rb:207:in `process_action'
+/Users/gavin/.rvm/gems/ruby-1.9.3-p0@global/gems/activerecord-3.2.13/lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+/Users/gavin/.rvm/gems/ruby-1.9.3-p0@global/gems/actionpack-3.2.13/lib/abstract_controller/base.rb:121:in `process'
+/Users/gavin/.rvm/gems/ruby-1.9.3-p0@global/gems/actionpack-3.2.13/lib/abstract_controller/rendering.rb:45:in `process'
+/Users/gavin/.rvm/gems/ruby-1.9.3-p0@global/gems/actionpack-3.2.13/lib/action_controller/metal.rb:203:in `dispatch'
+/Users/gavin/.rvm/gems/ruby-1.9.3-p0@global/gems/actionpack-3.2.13/lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+/Users/gavin/.rvm/gems/ruby-1.9.3-p0@global/gems/actionpack-3.2.13/lib/action_controller/metal.rb:246:in `block in action'
+/Users/gavin/.rvm/gems/ruby-1.9.3-p0@global/gems/actionpack-3.2.13/lib/action_dispatch/routing/route_set.rb:73:in `call'
+/Users/gavin/.rvm/gems/ruby-1.9.3-p0@global/gems/actionpack-3.2.13/lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+/Users/gavin/.rvm/gems/ruby-1.9.3-p0@global/gems/actionpack-3.2.13/lib/action_dispatch/routing/route_set.rb:36:in `call'
+/Users/gavin/.rvm/gems/ruby-1.9.3-p0@global/gems/journey-1.0.4/lib/journey/router.rb:68:in `block in call'
+/Users/gavin/.rvm/gems/ruby-1.9.3-p0@global/gems/journey-1.0.4/lib/journey/router.rb:56:in `each'
+/Users/gavin/.rvm/gems/ruby-1.9.3-p0@global/gems/journey-1.0.4/lib/journey/router.rb:56:in `call'
+/Users/gavin/.rvm/gems/ruby-1.9.3-p0@global/gems/actionpack-3.2.13/lib/action_dispatch/routing/route_set.rb:612:in `call'
+/Users/gavin/.rvm/gems/ruby-1.9.3-p0@global/gems/actionpack-3.2.13/lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+/Users/gavin/.rvm/gems/ruby-1.9.3-p0@global/gems/rack-1.4.5/lib/rack/etag.rb:23:in `call'
+/Users/gavin/.rvm/gems/ruby-1.9.3-p0@global/gems/rack-1.4.5/lib/rack/conditionalget.rb:25:in `call'
+/Users/gavin/.rvm/gems/ruby-1.9.3-p0@global/gems/actionpack-3.2.13/lib/action_dispatch/middleware/head.rb:14:in `call'
+/Users/gavin/.rvm/gems/ruby-1.9.3-p0@global/gems/actionpack-3.2.13/lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+/Users/gavin/.rvm/gems/ruby-1.9.3-p0@global/gems/actionpack-3.2.13/lib/action_dispatch/middleware/flash.rb:242:in `call'
+/Users/gavin/.rvm/gems/ruby-1.9.3-p0@global/gems/rack-1.4.5/lib/rack/session/abstract/id.rb:210:in `context'
+/Users/gavin/.rvm/gems/ruby-1.9.3-p0@global/gems/rack-1.4.5/lib/rack/session/abstract/id.rb:205:in `call'
+/Users/gavin/.rvm/gems/ruby-1.9.3-p0@global/gems/actionpack-3.2.13/lib/action_dispatch/middleware/cookies.rb:341:in `call'
+/Users/gavin/.rvm/gems/ruby-1.9.3-p0@global/gems/activerecord-3.2.13/lib/active_record/query_cache.rb:64:in `call'
+/Users/gavin/.rvm/gems/ruby-1.9.3-p0@global/gems/activerecord-3.2.13/lib/active_record/connection_adapters/abstract/connection_pool.rb:479:in `call'
+/Users/gavin/.rvm/gems/ruby-1.9.3-p0@global/gems/actionpack-3.2.13/lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+/Users/gavin/.rvm/gems/ruby-1.9.3-p0@global/gems/activesupport-3.2.13/lib/active_support/callbacks.rb:405:in `_run__3165634753621698069__call__647056383170370742__callbacks'
+/Users/gavin/.rvm/gems/ruby-1.9.3-p0@global/gems/activesupport-3.2.13/lib/active_support/callbacks.rb:405:in `__run_callback'
+/Users/gavin/.rvm/gems/ruby-1.9.3-p0@global/gems/activesupport-3.2.13/lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+/Users/gavin/.rvm/gems/ruby-1.9.3-p0@global/gems/activesupport-3.2.13/lib/active_support/callbacks.rb:81:in `run_callbacks'
+/Users/gavin/.rvm/gems/ruby-1.9.3-p0@global/gems/actionpack-3.2.13/lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+/Users/gavin/.rvm/gems/ruby-1.9.3-p0@global/gems/actionpack-3.2.13/lib/action_dispatch/middleware/reloader.rb:65:in `call'
+/Users/gavin/.rvm/gems/ruby-1.9.3-p0@global/gems/actionpack-3.2.13/lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+/Users/gavin/.rvm/gems/ruby-1.9.3-p0@global/gems/actionpack-3.2.13/lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+/Users/gavin/.rvm/gems/ruby-1.9.3-p0@global/gems/actionpack-3.2.13/lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+/Users/gavin/.rvm/gems/ruby-1.9.3-p0@global/gems/railties-3.2.13/lib/rails/rack/logger.rb:32:in `call_app'
+/Users/gavin/.rvm/gems/ruby-1.9.3-p0@global/gems/railties-3.2.13/lib/rails/rack/logger.rb:16:in `block in call'
+/Users/gavin/.rvm/gems/ruby-1.9.3-p0@global/gems/activesupport-3.2.13/lib/active_support/tagged_logging.rb:22:in `tagged'
+/Users/gavin/.rvm/gems/ruby-1.9.3-p0@global/gems/railties-3.2.13/lib/rails/rack/logger.rb:16:in `call'
+/Users/gavin/.rvm/gems/ruby-1.9.3-p0@global/gems/actionpack-3.2.13/lib/action_dispatch/middleware/request_id.rb:22:in `call'
+/Users/gavin/.rvm/gems/ruby-1.9.3-p0@global/gems/rack-1.4.5/lib/rack/methodoverride.rb:21:in `call'
+/Users/gavin/.rvm/gems/ruby-1.9.3-p0@global/gems/rack-1.4.5/lib/rack/runtime.rb:17:in `call'
+/Users/gavin/.rvm/gems/ruby-1.9.3-p0@global/gems/activesupport-3.2.13/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+/Users/gavin/.rvm/gems/ruby-1.9.3-p0@global/gems/rack-1.4.5/lib/rack/lock.rb:15:in `call'
+/Users/gavin/.rvm/gems/ruby-1.9.3-p0@global/gems/actionpack-3.2.13/lib/action_dispatch/middleware/static.rb:63:in `call'
+/Users/gavin/.rvm/gems/ruby-1.9.3-p0@global/gems/railties-3.2.13/lib/rails/engine.rb:479:in `call'
+/Users/gavin/.rvm/gems/ruby-1.9.3-p0@global/gems/railties-3.2.13/lib/rails/application.rb:223:in `call'
+/Users/gavin/.rvm/gems/ruby-1.9.3-p0@global/gems/rack-1.4.5/lib/rack/content_length.rb:14:in `call'
+/Users/gavin/.rvm/gems/ruby-1.9.3-p0@global/gems/railties-3.2.13/lib/rails/rack/log_tailer.rb:17:in `call'
+/Users/gavin/.rvm/gems/ruby-1.9.3-p0@global/gems/rack-1.4.5/lib/rack/handler/webrick.rb:59:in `service'
+/Users/gavin/.rvm/rubies/ruby-1.9.3-p0/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+/Users/gavin/.rvm/rubies/ruby-1.9.3-p0/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+/Users/gavin/.rvm/rubies/ruby-1.9.3-p0/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+  Rendered news_items/index.html.erb within layouts/application (2.0ms)
+Completed 500 Internal Server Error in 546ms
+
+ActionView::Template::Error (/Users/gavin/teachers/app/views/news_items/index.html.erb:11: syntax error, unexpected keyword_ensure, expecting $end):
+    8:   <% end %>
+    9: <% end %>
+  actionpack (3.2.13) lib/action_view/template.rb:297:in `module_eval'
+  actionpack (3.2.13) lib/action_view/template.rb:297:in `compile'
+  actionpack (3.2.13) lib/action_view/template.rb:244:in `block in compile!'
+  <internal:prelude>:10:in `synchronize'
+  actionpack (3.2.13) lib/action_view/template.rb:232:in `compile!'
+  actionpack (3.2.13) lib/action_view/template.rb:144:in `block in render'
+  activesupport (3.2.13) lib/active_support/notifications.rb:125:in `instrument'
+  actionpack (3.2.13) lib/action_view/template.rb:143:in `render'
+  actionpack (3.2.13) lib/action_view/renderer/template_renderer.rb:47:in `block (2 levels) in render_template'
+  actionpack (3.2.13) lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+  activesupport (3.2.13) lib/active_support/notifications.rb:123:in `block in instrument'
+  activesupport (3.2.13) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (3.2.13) lib/active_support/notifications.rb:123:in `instrument'
+  actionpack (3.2.13) lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+  actionpack (3.2.13) lib/action_view/renderer/template_renderer.rb:46:in `block in render_template'
+  actionpack (3.2.13) lib/action_view/renderer/template_renderer.rb:54:in `render_with_layout'
+  actionpack (3.2.13) lib/action_view/renderer/template_renderer.rb:45:in `render_template'
+  actionpack (3.2.13) lib/action_view/renderer/template_renderer.rb:18:in `render'
+  actionpack (3.2.13) lib/action_view/renderer/renderer.rb:36:in `render_template'
+  actionpack (3.2.13) lib/action_view/renderer/renderer.rb:17:in `render'
+  actionpack (3.2.13) lib/abstract_controller/rendering.rb:110:in `_render_template'
+  actionpack (3.2.13) lib/action_controller/metal/streaming.rb:225:in `_render_template'
+  actionpack (3.2.13) lib/abstract_controller/rendering.rb:103:in `render_to_body'
+  actionpack (3.2.13) lib/action_controller/metal/renderers.rb:28:in `render_to_body'
+  actionpack (3.2.13) lib/action_controller/metal/compatibility.rb:50:in `render_to_body'
+  actionpack (3.2.13) lib/abstract_controller/rendering.rb:88:in `render'
+  actionpack (3.2.13) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (3.2.13) lib/action_controller/metal/instrumentation.rb:40:in `block (2 levels) in render'
+  activesupport (3.2.13) lib/active_support/core_ext/benchmark.rb:5:in `block in ms'
+  /Users/gavin/.rvm/rubies/ruby-1.9.3-p0/lib/ruby/1.9.1/benchmark.rb:295:in `realtime'
+  activesupport (3.2.13) lib/active_support/core_ext/benchmark.rb:5:in `ms'
+  actionpack (3.2.13) lib/action_controller/metal/instrumentation.rb:40:in `block in render'
+  actionpack (3.2.13) lib/action_controller/metal/instrumentation.rb:83:in `cleanup_view_runtime'
+  activerecord (3.2.13) lib/active_record/railties/controller_runtime.rb:24:in `cleanup_view_runtime'
+  actionpack (3.2.13) lib/action_controller/metal/instrumentation.rb:39:in `render'
+  actionpack (3.2.13) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (3.2.13) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (3.2.13) lib/abstract_controller/base.rb:167:in `process_action'
+  actionpack (3.2.13) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (3.2.13) lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:414:in `_run__1355385782169123711__process_action__2850653484723380458__callbacks'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:385:in `_run_process_action_callbacks'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.13) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (3.2.13) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (3.2.13) lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+  activesupport (3.2.13) lib/active_support/notifications.rb:123:in `block in instrument'
+  activesupport (3.2.13) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (3.2.13) lib/active_support/notifications.rb:123:in `instrument'
+  actionpack (3.2.13) lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+  actionpack (3.2.13) lib/action_controller/metal/params_wrapper.rb:207:in `process_action'
+  activerecord (3.2.13) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (3.2.13) lib/abstract_controller/base.rb:121:in `process'
+  actionpack (3.2.13) lib/abstract_controller/rendering.rb:45:in `process'
+  actionpack (3.2.13) lib/action_controller/metal.rb:203:in `dispatch'
+  actionpack (3.2.13) lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+  actionpack (3.2.13) lib/action_controller/metal.rb:246:in `block in action'
+  actionpack (3.2.13) lib/action_dispatch/routing/route_set.rb:73:in `call'
+  actionpack (3.2.13) lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+  actionpack (3.2.13) lib/action_dispatch/routing/route_set.rb:36:in `call'
+  journey (1.0.4) lib/journey/router.rb:68:in `block in call'
+  journey (1.0.4) lib/journey/router.rb:56:in `each'
+  journey (1.0.4) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.13) lib/action_dispatch/routing/route_set.rb:612:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.5) lib/rack/etag.rb:23:in `call'
+  rack (1.4.5) lib/rack/conditionalget.rb:25:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.5) lib/rack/session/abstract/id.rb:210:in `context'
+  rack (1.4.5) lib/rack/session/abstract/id.rb:205:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/cookies.rb:341:in `call'
+  activerecord (3.2.13) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.13) lib/active_record/connection_adapters/abstract/connection_pool.rb:479:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:405:in `_run__3165634753621698069__call__647056383170370742__callbacks'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.13) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.13) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.13) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.13) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.13) lib/rails/engine.rb:479:in `call'
+  railties (3.2.13) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.13) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/gavin/.rvm/rubies/ruby-1.9.3-p0/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/gavin/.rvm/rubies/ruby-1.9.3-p0/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/gavin/.rvm/rubies/ruby-1.9.3-p0/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/gavin/.rvm/gems/ruby-1.9.3-p0@global/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+  Rendered /Users/gavin/.rvm/gems/ruby-1.9.3-p0@global/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /Users/gavin/.rvm/gems/ruby-1.9.3-p0@global/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (10.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-04-12 08:49:35 -0700
+Processing by NewsItemsController#index as HTML
+ERROR: compiling _app_views_news_items_index_html_erb__3520234066528807314_70184394853660 RAISED /Users/gavin/teachers/app/views/news_items/index.html.erb:11: syntax error, unexpected keyword_ensure, expecting $end
+Function body:           def _app_views_news_items_index_html_erb__3520234066528807314_70184394853660(local_assigns, output_buffer)
+            _old_virtual_path, @virtual_path = @virtual_path, "news_items/index";_old_output_buffer = @output_buffer;;@output_buffer = output_buffer || ActionView::OutputBuffer.new;@output_buffer.safe_concat('<h1>Tweets</h1>
+'); @tweets.statuses.each do |t| 
+   linkify_tweet(t) 
+@output_buffer.safe_concat('    <ul>
+      <li><img src="');@output_buffer.append= ( t.user.profile_image_url_https );@output_buffer.safe_concat('">');@output_buffer.append= ( t.user.name );@output_buffer.safe_concat('</li>
+      <li>');@output_buffer.append= ( @raw_text );@output_buffer.safe_concat('</li>
+    </ul>
+');   end 
+ end 
+@output_buffer.to_s
+          ensure
+            @virtual_path, @output_buffer = _old_virtual_path, _old_output_buffer
+          end
+
+Backtrace: /Users/gavin/.rvm/gems/ruby-1.9.3-p0@global/gems/actionpack-3.2.13/lib/action_view/template.rb:297:in `module_eval'
+/Users/gavin/.rvm/gems/ruby-1.9.3-p0@global/gems/actionpack-3.2.13/lib/action_view/template.rb:297:in `compile'
+/Users/gavin/.rvm/gems/ruby-1.9.3-p0@global/gems/actionpack-3.2.13/lib/action_view/template.rb:244:in `block in compile!'
+<internal:prelude>:10:in `synchronize'
+/Users/gavin/.rvm/gems/ruby-1.9.3-p0@global/gems/actionpack-3.2.13/lib/action_view/template.rb:232:in `compile!'
+/Users/gavin/.rvm/gems/ruby-1.9.3-p0@global/gems/actionpack-3.2.13/lib/action_view/template.rb:144:in `block in render'
+/Users/gavin/.rvm/gems/ruby-1.9.3-p0@global/gems/activesupport-3.2.13/lib/active_support/notifications.rb:125:in `instrument'
+/Users/gavin/.rvm/gems/ruby-1.9.3-p0@global/gems/actionpack-3.2.13/lib/action_view/template.rb:143:in `render'
+/Users/gavin/.rvm/gems/ruby-1.9.3-p0@global/gems/actionpack-3.2.13/lib/action_view/renderer/template_renderer.rb:47:in `block (2 levels) in render_template'
+/Users/gavin/.rvm/gems/ruby-1.9.3-p0@global/gems/actionpack-3.2.13/lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+/Users/gavin/.rvm/gems/ruby-1.9.3-p0@global/gems/activesupport-3.2.13/lib/active_support/notifications.rb:123:in `block in instrument'
+/Users/gavin/.rvm/gems/ruby-1.9.3-p0@global/gems/activesupport-3.2.13/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/Users/gavin/.rvm/gems/ruby-1.9.3-p0@global/gems/activesupport-3.2.13/lib/active_support/notifications.rb:123:in `instrument'
+/Users/gavin/.rvm/gems/ruby-1.9.3-p0@global/gems/actionpack-3.2.13/lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+/Users/gavin/.rvm/gems/ruby-1.9.3-p0@global/gems/actionpack-3.2.13/lib/action_view/renderer/template_renderer.rb:46:in `block in render_template'
+/Users/gavin/.rvm/gems/ruby-1.9.3-p0@global/gems/actionpack-3.2.13/lib/action_view/renderer/template_renderer.rb:54:in `render_with_layout'
+/Users/gavin/.rvm/gems/ruby-1.9.3-p0@global/gems/actionpack-3.2.13/lib/action_view/renderer/template_renderer.rb:45:in `render_template'
+/Users/gavin/.rvm/gems/ruby-1.9.3-p0@global/gems/actionpack-3.2.13/lib/action_view/renderer/template_renderer.rb:18:in `render'
+/Users/gavin/.rvm/gems/ruby-1.9.3-p0@global/gems/actionpack-3.2.13/lib/action_view/renderer/renderer.rb:36:in `render_template'
+/Users/gavin/.rvm/gems/ruby-1.9.3-p0@global/gems/actionpack-3.2.13/lib/action_view/renderer/renderer.rb:17:in `render'
+/Users/gavin/.rvm/gems/ruby-1.9.3-p0@global/gems/actionpack-3.2.13/lib/abstract_controller/rendering.rb:110:in `_render_template'
+/Users/gavin/.rvm/gems/ruby-1.9.3-p0@global/gems/actionpack-3.2.13/lib/action_controller/metal/streaming.rb:225:in `_render_template'
+/Users/gavin/.rvm/gems/ruby-1.9.3-p0@global/gems/actionpack-3.2.13/lib/abstract_controller/rendering.rb:103:in `render_to_body'
+/Users/gavin/.rvm/gems/ruby-1.9.3-p0@global/gems/actionpack-3.2.13/lib/action_controller/metal/renderers.rb:28:in `render_to_body'
+/Users/gavin/.rvm/gems/ruby-1.9.3-p0@global/gems/actionpack-3.2.13/lib/action_controller/metal/compatibility.rb:50:in `render_to_body'
+/Users/gavin/.rvm/gems/ruby-1.9.3-p0@global/gems/actionpack-3.2.13/lib/abstract_controller/rendering.rb:88:in `render'
+/Users/gavin/.rvm/gems/ruby-1.9.3-p0@global/gems/actionpack-3.2.13/lib/action_controller/metal/rendering.rb:16:in `render'
+/Users/gavin/.rvm/gems/ruby-1.9.3-p0@global/gems/actionpack-3.2.13/lib/action_controller/metal/instrumentation.rb:40:in `block (2 levels) in render'
+/Users/gavin/.rvm/gems/ruby-1.9.3-p0@global/gems/activesupport-3.2.13/lib/active_support/core_ext/benchmark.rb:5:in `block in ms'
+/Users/gavin/.rvm/rubies/ruby-1.9.3-p0/lib/ruby/1.9.1/benchmark.rb:295:in `realtime'
+/Users/gavin/.rvm/gems/ruby-1.9.3-p0@global/gems/activesupport-3.2.13/lib/active_support/core_ext/benchmark.rb:5:in `ms'
+/Users/gavin/.rvm/gems/ruby-1.9.3-p0@global/gems/actionpack-3.2.13/lib/action_controller/metal/instrumentation.rb:40:in `block in render'
+/Users/gavin/.rvm/gems/ruby-1.9.3-p0@global/gems/actionpack-3.2.13/lib/action_controller/metal/instrumentation.rb:83:in `cleanup_view_runtime'
+/Users/gavin/.rvm/gems/ruby-1.9.3-p0@global/gems/activerecord-3.2.13/lib/active_record/railties/controller_runtime.rb:24:in `cleanup_view_runtime'
+/Users/gavin/.rvm/gems/ruby-1.9.3-p0@global/gems/actionpack-3.2.13/lib/action_controller/metal/instrumentation.rb:39:in `render'
+/Users/gavin/.rvm/gems/ruby-1.9.3-p0@global/gems/actionpack-3.2.13/lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+/Users/gavin/.rvm/gems/ruby-1.9.3-p0@global/gems/actionpack-3.2.13/lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+/Users/gavin/.rvm/gems/ruby-1.9.3-p0@global/gems/actionpack-3.2.13/lib/abstract_controller/base.rb:167:in `process_action'
+/Users/gavin/.rvm/gems/ruby-1.9.3-p0@global/gems/actionpack-3.2.13/lib/action_controller/metal/rendering.rb:10:in `process_action'
+/Users/gavin/.rvm/gems/ruby-1.9.3-p0@global/gems/actionpack-3.2.13/lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+/Users/gavin/.rvm/gems/ruby-1.9.3-p0@global/gems/activesupport-3.2.13/lib/active_support/callbacks.rb:414:in `_run__1355385782169123711__process_action__2850653484723380458__callbacks'
+/Users/gavin/.rvm/gems/ruby-1.9.3-p0@global/gems/activesupport-3.2.13/lib/active_support/callbacks.rb:405:in `__run_callback'
+/Users/gavin/.rvm/gems/ruby-1.9.3-p0@global/gems/activesupport-3.2.13/lib/active_support/callbacks.rb:385:in `_run_process_action_callbacks'
+/Users/gavin/.rvm/gems/ruby-1.9.3-p0@global/gems/activesupport-3.2.13/lib/active_support/callbacks.rb:81:in `run_callbacks'
+/Users/gavin/.rvm/gems/ruby-1.9.3-p0@global/gems/actionpack-3.2.13/lib/abstract_controller/callbacks.rb:17:in `process_action'
+/Users/gavin/.rvm/gems/ruby-1.9.3-p0@global/gems/actionpack-3.2.13/lib/action_controller/metal/rescue.rb:29:in `process_action'
+/Users/gavin/.rvm/gems/ruby-1.9.3-p0@global/gems/actionpack-3.2.13/lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+/Users/gavin/.rvm/gems/ruby-1.9.3-p0@global/gems/activesupport-3.2.13/lib/active_support/notifications.rb:123:in `block in instrument'
+/Users/gavin/.rvm/gems/ruby-1.9.3-p0@global/gems/activesupport-3.2.13/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/Users/gavin/.rvm/gems/ruby-1.9.3-p0@global/gems/activesupport-3.2.13/lib/active_support/notifications.rb:123:in `instrument'
+/Users/gavin/.rvm/gems/ruby-1.9.3-p0@global/gems/actionpack-3.2.13/lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+/Users/gavin/.rvm/gems/ruby-1.9.3-p0@global/gems/actionpack-3.2.13/lib/action_controller/metal/params_wrapper.rb:207:in `process_action'
+/Users/gavin/.rvm/gems/ruby-1.9.3-p0@global/gems/activerecord-3.2.13/lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+/Users/gavin/.rvm/gems/ruby-1.9.3-p0@global/gems/actionpack-3.2.13/lib/abstract_controller/base.rb:121:in `process'
+/Users/gavin/.rvm/gems/ruby-1.9.3-p0@global/gems/actionpack-3.2.13/lib/abstract_controller/rendering.rb:45:in `process'
+/Users/gavin/.rvm/gems/ruby-1.9.3-p0@global/gems/actionpack-3.2.13/lib/action_controller/metal.rb:203:in `dispatch'
+/Users/gavin/.rvm/gems/ruby-1.9.3-p0@global/gems/actionpack-3.2.13/lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+/Users/gavin/.rvm/gems/ruby-1.9.3-p0@global/gems/actionpack-3.2.13/lib/action_controller/metal.rb:246:in `block in action'
+/Users/gavin/.rvm/gems/ruby-1.9.3-p0@global/gems/actionpack-3.2.13/lib/action_dispatch/routing/route_set.rb:73:in `call'
+/Users/gavin/.rvm/gems/ruby-1.9.3-p0@global/gems/actionpack-3.2.13/lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+/Users/gavin/.rvm/gems/ruby-1.9.3-p0@global/gems/actionpack-3.2.13/lib/action_dispatch/routing/route_set.rb:36:in `call'
+/Users/gavin/.rvm/gems/ruby-1.9.3-p0@global/gems/journey-1.0.4/lib/journey/router.rb:68:in `block in call'
+/Users/gavin/.rvm/gems/ruby-1.9.3-p0@global/gems/journey-1.0.4/lib/journey/router.rb:56:in `each'
+/Users/gavin/.rvm/gems/ruby-1.9.3-p0@global/gems/journey-1.0.4/lib/journey/router.rb:56:in `call'
+/Users/gavin/.rvm/gems/ruby-1.9.3-p0@global/gems/actionpack-3.2.13/lib/action_dispatch/routing/route_set.rb:612:in `call'
+/Users/gavin/.rvm/gems/ruby-1.9.3-p0@global/gems/actionpack-3.2.13/lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+/Users/gavin/.rvm/gems/ruby-1.9.3-p0@global/gems/rack-1.4.5/lib/rack/etag.rb:23:in `call'
+/Users/gavin/.rvm/gems/ruby-1.9.3-p0@global/gems/rack-1.4.5/lib/rack/conditionalget.rb:25:in `call'
+/Users/gavin/.rvm/gems/ruby-1.9.3-p0@global/gems/actionpack-3.2.13/lib/action_dispatch/middleware/head.rb:14:in `call'
+/Users/gavin/.rvm/gems/ruby-1.9.3-p0@global/gems/actionpack-3.2.13/lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+/Users/gavin/.rvm/gems/ruby-1.9.3-p0@global/gems/actionpack-3.2.13/lib/action_dispatch/middleware/flash.rb:242:in `call'
+/Users/gavin/.rvm/gems/ruby-1.9.3-p0@global/gems/rack-1.4.5/lib/rack/session/abstract/id.rb:210:in `context'
+/Users/gavin/.rvm/gems/ruby-1.9.3-p0@global/gems/rack-1.4.5/lib/rack/session/abstract/id.rb:205:in `call'
+/Users/gavin/.rvm/gems/ruby-1.9.3-p0@global/gems/actionpack-3.2.13/lib/action_dispatch/middleware/cookies.rb:341:in `call'
+/Users/gavin/.rvm/gems/ruby-1.9.3-p0@global/gems/activerecord-3.2.13/lib/active_record/query_cache.rb:64:in `call'
+/Users/gavin/.rvm/gems/ruby-1.9.3-p0@global/gems/activerecord-3.2.13/lib/active_record/connection_adapters/abstract/connection_pool.rb:479:in `call'
+/Users/gavin/.rvm/gems/ruby-1.9.3-p0@global/gems/actionpack-3.2.13/lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+/Users/gavin/.rvm/gems/ruby-1.9.3-p0@global/gems/activesupport-3.2.13/lib/active_support/callbacks.rb:405:in `_run__3165634753621698069__call__647056383170370742__callbacks'
+/Users/gavin/.rvm/gems/ruby-1.9.3-p0@global/gems/activesupport-3.2.13/lib/active_support/callbacks.rb:405:in `__run_callback'
+/Users/gavin/.rvm/gems/ruby-1.9.3-p0@global/gems/activesupport-3.2.13/lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+/Users/gavin/.rvm/gems/ruby-1.9.3-p0@global/gems/activesupport-3.2.13/lib/active_support/callbacks.rb:81:in `run_callbacks'
+/Users/gavin/.rvm/gems/ruby-1.9.3-p0@global/gems/actionpack-3.2.13/lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+/Users/gavin/.rvm/gems/ruby-1.9.3-p0@global/gems/actionpack-3.2.13/lib/action_dispatch/middleware/reloader.rb:65:in `call'
+/Users/gavin/.rvm/gems/ruby-1.9.3-p0@global/gems/actionpack-3.2.13/lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+/Users/gavin/.rvm/gems/ruby-1.9.3-p0@global/gems/actionpack-3.2.13/lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+/Users/gavin/.rvm/gems/ruby-1.9.3-p0@global/gems/actionpack-3.2.13/lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+/Users/gavin/.rvm/gems/ruby-1.9.3-p0@global/gems/railties-3.2.13/lib/rails/rack/logger.rb:32:in `call_app'
+/Users/gavin/.rvm/gems/ruby-1.9.3-p0@global/gems/railties-3.2.13/lib/rails/rack/logger.rb:16:in `block in call'
+/Users/gavin/.rvm/gems/ruby-1.9.3-p0@global/gems/activesupport-3.2.13/lib/active_support/tagged_logging.rb:22:in `tagged'
+/Users/gavin/.rvm/gems/ruby-1.9.3-p0@global/gems/railties-3.2.13/lib/rails/rack/logger.rb:16:in `call'
+/Users/gavin/.rvm/gems/ruby-1.9.3-p0@global/gems/actionpack-3.2.13/lib/action_dispatch/middleware/request_id.rb:22:in `call'
+/Users/gavin/.rvm/gems/ruby-1.9.3-p0@global/gems/rack-1.4.5/lib/rack/methodoverride.rb:21:in `call'
+/Users/gavin/.rvm/gems/ruby-1.9.3-p0@global/gems/rack-1.4.5/lib/rack/runtime.rb:17:in `call'
+/Users/gavin/.rvm/gems/ruby-1.9.3-p0@global/gems/activesupport-3.2.13/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+/Users/gavin/.rvm/gems/ruby-1.9.3-p0@global/gems/rack-1.4.5/lib/rack/lock.rb:15:in `call'
+/Users/gavin/.rvm/gems/ruby-1.9.3-p0@global/gems/actionpack-3.2.13/lib/action_dispatch/middleware/static.rb:63:in `call'
+/Users/gavin/.rvm/gems/ruby-1.9.3-p0@global/gems/railties-3.2.13/lib/rails/engine.rb:479:in `call'
+/Users/gavin/.rvm/gems/ruby-1.9.3-p0@global/gems/railties-3.2.13/lib/rails/application.rb:223:in `call'
+/Users/gavin/.rvm/gems/ruby-1.9.3-p0@global/gems/rack-1.4.5/lib/rack/content_length.rb:14:in `call'
+/Users/gavin/.rvm/gems/ruby-1.9.3-p0@global/gems/railties-3.2.13/lib/rails/rack/log_tailer.rb:17:in `call'
+/Users/gavin/.rvm/gems/ruby-1.9.3-p0@global/gems/rack-1.4.5/lib/rack/handler/webrick.rb:59:in `service'
+/Users/gavin/.rvm/rubies/ruby-1.9.3-p0/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+/Users/gavin/.rvm/rubies/ruby-1.9.3-p0/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+/Users/gavin/.rvm/rubies/ruby-1.9.3-p0/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+  Rendered news_items/index.html.erb within layouts/application (0.7ms)
+Completed 500 Internal Server Error in 256ms
+
+ActionView::Template::Error (/Users/gavin/teachers/app/views/news_items/index.html.erb:11: syntax error, unexpected keyword_ensure, expecting $end):
+    8:   <% end %>
+    9: <% end %>
+  actionpack (3.2.13) lib/action_view/template.rb:297:in `module_eval'
+  actionpack (3.2.13) lib/action_view/template.rb:297:in `compile'
+  actionpack (3.2.13) lib/action_view/template.rb:244:in `block in compile!'
+  <internal:prelude>:10:in `synchronize'
+  actionpack (3.2.13) lib/action_view/template.rb:232:in `compile!'
+  actionpack (3.2.13) lib/action_view/template.rb:144:in `block in render'
+  activesupport (3.2.13) lib/active_support/notifications.rb:125:in `instrument'
+  actionpack (3.2.13) lib/action_view/template.rb:143:in `render'
+  actionpack (3.2.13) lib/action_view/renderer/template_renderer.rb:47:in `block (2 levels) in render_template'
+  actionpack (3.2.13) lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+  activesupport (3.2.13) lib/active_support/notifications.rb:123:in `block in instrument'
+  activesupport (3.2.13) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (3.2.13) lib/active_support/notifications.rb:123:in `instrument'
+  actionpack (3.2.13) lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+  actionpack (3.2.13) lib/action_view/renderer/template_renderer.rb:46:in `block in render_template'
+  actionpack (3.2.13) lib/action_view/renderer/template_renderer.rb:54:in `render_with_layout'
+  actionpack (3.2.13) lib/action_view/renderer/template_renderer.rb:45:in `render_template'
+  actionpack (3.2.13) lib/action_view/renderer/template_renderer.rb:18:in `render'
+  actionpack (3.2.13) lib/action_view/renderer/renderer.rb:36:in `render_template'
+  actionpack (3.2.13) lib/action_view/renderer/renderer.rb:17:in `render'
+  actionpack (3.2.13) lib/abstract_controller/rendering.rb:110:in `_render_template'
+  actionpack (3.2.13) lib/action_controller/metal/streaming.rb:225:in `_render_template'
+  actionpack (3.2.13) lib/abstract_controller/rendering.rb:103:in `render_to_body'
+  actionpack (3.2.13) lib/action_controller/metal/renderers.rb:28:in `render_to_body'
+  actionpack (3.2.13) lib/action_controller/metal/compatibility.rb:50:in `render_to_body'
+  actionpack (3.2.13) lib/abstract_controller/rendering.rb:88:in `render'
+  actionpack (3.2.13) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (3.2.13) lib/action_controller/metal/instrumentation.rb:40:in `block (2 levels) in render'
+  activesupport (3.2.13) lib/active_support/core_ext/benchmark.rb:5:in `block in ms'
+  /Users/gavin/.rvm/rubies/ruby-1.9.3-p0/lib/ruby/1.9.1/benchmark.rb:295:in `realtime'
+  activesupport (3.2.13) lib/active_support/core_ext/benchmark.rb:5:in `ms'
+  actionpack (3.2.13) lib/action_controller/metal/instrumentation.rb:40:in `block in render'
+  actionpack (3.2.13) lib/action_controller/metal/instrumentation.rb:83:in `cleanup_view_runtime'
+  activerecord (3.2.13) lib/active_record/railties/controller_runtime.rb:24:in `cleanup_view_runtime'
+  actionpack (3.2.13) lib/action_controller/metal/instrumentation.rb:39:in `render'
+  actionpack (3.2.13) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (3.2.13) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (3.2.13) lib/abstract_controller/base.rb:167:in `process_action'
+  actionpack (3.2.13) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (3.2.13) lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:414:in `_run__1355385782169123711__process_action__2850653484723380458__callbacks'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:385:in `_run_process_action_callbacks'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.13) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (3.2.13) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (3.2.13) lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+  activesupport (3.2.13) lib/active_support/notifications.rb:123:in `block in instrument'
+  activesupport (3.2.13) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (3.2.13) lib/active_support/notifications.rb:123:in `instrument'
+  actionpack (3.2.13) lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+  actionpack (3.2.13) lib/action_controller/metal/params_wrapper.rb:207:in `process_action'
+  activerecord (3.2.13) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (3.2.13) lib/abstract_controller/base.rb:121:in `process'
+  actionpack (3.2.13) lib/abstract_controller/rendering.rb:45:in `process'
+  actionpack (3.2.13) lib/action_controller/metal.rb:203:in `dispatch'
+  actionpack (3.2.13) lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+  actionpack (3.2.13) lib/action_controller/metal.rb:246:in `block in action'
+  actionpack (3.2.13) lib/action_dispatch/routing/route_set.rb:73:in `call'
+  actionpack (3.2.13) lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+  actionpack (3.2.13) lib/action_dispatch/routing/route_set.rb:36:in `call'
+  journey (1.0.4) lib/journey/router.rb:68:in `block in call'
+  journey (1.0.4) lib/journey/router.rb:56:in `each'
+  journey (1.0.4) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.13) lib/action_dispatch/routing/route_set.rb:612:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.5) lib/rack/etag.rb:23:in `call'
+  rack (1.4.5) lib/rack/conditionalget.rb:25:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.5) lib/rack/session/abstract/id.rb:210:in `context'
+  rack (1.4.5) lib/rack/session/abstract/id.rb:205:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/cookies.rb:341:in `call'
+  activerecord (3.2.13) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.13) lib/active_record/connection_adapters/abstract/connection_pool.rb:479:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:405:in `_run__3165634753621698069__call__647056383170370742__callbacks'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.13) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.13) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.13) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.13) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.13) lib/rails/engine.rb:479:in `call'
+  railties (3.2.13) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.13) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/gavin/.rvm/rubies/ruby-1.9.3-p0/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/gavin/.rvm/rubies/ruby-1.9.3-p0/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/gavin/.rvm/rubies/ruby-1.9.3-p0/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/gavin/.rvm/gems/ruby-1.9.3-p0@global/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+  Rendered /Users/gavin/.rvm/gems/ruby-1.9.3-p0@global/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /Users/gavin/.rvm/gems/ruby-1.9.3-p0@global/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (9.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-04-12 08:49:59 -0700
+Processing by NewsItemsController#index as HTML
+  Rendered news_items/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 584ms (Views: 4.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-12 08:50:00 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-12 08:50:00 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-12 08:50:00 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-12 08:50:00 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-04-12 08:52:13 -0700
+Processing by NewsItemsController#index as HTML
+  Rendered news_items/index.html.erb within layouts/application (2.0ms)
+Completed 500 Internal Server Error in 195ms
+
+ActionView::Template::Error (undefined method `url' for #<Twitter::Tweet:0x007faa247294a0>):
+    4:   <ul>
+    5:     <li><img src="<%= t.user.profile_image_url_https %>"><%= t.user.name %></li>
+    6:     <li><%= @raw_text %></li>
+    7:     <li><%= t.url %></li>
+    8:   </ul>
+    9: <% end %>
+  app/views/news_items/index.html.erb:7:in `block in _app_views_news_items_index_html_erb__3520234066528807314_70184392648540'
+  app/views/news_items/index.html.erb:2:in `each'
+  app/views/news_items/index.html.erb:2:in `_app_views_news_items_index_html_erb__3520234066528807314_70184392648540'
+
+
+  Rendered /Users/gavin/.rvm/gems/ruby-1.9.3-p0@global/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+  Rendered /Users/gavin/.rvm/gems/ruby-1.9.3-p0@global/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /Users/gavin/.rvm/gems/ruby-1.9.3-p0@global/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (8.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-04-12 08:52:50 -0700
+Processing by NewsItemsController#index as HTML
+  Rendered news_items/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 543ms (Views: 4.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-12 08:52:50 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-12 08:52:50 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-12 08:52:50 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-12 08:52:50 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-04-12 08:53:27 -0700
+Processing by NewsItemsController#index as HTML
+  Rendered news_items/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 595ms (Views: 5.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-12 08:53:27 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-12 08:53:27 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-12 08:53:27 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-12 08:53:27 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-04-12 08:54:21 -0700
+Processing by NewsItemsController#index as HTML
+  Rendered news_items/index.html.erb within layouts/application (2.1ms)
+Completed 500 Internal Server Error in 598ms
+
+ActionView::Template::Error (undefined method `screen_name' for #<Twitter::Tweet:0x007faa27872cc8>):
+    4:   <ul>
+    5:     <li><img src="<%= t.user.profile_image_url_https %>"><%= t.user.name %></li>
+    6:     <li><%= @raw_text %></li>
+    7:     <li>http://twitter.com/<%= t.screen_name %><%= t.id %></li>
+    8:   </ul>
+    9: <% end %>
+  app/views/news_items/index.html.erb:7:in `block in _app_views_news_items_index_html_erb__3520234066528807314_70184393077880'
+  app/views/news_items/index.html.erb:2:in `each'
+  app/views/news_items/index.html.erb:2:in `_app_views_news_items_index_html_erb__3520234066528807314_70184393077880'
+
+
+  Rendered /Users/gavin/.rvm/gems/ruby-1.9.3-p0@global/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /Users/gavin/.rvm/gems/ruby-1.9.3-p0@global/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /Users/gavin/.rvm/gems/ruby-1.9.3-p0@global/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (7.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-04-12 08:54:31 -0700
+Processing by NewsItemsController#index as HTML
+  Rendered news_items/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 190ms (Views: 5.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-12 08:54:31 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-12 08:54:31 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-12 08:54:31 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-12 08:54:31 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-04-12 08:54:58 -0700
+Processing by NewsItemsController#index as HTML
+  Rendered news_items/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 496ms (Views: 4.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-12 08:54:59 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-12 08:54:59 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-12 08:54:59 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-12 08:54:59 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-04-12 08:58:20 -0700
+Processing by NewsItemsController#index as HTML
+  Rendered news_items/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 612ms (Views: 5.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-12 08:58:21 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-12 08:58:21 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-12 08:58:21 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-12 08:58:21 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/" for 127.0.0.1 at 2013-04-12 08:58:59 -0700
+Processing by NewsItemsController#index as HTML
+  Rendered news_items/index.html.erb within layouts/application (25.9ms)
+Completed 200 OK in 649ms (Views: 54.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-12 08:59:00 -0700
+Served asset /application.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-12 08:59:00 -0700
+Served asset /application.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-12 08:59:00 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-12 08:59:00 -0700
+Served asset /jquery.js - 304 Not Modified (3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-04-12 08:59:16 -0700
+Processing by NewsItemsController#index as HTML
+  Rendered news_items/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 562ms (Views: 5.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-12 08:59:16 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-12 08:59:16 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-12 08:59:16 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-12 08:59:16 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-04-12 10:27:55 -0700
+Processing by NewsItemsController#index as HTML
+  Rendered news_items/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 555ms (Views: 6.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-12 10:27:56 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-12 10:27:56 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-12 10:27:56 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-12 10:27:56 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-04-12 10:28:14 -0700
+Processing by NewsItemsController#index as HTML
+  Rendered news_items/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 1133ms (Views: 4.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-12 10:28:15 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-12 10:28:15 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-12 10:28:15 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-12 10:28:15 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-04-12 10:28:27 -0700
+Processing by NewsItemsController#index as HTML
+  Rendered news_items/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 159ms (Views: 5.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-12 10:28:27 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-12 10:28:27 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-12 10:28:27 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-12 10:28:27 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/" for 127.0.0.1 at 2013-04-12 10:29:39 -0700
+Processing by NewsItemsController#index as HTML
+  Rendered news_items/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 168ms (Views: 5.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-12 10:29:39 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-12 10:29:39 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-12 10:29:39 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-12 10:29:39 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-04-12 10:34:13 -0700
+Processing by NewsItemsController#index as HTML
+  Rendered news_items/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 363ms (Views: 4.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-12 10:34:13 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-12 10:34:13 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-12 10:34:13 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-12 10:34:13 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-04-12 10:48:21 -0700
+Processing by NewsItemsController#index as HTML
+  Rendered news_items/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 361ms (Views: 4.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-12 10:48:22 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-12 10:48:22 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-12 10:48:22 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-12 10:48:22 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/" for 127.0.0.1 at 2013-04-12 11:21:22 -0700
+Processing by NewsItemsController#index as HTML
+  Rendered news_items/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 239ms (Views: 3.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-12 11:21:22 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-12 11:21:22 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-12 11:21:22 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-12 11:21:22 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-04-12 11:21:34 -0700
+Processing by NewsItemsController#index as HTML
+  Rendered news_items/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 100ms (Views: 4.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-12 11:21:34 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-12 11:21:34 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-12 11:21:34 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-12 11:21:34 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-04-12 11:23:29 -0700
+Processing by NewsItemsController#index as HTML
+  Rendered news_items/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 189ms (Views: 6.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-12 11:23:29 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-12 11:23:29 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-12 11:23:29 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-12 11:23:29 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-04-12 11:23:58 -0700
+Processing by NewsItemsController#index as HTML
+  Rendered news_items/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 487ms (Views: 4.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-12 11:23:59 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-12 11:23:59 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-12 11:23:59 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-12 11:23:59 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-04-12 11:24:27 -0700
+Processing by NewsItemsController#index as HTML
+  Rendered news_items/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 515ms (Views: 4.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-12 11:24:28 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-12 11:24:28 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-12 11:24:28 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-12 11:24:28 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-04-12 11:37:37 -0700
+Processing by NewsItemsController#index as HTML
+  Rendered news_items/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 743ms (Views: 4.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-12 11:37:37 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-12 11:37:37 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-12 11:37:37 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-12 11:37:37 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-04-12 11:37:44 -0700
+Processing by NewsItemsController#index as HTML
+  Rendered news_items/index.html.erb within layouts/application (11.1ms)
+Completed 500 Internal Server Error in 241ms
+
+ActionView::Template::Error (undefined method `html' for #<Hash:0x007fcbe4bc8880>):
+    5:     <li><%= t.text %></li>
+    6:     <li><%= @resource %></li>
+    7:   </ul>
+    8:   <%= @html.html %>
+    9: <% end %>
+  app/views/news_items/index.html.erb:8:in `block in _app_views_news_items_index_html_erb__2484444921200459206_70256846357600'
+  app/views/news_items/index.html.erb:2:in `each'
+  app/views/news_items/index.html.erb:2:in `_app_views_news_items_index_html_erb__2484444921200459206_70256846357600'
+
+
+  Rendered /Users/gavin/.rvm/gems/ruby-1.9.3-p0@global/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.9ms)
+  Rendered /Users/gavin/.rvm/gems/ruby-1.9.3-p0@global/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.6ms)
+  Rendered /Users/gavin/.rvm/gems/ruby-1.9.3-p0@global/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (12.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-04-12 11:38:12 -0700
+Processing by NewsItemsController#index as HTML
+  Rendered news_items/index.html.erb within layouts/application (2.1ms)
+Completed 500 Internal Server Error in 599ms
+
+ActionView::Template::Error (undefined method `body' for #<Hash:0x007fcbe4ca8660>):
+    5:     <li><%= t.text %></li>
+    6:     <li><%= @resource %></li>
+    7:   </ul>
+    8:   <%= @html.body.html %>
+    9: <% end %>
+  app/views/news_items/index.html.erb:8:in `block in _app_views_news_items_index_html_erb__2484444921200459206_70256846820260'
+  app/views/news_items/index.html.erb:2:in `each'
+  app/views/news_items/index.html.erb:2:in `_app_views_news_items_index_html_erb__2484444921200459206_70256846820260'
+
+
+  Rendered /Users/gavin/.rvm/gems/ruby-1.9.3-p0@global/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.5ms)
+  Rendered /Users/gavin/.rvm/gems/ruby-1.9.3-p0@global/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /Users/gavin/.rvm/gems/ruby-1.9.3-p0@global/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (8.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-04-12 11:38:33 -0700
+Processing by NewsItemsController#index as HTML
+  Rendered news_items/index.html.erb within layouts/application (1.4ms)
+Completed 500 Internal Server Error in 1139ms
+
+ActionView::Template::Error (undefined method `body' for #<Hash:0x007fcbe4d68cf8>):
+    5:     <li><%= t.text %></li>
+    6:     <li><%= @resource %></li>
+    7:   </ul>
+    8:   <%= @html.body %>
+    9: <% end %>
+  app/views/news_items/index.html.erb:8:in `block in _app_views_news_items_index_html_erb__2484444921200459206_70256847213420'
+  app/views/news_items/index.html.erb:2:in `each'
+  app/views/news_items/index.html.erb:2:in `_app_views_news_items_index_html_erb__2484444921200459206_70256847213420'
+
+
+  Rendered /Users/gavin/.rvm/gems/ruby-1.9.3-p0@global/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+  Rendered /Users/gavin/.rvm/gems/ruby-1.9.3-p0@global/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /Users/gavin/.rvm/gems/ruby-1.9.3-p0@global/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (7.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-04-12 11:38:46 -0700
+Processing by NewsItemsController#index as HTML
+  Rendered news_items/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 1348ms (Views: 32.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-12 11:38:48 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-12 11:38:48 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-12 11:38:48 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-12 11:38:48 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-04-12 11:39:02 -0700
+Processing by NewsItemsController#index as HTML
+  Rendered news_items/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 673ms (Views: 5.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-12 11:39:02 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-12 11:39:02 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-12 11:39:02 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-12 11:39:02 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-04-12 11:39:13 -0700
+Processing by NewsItemsController#index as HTML
+  Rendered news_items/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 261ms (Views: 4.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-12 11:39:14 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-12 11:39:14 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-12 11:39:14 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-12 11:39:14 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-04-12 11:40:18 -0700
+Processing by NewsItemsController#index as HTML
+  Rendered news_items/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 649ms (Views: 6.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-12 11:40:19 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-12 11:40:19 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-12 11:40:19 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-12 11:40:19 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-04-12 11:41:12 -0700
+Processing by NewsItemsController#index as HTML
+  Rendered news_items/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 291ms (Views: 4.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-12 11:41:12 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-12 11:41:12 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-12 11:41:12 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-12 11:41:12 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-04-12 11:43:18 -0700
+Processing by NewsItemsController#index as HTML
+  Rendered news_items/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 1962ms (Views: 6.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-12 11:43:20 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-12 11:43:20 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-12 11:43:20 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-12 11:43:20 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-04-12 11:43:25 -0700
+Processing by NewsItemsController#index as HTML
+  Rendered news_items/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 2001ms (Views: 5.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-12 11:43:27 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-12 11:43:27 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-12 11:43:27 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-12 11:43:27 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-04-12 11:47:25 -0700
+Processing by NewsItemsController#index as HTML
+  Rendered news_items/index.html.erb within layouts/application (1.2ms)
+Completed 500 Internal Server Error in 357ms
+
+ActionView::Template::Error (wrong number of arguments (0 for 1)):
+    4:     <li><img src="<%= t.user.profile_image_url_https %>"><%= t.from_user %></li>
+    5:     <li><%= t.text %></li>
+    6:   </ul>
+    7:   <%= embed_tweet.html_safe %>
+    8: <% end %>
+  app/helpers/tweet_helper.rb:3:in `embed_tweet'
+  app/views/news_items/index.html.erb:7:in `block in _app_views_news_items_index_html_erb__2484444921200459206_70256846975860'
+  app/views/news_items/index.html.erb:2:in `each'
+  app/views/news_items/index.html.erb:2:in `_app_views_news_items_index_html_erb__2484444921200459206_70256846975860'
+
+
+  Rendered /Users/gavin/.rvm/gems/ruby-1.9.3-p0@global/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+  Rendered /Users/gavin/.rvm/gems/ruby-1.9.3-p0@global/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /Users/gavin/.rvm/gems/ruby-1.9.3-p0@global/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (7.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-04-12 11:47:44 -0700
+Processing by NewsItemsController#index as HTML
+  Rendered news_items/index.html.erb within layouts/application (418.5ms)
+Completed 200 OK in 685ms (Views: 422.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-12 11:47:45 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-12 11:47:45 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-12 11:47:45 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-12 11:47:45 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-04-12 11:47:59 -0700
+Processing by NewsItemsController#index as HTML
+  Rendered news_items/index.html.erb within layouts/application (406.4ms)
+Completed 200 OK in 1053ms (Views: 412.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-12 11:48:00 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-12 11:48:00 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-12 11:48:00 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-12 11:48:00 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-04-12 11:48:59 -0700
+Processing by NewsItemsController#index as HTML
+Completed 500 Internal Server Error in 271ms
+
+Twitter::Error::Unauthorized (Could not authenticate you):
+  app/controllers/news_items_controller.rb:5:in `index'
+
+
+  Rendered /Users/gavin/.rvm/gems/ruby-1.9.3-p0@global/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+  Rendered /Users/gavin/.rvm/gems/ruby-1.9.3-p0@global/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /Users/gavin/.rvm/gems/ruby-1.9.3-p0@global/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (8.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-04-12 11:49:04 -0700
+Processing by NewsItemsController#index as HTML
+  Rendered news_items/index.html.erb within layouts/application (490.1ms)
+Completed 200 OK in 748ms (Views: 495.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-12 11:49:05 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-12 11:49:05 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-12 11:49:05 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-12 11:49:05 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-04-12 11:49:50 -0700
+Processing by NewsItemsController#index as HTML
+  Rendered news_items/index.html.erb within layouts/application (792.1ms)
+Completed 200 OK in 1463ms (Views: 795.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-12 11:49:51 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-12 11:49:51 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-12 11:49:51 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-12 11:49:51 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-04-12 11:51:12 -0700
+Processing by NewsItemsController#index as HTML
+  Rendered news_items/index.html.erb within layouts/application (414.6ms)
+Completed 200 OK in 708ms (Views: 419.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-12 11:51:12 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-12 11:51:12 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-12 11:51:12 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-12 11:51:12 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-04-12 11:51:19 -0700
+Processing by NewsItemsController#index as HTML
+  Rendered news_items/index.html.erb within layouts/application (377.6ms)
+Completed 200 OK in 609ms (Views: 381.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-12 11:51:20 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-12 11:51:20 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-12 11:51:20 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-12 11:51:20 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-04-12 11:52:04 -0700
+Processing by NewsItemsController#index as HTML
+  Rendered news_items/index.html.erb within layouts/application (1739.1ms)
+Completed 200 OK in 2483ms (Views: 1743.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-12 11:52:06 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-12 11:52:06 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-12 11:52:06 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-12 11:52:06 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-04-12 11:53:31 -0700
+Processing by NewsItemsController#index as HTML
+  Rendered news_items/index.html.erb within layouts/application (1487.0ms)
+Compiled style.css  (36ms)  (pid 27605)
+Compiled style.css  (4ms)  (pid 27605)
+Compiled application.css  (54ms)  (pid 27605)
+Completed 200 OK in 1884ms (Views: 1567.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-12 11:53:33 -0700
+Served asset /application.css - 304 Not Modified (8ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2013-04-12 11:53:33 -0700
+Served asset /style.css - 200 OK (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-12 11:53:33 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-12 11:53:33 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-12 11:53:33 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-04-12 11:53:46 -0700
+Processing by NewsItemsController#index as HTML
+  Rendered news_items/index.html.erb within layouts/application (1317.9ms)
+Compiled style.css  (2ms)  (pid 27605)
+Compiled application.css  (1ms)  (pid 27605)
+Completed 200 OK in 1949ms (Views: 1344.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-12 11:53:48 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-12 11:53:48 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-12 11:53:48 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2013-04-12 11:53:48 -0700
+Served asset /style.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-12 11:53:48 -0700
+Served asset /application.css - 304 Not Modified (3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-04-12 11:54:21 -0700
+Processing by NewsItemsController#index as HTML
+  Rendered news_items/index.html.erb within layouts/application (1227.1ms)
+Compiled style.css  (29ms)  (pid 27605)
+Compiled application.css  (0ms)  (pid 27605)
+Completed 200 OK in 1980ms (Views: 1275.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-12 11:54:23 -0700
+Served asset /application.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2013-04-12 11:54:23 -0700
+Served asset /style.css - 200 OK (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-12 11:54:23 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-12 11:54:23 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-12 11:54:23 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-04-12 11:54:37 -0700
+Processing by NewsItemsController#index as HTML
+  Rendered news_items/index.html.erb within layouts/application (5057.9ms)
+Compiled style.css  (2ms)  (pid 27605)
+Compiled application.css  (1ms)  (pid 27605)
+Completed 200 OK in 6532ms (Views: 5078.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-12 11:54:44 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-12 11:54:44 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-12 11:54:44 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-12 11:54:44 -0700
+Served asset /application.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2013-04-12 11:54:44 -0700
+Served asset /style.css - 200 OK (1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-04-12 11:55:02 -0700
+Processing by NewsItemsController#index as HTML
+  Rendered news_items/index.html.erb within layouts/application (634.4ms)
+Compiled style.css  (2ms)  (pid 27605)
+Compiled application.css  (1ms)  (pid 27605)
+Completed 200 OK in 903ms (Views: 657.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-12 11:55:03 -0700
+Served asset /application.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-12 11:55:03 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-12 11:55:03 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2013-04-12 11:55:03 -0700
+Served asset /style.css - 200 OK (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-12 11:55:03 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-04-12 11:55:17 -0700
+Processing by NewsItemsController#index as HTML
+  Rendered news_items/index.html.erb within layouts/application (421.3ms)
+Completed 200 OK in 1020ms (Views: 430.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2013-04-12 11:55:18 -0700
+Served asset /style.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-12 11:55:18 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-12 11:55:18 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-12 11:55:18 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-12 11:55:18 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-04-12 11:55:27 -0700
+Processing by NewsItemsController#index as HTML
+  Rendered news_items/index.html.erb within layouts/application (372.8ms)
+Completed 200 OK in 602ms (Views: 386.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-12 11:55:27 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2013-04-12 11:55:27 -0700
+Served asset /style.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-12 11:55:27 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-12 11:55:27 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-12 11:55:27 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-04-12 11:56:00 -0700
+Processing by NewsItemsController#index as HTML
+  Rendered news_items/index.html.erb within layouts/application (414.1ms)
+Compiled style.css  (1ms)  (pid 27605)
+Compiled application.css  (0ms)  (pid 27605)
+Completed 200 OK in 1076ms (Views: 462.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-12 11:56:02 -0700
+Served asset /application.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2013-04-12 11:56:02 -0700
+Served asset /style.css - 200 OK (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-12 11:56:02 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-12 11:56:02 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-12 11:56:02 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-04-12 12:10:23 -0700
+Processing by NewsItemsController#index as HTML
+  Rendered news_items/index.html.erb within layouts/application (612.8ms)
+Completed 200 OK in 926ms (Views: 624.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-12 12:10:24 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-12 12:10:24 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-12 12:10:24 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2013-04-12 12:10:24 -0700
+Served asset /style.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-12 12:10:24 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/" for 127.0.0.1 at 2013-04-12 12:16:21 -0700
+Processing by NewsItemsController#index as HTML
+Completed 500 Internal Server Error in 178ms
+
+Twitter::Error::BadRequest (Bad Authentication data):
+  app/controllers/news_items_controller.rb:4:in `index'
+
+
+  Rendered /Users/gavin/.rvm/gems/ruby-1.9.3-p0@global/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+  Rendered /Users/gavin/.rvm/gems/ruby-1.9.3-p0@global/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /Users/gavin/.rvm/gems/ruby-1.9.3-p0@global/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (12.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-04-12 12:16:24 -0700
+Processing by NewsItemsController#index as HTML
+Completed 500 Internal Server Error in 365ms
+
+Twitter::Error::BadRequest (Bad Authentication data):
+  app/controllers/news_items_controller.rb:4:in `index'
+
+
+  Rendered /Users/gavin/.rvm/gems/ruby-1.9.3-p0@global/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /Users/gavin/.rvm/gems/ruby-1.9.3-p0@global/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /Users/gavin/.rvm/gems/ruby-1.9.3-p0@global/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (6.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-04-12 12:16:42 -0700
+Processing by NewsItemsController#index as HTML
+Completed 500 Internal Server Error in 439ms
+
+Twitter::Error::BadRequest (Bad Authentication data):
+  app/controllers/news_items_controller.rb:4:in `index'
+
+
+  Rendered /Users/gavin/.rvm/gems/ruby-1.9.3-p0@global/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /Users/gavin/.rvm/gems/ruby-1.9.3-p0@global/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /Users/gavin/.rvm/gems/ruby-1.9.3-p0@global/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (7.4ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/" for 127.0.0.1 at 2013-04-12 12:16:58 -0700
+Processing by NewsItemsController#index as HTML
+Completed 500 Internal Server Error in 105ms
+
+Twitter::Error::BadRequest (Bad Authentication data):
+  app/controllers/news_items_controller.rb:4:in `index'
+
+
+  Rendered /Users/gavin/.rvm/gems/ruby-1.9.3-p0@global/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+  Rendered /Users/gavin/.rvm/gems/ruby-1.9.3-p0@global/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /Users/gavin/.rvm/gems/ruby-1.9.3-p0@global/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (9.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-04-12 12:17:40 -0700
+Processing by NewsItemsController#index as HTML
+Completed 500 Internal Server Error in 130ms
+
+Twitter::Error::BadRequest (Bad Authentication data):
+  app/controllers/news_items_controller.rb:4:in `index'
+
+
+  Rendered /Users/gavin/.rvm/gems/ruby-1.9.3-p0@global/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+  Rendered /Users/gavin/.rvm/gems/ruby-1.9.3-p0@global/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /Users/gavin/.rvm/gems/ruby-1.9.3-p0@global/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (7.8ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/" for 127.0.0.1 at 2013-04-12 12:17:49 -0700
+Processing by NewsItemsController#index as HTML
+  Rendered news_items/index.html.erb within layouts/application (399.5ms)
+Completed 200 OK in 676ms (Views: 431.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-12 12:17:49 -0700
+Served asset /application.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2013-04-12 12:17:49 -0700
+Served asset /style.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-12 12:17:49 -0700
+Served asset /application.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-12 12:17:49 -0700
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-12 12:17:49 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-04-12 12:18:57 -0700
+Processing by NewsItemsController#index as HTML
+  Rendered news_items/index.html.erb within layouts/application (550.9ms)
+Completed 200 OK in 984ms (Views: 564.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2013-04-12 12:18:58 -0700
+Served asset /style.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-12 12:18:58 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-12 12:18:58 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-12 12:18:58 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-12 12:18:58 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-04-12 12:19:28 -0700
+Processing by NewsItemsController#index as HTML
+  Rendered news_items/index.html.erb within layouts/application (371.6ms)
+Completed 200 OK in 872ms (Views: 382.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2013-04-12 12:19:29 -0700
+Served asset /style.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-12 12:19:29 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-12 12:19:29 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-12 12:19:29 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-12 12:19:29 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-04-12 12:20:09 -0700
+Processing by NewsItemsController#index as HTML
+  Rendered news_items/index.html.erb within layouts/application (433.3ms)
+Completed 200 OK in 999ms (Views: 469.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-12 12:20:10 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-12 12:20:10 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2013-04-12 12:20:10 -0700
+Served asset /style.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-12 12:20:10 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-12 12:20:10 -0700
+Served asset /application.js - 304 Not Modified (0ms)
