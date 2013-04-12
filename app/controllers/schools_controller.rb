@@ -1,31 +1,19 @@
 class SchoolsController < ApplicationController
-
+	
 	def create
 		@school = School.new
 	end
 
 	def show
-		@school = School.new
-
+		@school = School.find(params[:id])
 	end
 
 	def search
-		@schools = School.where(params[:zip])
-		# if @schools
-		# 	redire	ct @school
-		# else
-		# end
+		@schools = School.where(zip: params[:zip], state: params[:state])
+		if @schools.empty?
+			call_api(params[:zip],params[:state])	
+		  @schools = School.where(zip: params[:zip], state: params[:state])
+		end	
+			render :json => @schools.to_json
 	end
-
-
-	def index
-	  @search = School.where(params[:zip])
-  	@products = @search.all
-	end
-
-
-		end
-
-	end
-
 end

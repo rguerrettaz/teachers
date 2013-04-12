@@ -1,11 +1,13 @@
 class ApplicationController < ActionController::Base
   protect_from_forgery
+  require 'json'
+  require 'open-uri'
 
-  def call_api(zip)
-    query = JSON.parse(open("http://api.education.com/service/service.php?resf=json&f=schoolSearch&key=f1adcc65e4df0852db7a09d0f84e2167&sn=sf&v=4&zip=#{zip}").read)
+  def call_api(zip,state) 
+    query = JSON.parse(open("http://api.education.com/service/service.php?resf=json&f=schoolSearch&key=410e1967497cd724f524a35879ffc078&sn=sf&v=4&state=#{state}&zip=#{zip.to_i}").read)
     query.each do |s| School.create(:schoolid          =>  s['school']["schoolid"],
                                     :schoolname           =>  s['school']["schoolname"],              
-                                    :zip                  =>  s['school']["30331"],
+                                    :zip                  =>  s['school']["zip"],
                                     :address              =>  s['school']["address"],
                                     :city                 =>  s['school']["city"],
                                     :districtid           =>  s['school']["districtid"],
