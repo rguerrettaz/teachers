@@ -1,2 +1,3 @@
 config/initializers/twitter.rb
 tmp/
+.DS_Store
