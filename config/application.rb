@@ -11,6 +11,8 @@ end
 
 module TeacherGap
   class Application < Rails::Application
+
+    EDUCATION_API_KEY = '410e1967497cd724f524a35879ffc078'
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration should go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded.

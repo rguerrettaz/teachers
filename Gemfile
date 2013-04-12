@@ -7,6 +7,8 @@ gem 'rails', '3.2.13'
 
 gem 'pg'
 
+gem 'bcrypt-ruby'
+gem 'json'
 
 # Gems used only for assets and not required
 # in production environments by default.
@@ -35,4 +37,4 @@ gem 'jquery-rails'
 # gem 'capistrano'
 
 # To use debugger
-# gem 'debugger'
+gem 'debugger'
