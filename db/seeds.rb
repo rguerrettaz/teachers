@@ -9,10 +9,10 @@ require 'json'
 require 'open-uri'
 
 
-atlanta = JSON.parse(open("http://api.education.com/service/service.php?resf=json&f=schoolSearch&key=410e1967497cd724f524a35879ffc078&sn=sf&v=4&state=ak").read)
+alaska = JSON.parse(open("http://api.education.com/service/service.php?resf=json&f=schoolSearch&key=f1adcc65e4df0852db7a09d0f84e2167&sn=sf&v=4&state=ak").read)
 
 
-atlanta.each do |s| School.create(	:schoolid             =>  s['school']["schoolid"],
+alaska.each do |s| School.create( 	:schoolid             =>  s['school']["schoolid"],
 																		:schoolname           =>  s['school']["schoolname"],              
 																		:zip                  =>  s['school']["30331"],
 																		:address              =>  s['school']["address"],
