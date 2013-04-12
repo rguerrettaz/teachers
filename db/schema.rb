@@ -11,7 +11,20 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130411203138) do
+ActiveRecord::Schema.define(:version => 20130412005928) do
+
+  create_table "news_items", :force => true do |t|
+    t.string   "headline"
+    t.string   "author"
+    t.string   "url"
+    t.text     "body"
+    t.integer  "stars"
+    t.string   "date_published"
+    t.text     "location"
+    t.string   "avatar_url"
+    t.datetime "created_at",     :null => false
+    t.datetime "updated_at",     :null => false
+  end
 
   create_table "schools", :force => true do |t|
     t.string   "schoolid"
