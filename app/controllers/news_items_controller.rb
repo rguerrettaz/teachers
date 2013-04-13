@@ -5,10 +5,12 @@ class NewsItemsController < ApplicationController
 
     @tweets = tweets
 
-    @tag_recent_media = Instagram.tag_recent_media('edchat', :count => 1)
-    @location_recent_media = Instagram.location_recent_media(82197239)
+    @instas = instas
+    # @location_recent_media = Instagram.location_recent_media(82197239)
 
     @tumbles = tumbles
+
+    @trial = tweets
 
   end
 

@@ -1,17 +1,18 @@
-
 <h1>Instagram</h1>
-<%= @location_images %>
 
-<% find_by_coords('33.6441498', '-117.5807648', "Santa Margarita Catholic High School") %>
+<% @instas.each do |pic| %>
+  <article class = 'news_item'>
+    <%= pic['popularity'] %>
 
-<% @location_images.each do |i| %>
-  <% image_url(i) %>
+    <%= link_to pic['pic'].caption.from.username, :url => "http://instagram.com/#{pic['pic'].caption.from.username}" %>
 
-  <ul class="instagram">
-    <li class="name"><img class="profile_picture" src="<%= @profile_picture %>"><a href="http://instagram.com/<%= @username %>"><span><%= @username %></span></a></li>
-    <li class="image"><img src="<%= @url %>"></img></li>
-    <li class="caption"><%= @caption %></li>
-  </ul>
+    <%= link_to image_tag pic['pic'].images.standard_resolution.url, :url => "http://instagram.com/#{pic['pic'].caption.from.username}" %>
+
+    <p><%= pic['pic'].caption.text.html_safe %></p>
+
+  </article>
+<% end %>
+
 
 <h1>Tweets</h1>
 <% @tweets.each do |tweet| %>
@@ -31,6 +32,3 @@
       <%= render 'meta_info', :post => post %>
     </article>
   <% end %>
-
-
-<%= @tweets %>
