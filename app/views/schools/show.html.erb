@@ -25,3 +25,19 @@
 </ul>
 
 
+<% find_by_coords(@school.latitude, @school.longitude, @school.schoolname) %>
+
+<% if @location_images.nil? %>
+	<p>No Instagram photos!</p>
+<% else %>
+	<% @location_images.each do |i| %>
+	  <% image_url(i) %>
+	  <ul class="instagram">
+	    <li class="name">
+	      <img class="profile_picture" src="<%= @profile_picture %>"><a href="http://instagram.com/<%= @username %>"><span><%= @username %></span></a>
+	    </li>
+	    <li class="image"><img src="<%= @url %>"></img></li>
+	    <li class="caption"><%= @caption %></li>
+	  </ul>
+	<% end %>
+<% end %>
