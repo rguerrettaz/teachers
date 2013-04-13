@@ -1,31 +1,9 @@
-<h1>Instagram</h1>
 
+<h1>start</h1>
 
-<% find_by_coords('39.143333', '-77.418333', "Poolesville High School") %>
+<% @news_items.each do |item| %>
+  
+  <%= item.type %>, <%= item.popularity %><br>
+  <%= item.body.html_safe if item.body %> 
 
-    <%= link_to image_tag pic['pic'].images.standard_resolution.url, :url => "http://instagram.com/#{pic['pic'].caption.from.username}" %>
-
-    <p><%= pic['pic'].caption.text.html_safe %></p>
-
-  </article>
 <% end %>
-
-
-<h1>Tweets</h1>
-<% @tweets.each do |tweet| %>
-  <%= tweet['popularity'] %>
-  <%= embed_tweet(tweet['status'].id) %>
-<% end %>
-
-<h1>Tumbles</h1>
-
-  <% @tumbles.each do |post| %>
-    <article class = 'news_item'>
-      <ul>
-        <li><%= link_to post['blog_name'], post['post_url'] %><li>
-        <li class='popularity'><%= post['popularity'] %></li>
-      </ul>
-      <%= render post['type'], :post => post %>
-      <%= render 'meta_info', :post => post %>
-    </article>
-  <% end %>

@@ -1,6 +1,12 @@
 module ApplicationHelper
 
+  TAG_SEARCH = 5
+  TAGS = ['education', 'edtech']
 
+  def source
+    
+  end
+  
   def popularity(vote, created_at)
     created_at = created_at.to_time.to_i unless created_at.class == Fixnum
 
@@ -8,16 +14,6 @@ module ApplicationHelper
     popularity = (((vote.to_i - 1) / ((hours + 2) ** 1.5))*10).ceil
   end
 
-  def tumbles
-    client = Tumblr::Client.new
-    search = client.tagged('education', :limit => 5)
-
-    search.map do |post|
-      popularity = popularity(post['note_count'], post['date'])
-      post.merge!({'popularity' => popularity })
-    end
-
-  end
   
   def tweets
     search = Twitter.search('#edchat OR #education', :count => 10, :result_type => 'popular').statuses
