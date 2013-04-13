@@ -1,10 +1,7 @@
 <h1>Instagram</h1>
 
-<% @instas.each do |pic| %>
-  <article class = 'news_item'>
-    <%= pic['popularity'] %>
 
-    <%= link_to pic['pic'].caption.from.username, :url => "http://instagram.com/#{pic['pic'].caption.from.username}" %>
+<% find_by_coords('39.143333', '-77.418333', "Poolesville High School") %>
 
     <%= link_to image_tag pic['pic'].images.standard_resolution.url, :url => "http://instagram.com/#{pic['pic'].caption.from.username}" %>
 
