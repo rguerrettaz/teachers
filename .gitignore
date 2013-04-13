@@ -1,0 +1,6 @@
+config/initializers/twitter.rb
+tmp/
+log/*.log
+.bundle
+.DS_Store
+tmp/

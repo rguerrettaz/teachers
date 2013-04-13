@@ -1,0 +1,9 @@
+<div class="search">
+	<h1>Search for the School</h1>
+
+	<%= form_tag(search_schools_path, :remote => true) do %>
+		<%= text_field_tag(:zip, nil, :placeholder => "Enter Zip") %>
+		<%= text_field_tag(:state, nil, :placeholder => "Enter State") %>
+		<%= submit_tag 'Submit' %>
+	<% end %>
+</div>
