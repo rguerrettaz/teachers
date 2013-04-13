@@ -1,5 +1,5 @@
 class NewsItemsController < ApplicationController
-
+  include ApplicationHelper
 
   def index
 
@@ -7,7 +7,9 @@ class NewsItemsController < ApplicationController
     # @tweets = Twitter.search('#edchat OR #education', :count => 10, :result_type => 'popular').statuses
 
     client = Tumblr::Client.new
-    @tumbles = client.tagged('education', :limit => 10)
+    search = client.tagged('education', :limit => 5)
+
+    @tumbles = add_popularity(search)
 
 
 

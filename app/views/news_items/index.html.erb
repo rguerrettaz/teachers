@@ -8,41 +8,16 @@
 <h1>Tumbles</h1>
 
 
-
-
-<% @tumbles.each do |post| %>
-  <%= link_to post["blog_name"], post["post_url"] %> <br>
-
-  <% if post['type'] == 'photo' %>
-    <%= render 'photo_set', :post => post %>
-
-  <% elsif post['type'] == 'text' %>
-    <%= render 'text', :post => post %>
-
-  <% elsif post['type'] == 'quote' %>
-    <%= render 'quote', :post => post %>
-
-  <% elsif post['type'] == 'link' %>
-    <%= render 'link', :post => post %>
-
-  <% elsif post['type'] == 'chat' %>
-    <%= render 'chat', :post => post %>
-
-  <% elsif post['type'] == 'audio' %>
-    <%= render 'audio', :post => post %>
-
-  <% elsif post['type'] == 'video' %>
-    <%= render 'video', :post => post %>
-
-  <% elsif post['type'] == 'answer' %>
-    <%= render 'answer', :post => post %>
-
+  <% @tumbles.each do |post| %>
+    <article class = 'news_item'>
+      <ul>
+        <li><%= link_to post['blog_name'], post['post_url'] %><li>
+        <li class='popularity'><%= post['popularity'] %></li>
+      </ul>
+      <%= render post['type'], :post => post %>
+      <%= render 'meta_info', :post => post %>
+    </article>
   <% end %>
 
-  <%= post['type'] %>
 
-  <%= render 'meta_info', :post => post %>
-
-
-<% end %>
 

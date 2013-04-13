@@ -1,10 +1,10 @@
-<div class = "meta">
-    <%= post["note_count"] %><br>
-
-    <% post["tags"].each do |tag| %>
-      <%=link_to tag , "http://www.tumblr.com/tagged/" + tag %>
-    <% end %>
-
+<div class = 'meta'>
+    <p>
+      <% post['tags'].each do |tag| %>
+        <%=link_to tag , 'http://www.tumblr.com/tagged/' + tag %>
+      <% end %>
+      
+    </p>
 </div>
 
 
