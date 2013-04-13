@@ -7,7 +7,7 @@ class School < ActiveRecord::Base
 	 	 params = {}
    	 params[:state] = state
    	 params[:zip] = zip unless zip.blank?
-   	 params[:city] = city unless city.blank?
+   	 params[:city] = city.downcase unless city.blank?
    	 @schools = School.find(:all, :conditions => params)
 		 if @schools.empty?
 			 School.call_api(zip,state,city)	

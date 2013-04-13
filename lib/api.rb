@@ -4,7 +4,6 @@ require 'open-uri'
 module Api
   module ClassMethods  
       def call_api(zip,state,city) 
-        p "I'm in the API!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
         if zip.blank? && city.blank?
             query = JSON.parse(open("http://api.education.com/service/service.php?resf=json&f=schoolSearch&key=410e1967497cd724f524a35879ffc078&sn=sf&v=4&state=#{state}").read)
         elsif zip.blank?
@@ -14,11 +13,13 @@ module Api
         else 
             query = JSON.parse(open("http://api.education.com/service/service.php?resf=json&f=schoolSearch&key=410e1967497cd724f524a35879ffc078&sn=sf&v=4&state=#{state}&zip=#{zip.to_i}&city=#{URI::encode(city).downcase}").read)
         end
+          p "I'm in the API!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
+          p query
         query.each do |s| School.create(:schoolid          =>  s['school']["schoolid"],
                                         :schoolname           =>  s['school']["schoolname"],              
                                         :zip                  =>  s['school']["zip"],
                                         :address              =>  s['school']["address"],
-                                        :city                 =>  s['school']["city"],
+                                        :city                 =>  s['school']["city"].downcase,
                                         :districtid           =>  s['school']["districtid"],
                                         :AYPResultYear        =>  s['school']["AYPResultYear"],
                                         :distance             =>  s['school']["distance"],
