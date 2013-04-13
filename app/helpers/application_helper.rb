@@ -1,5 +1,6 @@
 module ApplicationHelper
 
+
   def popularity(vote, created_at)
     created_at = created_at.to_time.to_i unless created_at.class == Fixnum
 
@@ -27,7 +28,6 @@ module ApplicationHelper
     end
 
   end
-
 
   def instas
     search = Instagram.tag_recent_media('edchat', :count => 5)
