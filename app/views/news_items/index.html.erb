@@ -1,8 +1,0 @@
-<h1>Tweets</h1>
-<% @tweets.statuses.each do |t| %>
-  <% linkify_tweet(t) %>
-  <ul>
-    <li><img src="<%= t.user.profile_image_url_https %>"><%= t.user.name %></li>
-    <li><%= @raw_text %></li>
-  </ul>
-<% end %>
