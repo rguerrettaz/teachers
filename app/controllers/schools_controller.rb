@@ -9,11 +9,7 @@ class SchoolsController < ApplicationController
 	end
 
 	def search
-		@schools = School.where(zip: params[:zip], state: params[:state])
-		if @schools.empty?
-			call_api(params[:zip],params[:state])	
-		  @schools = School.where(zip: params[:zip], state: params[:state])
-		end	
-			render :json => @schools.to_json
+		@schools = School.find_or_call(params[:zip], params[:state])
+		render :json => @schools.to_json
 	end
 end
