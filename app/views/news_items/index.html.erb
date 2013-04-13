@@ -8,10 +8,10 @@
   <% image_url(i) %>
   <ul class="instagram">
     <li class="name">
-      <img class="profile_picture" src="<%#= @profile_picture %>"><a href="http://instagram.com/<%#= @username %>"><span><%#= @username %></span></a>
+      <img class="profile_picture" src="<%= @profile_picture %>"><a href="http://instagram.com/<%= @username %>"><span><%= @username %></span></a>
     </li>
-    <li class="image"><img src="<%#= @url %>"></img></li>
-    <li class="caption"><%#= @caption %></li>
+    <li class="image"><img src="<%= @url %>"></img></li>
+    <li class="caption"><%= @caption %></li>
   </ul>
 <% end %>
 
@@ -29,7 +29,7 @@
   <article class = 'news_item'>
     <ul>
       <li><%= link_to post['blog_name'], post['post_url'] %><li>
-      <li class='popularity'><%#= post['popularity'] %></li>
+      <li class='popularity'><%= post['popularity'] %></li>
     </ul>
     <%= render post['type'], :post => post %>
     <%= render 'meta_info', :post => post %>
