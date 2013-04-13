@@ -9,7 +9,7 @@ class SchoolsController < ApplicationController
 	end
 
 	def search
-		@schools = School.find_or_call(params[:zip], params[:state])
+		@schools = School.find_or_call(params[:zip], params[:state], params[:city]) 
 		render :json => @schools.to_json
 	end
 end

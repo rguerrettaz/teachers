@@ -7,5 +7,6 @@ require 'levenshtein'
 
 # require 'lib/api'
 
+require 'uri'
 # Initialize the rails application
 TeacherGap::Application.initialize!

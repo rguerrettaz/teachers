@@ -2,5 +2,7 @@ config/initializers/twitter.rb
 config/initializers/instagram.rb
 log/*.log
 .bundle
-.DS_Store
+config/initializers/tumblr.rb
 tmp/
+.DS_Store
+
