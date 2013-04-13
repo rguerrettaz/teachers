@@ -1,5 +1,6 @@
 module ApplicationHelper
 
+
   def popularity(vote, created_at)
     hours = ((Time.now - created_at.to_time) / 60) / 60
     popularity = (((vote.to_i - 1) / ((hours + 2) ** 1.5))*10).ceil
@@ -27,4 +28,6 @@ module ApplicationHelper
   end
 
 
+
+	
 end
