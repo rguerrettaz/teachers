@@ -1,0 +1,7 @@
+<h1><%= post ['title'] %></h1>
+
+<% post['dialogue'].each do |line| %>
+
+  <p><%= line['label'] %><span><%= line['phrase'] %></span></p>
+
+<% end %>

@@ -11,23 +11,38 @@
 
 
 <% @tumbles.each do |post| %>
-    
-  <% if post["type"] == "photo" %>
+  <%= link_to post["blog_name"], post["post_url"] %> <br>
 
+  <% if post['type'] == 'photo' %>
     <%= render 'photo_set', :post => post %>
 
-  <% elsif post["type"] == "text" %>
-
+  <% elsif post['type'] == 'text' %>
     <%= render 'text', :post => post %>
+
+  <% elsif post['type'] == 'quote' %>
+    <%= render 'quote', :post => post %>
+
+  <% elsif post['type'] == 'link' %>
+    <%= render 'link', :post => post %>
+
+  <% elsif post['type'] == 'chat' %>
+    <%= render 'chat', :post => post %>
+
+  <% elsif post['type'] == 'audio' %>
+    <%= render 'audio', :post => post %>
+
+  <% elsif post['type'] == 'video' %>
+    <%= render 'video', :post => post %>
+
+  <% elsif post['type'] == 'answer' %>
+    <%= render 'answer', :post => post %>
 
   <% end %>
 
+  <%= post['type'] %>
 
-    <%= render 'meta_info', :post => post %>
+  <%= render 'meta_info', :post => post %>
 
 
 <% end %>
 
-
-
-<%#= @tumbles %>
