@@ -148,7 +148,6 @@ DEPENDENCIES
   json
   levenshtein
   nokogiri
-  oauth
   pg
   rails (= 3.2.13)
   ruby-oembed
