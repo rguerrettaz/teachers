@@ -1,9 +1,10 @@
 
 
 <h1>Tweets</h1>
-<%# @tweets.each do |t| %>
-  <%#= embed_tweet(t.id) %>
-<%# end %>
+<% @tweets.each do |tweet| %>
+  <%= tweet['popularity'] %>
+  <%= embed_tweet(tweet['status'].id) %>
+<% end %>
 
 <h1>Tumbles</h1>
 
@@ -21,3 +22,4 @@
 
 
 
+<%= @tweets %>
