@@ -4,7 +4,7 @@ class NewsItem
   include TumblrHelper
 
   attr_reader :published_at, :source, :source_user, :source_url, :type, :tags,
-              :vote, :popularity, :body, :title, :caption, :url, :asking_name,
+              :vote, :popularity, :body, :title, :caption, :photo_urls, :asking_name,
               :asking_url, :question, :answer
 
   def initialize(options={})
@@ -15,7 +15,6 @@ class NewsItem
     @type = options[:type]
 
     @tags = options[:tags]
-    @vote = options[:vote]
     @popularity = options[:popularity]
 
     @body = options[:body]
@@ -23,16 +22,15 @@ class NewsItem
 
     @caption = options[:caption]
 
-    @url = options[:urls]
+    @photo_urls = options[:photo_urls]
     
     @asking_name = options[:asking_name]
     @asking_url = options[:asking_url]
 
     @question = options[:question]
     @answer = options[:answer]
-        
-  end
 
+  end
 
 
 end

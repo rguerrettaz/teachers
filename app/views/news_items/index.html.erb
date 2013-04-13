@@ -1,10 +1,13 @@
 
 <h1>start</h1>
 
+
 <% @news_items.each do |item| %>
-  
-  <%= item.type %>, <%= item.popularity %><br>
-  <%= item.body.html_safe if item.body %> 
+  From: <%= item.source %>
+  <%= item.popularity %><br>
+  <%= link_to item.source_user, item.source_url %><br>
+  <%= item.tags %>
+  <hr>
 
 <% end %>
 

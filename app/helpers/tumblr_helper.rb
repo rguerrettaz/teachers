@@ -1,8 +1,9 @@
 module TumblrHelper
   include ApplicationHelper
 
-  def search
+  def tumblr_search
     client = Tumblr::Client.new
+    
     posts = TAGS.map do |tag|
       client.tagged(tag, :limit => TAG_SEARCH)
     end
@@ -11,7 +12,7 @@ module TumblrHelper
 
 
   def from_tumblr  
-    search.map do |post|
+    tumblr_search.map do |post|
       if post['type'] == 'text'
         body = post['body']
         title = post['title']

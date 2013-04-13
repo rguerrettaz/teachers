@@ -1,7 +1,7 @@
 module ApplicationHelper
 
-  TAG_SEARCH = 5
-  TAGS = ['education', 'edtech']
+  TAG_SEARCH = 6
+  TAGS = ['education', 'edtech', 'edchat', 'special education']
 
   def source
     
