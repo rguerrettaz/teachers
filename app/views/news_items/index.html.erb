@@ -1,4 +1,20 @@
 <h1>Tweets</h1>
-<% @tweets.each do |t| %>
-  <%= embed_tweet(t.id) %>
+<%# @tweets.each do |t| %>
+  <%#= embed_tweet(t.id) %>
+<%# end %>
+
+<h1>Instagram</h1>
+<%= @location_images %>
+
+<% find_by_coords('33.6441498', '-117.5807648', "Santa Margarita Catholic High School") %>
+
+<% @location_images.each do |i| %>
+  <% image_url(i) %>
+
+  <ul class="instagram">
+    <li class="name"><img class="profile_picture" src="<%= @profile_picture %>"><a href="http://instagram.com/<%= @username %>"><span><%= @username %></span></a></li>
+    <li class="image"><img src="<%= @url %>"></img></li>
+    <li class="caption"><%= @caption %></li>
+  </ul>
+
 <% end %>
