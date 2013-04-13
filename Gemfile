@@ -13,11 +13,14 @@ gem 'json'
 gem 'twitter'
 gem 'ruby-oembed'
 gem 'tumblr_client'
-gem 'embedly'
 
 gem 'instagram'
 
 gem 'levenshtein'
+
+gem "nokogiri"
+gem "htmlentities"
+gem 'truncate_html'
 
 # Gems used only for assets and not required
 # in production environments by default.

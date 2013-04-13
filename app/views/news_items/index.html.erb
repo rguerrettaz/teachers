@@ -1,9 +1,4 @@
 
-<h1>Tweets</h1>
-<%# @tweets.each do |t| %>
-  <%#= embed_tweet(t.id) %>
-<%# end %>
-
 <h1>Instagram</h1>
 <%= @location_images %>
 
@@ -18,12 +13,24 @@
     <li class="caption"><%= @caption %></li>
   </ul>
 
+<h1>Tweets</h1>
+<% @tweets.each do |tweet| %>
+  <%= tweet['popularity'] %>
+  <%= embed_tweet(tweet['status'].id) %>
 <% end %>
 
 <h1>Tumbles</h1>
 
+  <% @tumbles.each do |post| %>
+    <article class = 'news_item'>
+      <ul>
+        <li><%= link_to post['blog_name'], post['post_url'] %><li>
+        <li class='popularity'><%= post['popularity'] %></li>
+      </ul>
+      <%= render post['type'], :post => post %>
+      <%= render 'meta_info', :post => post %>
+    </article>
+  <% end %>
 
 
-
-<%= @obj %>   
-
+<%= @tweets %>
