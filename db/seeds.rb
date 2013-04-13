@@ -9,6 +9,28 @@
 # require 'open-uri'
 
 
+School.create(:schoolid          =>  '',
+                                        :schoolname           =>  'Dev Bootcamp',              
+                                        :zip                  =>  '94108',
+                                        :address              =>  '717 California St #200',
+                                        :city                 =>  'San Francisco',
+                                        :districtid           =>  '',
+                                        :AYPResultYear        =>  '',
+                                        :distance             =>  s['school']["distance"],
+                                        :enrollment           =>  '50',
+                                        :gradelevel           =>  '',
+                                        :gradesserved         =>  '',
+                                        :latitude             =>  '37.79221',
+                                        :longitude            =>  '-122.40614',
+                                        :phonenumber          =>  '(415) 295-2668',
+                                        :schooldistrictname   =>  '',
+                                        :schooltype           =>  '''',
+                                        :state                =>  'CA',
+                                        :studentteacherratio  =>  '7',
+                                        :website              =>  'http://www.devbootcamp.com',
+                                        :testrating_text      =>  '5',
+                                        :testrating_year      =>  '2013')
+
 
 
 
