@@ -11,6 +11,7 @@ end
 
 module TeacherGap
   class Application < Rails::Application
+    config.autoload_paths += %W(#{config.root}/lib)
 
     EDUCATION_API_KEY = '410e1967497cd724f524a35879ffc078'
 

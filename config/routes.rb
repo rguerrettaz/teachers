@@ -1,6 +1,10 @@
 TeacherGap::Application.routes.draw do
 
-  resources :schools
+  resources :schools do
+    collection do
+      post 'search'
+    end
+  end
   resources :searches
   root :to => 'news_items#index'
 

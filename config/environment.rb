@@ -5,5 +5,7 @@ require 'oembed'
 require 'instagram'
 require 'levenshtein'
 
+# require 'lib/api'
+
 # Initialize the rails application
 TeacherGap::Application.initialize!
