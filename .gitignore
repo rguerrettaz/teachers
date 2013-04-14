@@ -1,8 +1,10 @@
 config/initializers/twitter.rb
 config/initializers/instagram.rb
-log/*.log
+log/
 .bundle
 config/initializers/tumblr.rb
 tmp/
 .DS_Store
 
+
+*.log
