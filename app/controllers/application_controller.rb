@@ -3,5 +3,6 @@ class ApplicationController < ActionController::Base
   include ApplicationHelper
   include TumblrHelper
   include InstagramHelper
+  include TweetHelper
   
 end

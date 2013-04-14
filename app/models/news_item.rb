@@ -2,10 +2,11 @@ class NewsItem
 
   include ApplicationHelper
   include TumblrHelper
+  include TweetHelper
 
   attr_reader :published_at, :source, :source_user, :source_url, :type, :tags,
               :vote, :popularity, :body, :title, :caption, :photo_urls, :asking_name,
-              :asking_url, :question, :answer
+              :asking_url, :question, :answer, :content_url
 
   def initialize(options={})
     @published_at = options[:published_at]
@@ -13,6 +14,8 @@ class NewsItem
     @source_user = options[:source_user]
     @source_url = options[:source_url]
     @type = options[:type]
+
+    @content_url = options[:content_url]
 
     @tags = options[:tags]
     @popularity = options[:popularity]
