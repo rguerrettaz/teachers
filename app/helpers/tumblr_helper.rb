@@ -2,15 +2,15 @@ module TumblrHelper
   include ApplicationHelper
 
   def tumblr_search
-    client = Tumblr::Client.new 
+    client = Tumblr::Client.new
     posts = TAGS.map do |tag|
-      client.tagged(TAGS, :limit => TAG_SEARCH)
+      client.tagged(tag, :limit => TAG_SEARCH)
     end
     posts.flatten!
   end
 
 
-  def from_tumblr  
+  def from_tumblr
     tumbles = tumblr_search.map do |post|
       if post['type'] == 'text'
         body = post['body']
@@ -51,7 +51,7 @@ module TumblrHelper
                       :source_user => post['blog_name'],
                       :source_url => post['post_url'],
                       :type => post['type'],
-                      :tags => post['tags'], 
+                      :tags => post['tags'],
                       :popularity => popularity(post['note_count'], post['date']),
                       :body => body,
                       :title => title,
