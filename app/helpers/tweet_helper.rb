@@ -10,7 +10,7 @@ module TweetHelper
 	def from_twitter
 		tweets = twitter_search.map do |tag|
 			tag.statuses.map do |tweet|
-	      NewsItem.new(:published_at => tweet.created_at,
+	      NewsItem.create(:published_at => tweet.created_at,
 	                    :source => 'Twitter',
 	                    :source_id => tweet.id,
 	                    :source_user => tweet.from_user,

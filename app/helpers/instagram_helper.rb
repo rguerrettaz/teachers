@@ -10,7 +10,7 @@ module InstagramHelper
       # debugger
       
       unless pic.caption.nil?
-      NewsItem.new(:published_at => pic.created_time,
+      NewsItem.create(:published_at => pic.created_time,
                     :source_id =>  pic.caption.id,   
                     :source => 'Instagram',
                     :source_user => pic.caption.from.username,

@@ -19,7 +19,7 @@ module RedditHelper
     posts = search.map do |submission|
       submission.comments.map do |comment|
         if submission.score > 0
-          NewsItem.new( :published_at => submission.created_utc,
+          NewsItem.create( :published_at => submission.created_utc,
                         :source_id => comment.id,
                         :source => 'Reddit',
                         :source_user => comment.author,
