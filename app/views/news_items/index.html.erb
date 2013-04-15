@@ -1,15 +1,29 @@
-
-<h1>start</h1>
-
-
-<% @news_items.each do |item| %>
+<h1>Popular Items</h1>
+<% @popular.each do |item| %>
   From: <%= item.source %>
+  <%= image_tag(item.profile_pic) if item.profile_pic%><br>
+  <%= item.type %>
   <%= item.popularity %><br>
   <%= link_to item.source_user, item.source_url %><br>
-  <%= item.tags %>
+  <%= item.tags %><br>
+  <%= item.body.html_safe if item.body %>
+  <%= image_tag(item.photo_urls) if item.photo_urls%><br>
+
   <hr>
 
 <% end %>
 
 
+<h1>Recent Items</h1>
+<% @recent.each do |item| %>
+  From: <%= item.source %>
+  <%= item.type %>
+  <%= item.popularity %><br>
+  <%= link_to item.source_user, item.source_url %><br>
+  <%= item.tags %><br>
+  <%= item.body.html_safe if item.body %>
+  <%= image_tag(item.photo_urls) if item.photo_urls%><br>
 
+  <hr>
+
+<% end %>

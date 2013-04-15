@@ -5,14 +5,14 @@ module TumblrHelper
     client = Tumblr::Client.new
     
     posts = TAGS.map do |tag|
-      client.tagged(tag, :limit => TAG_SEARCH)
+      client.tagged(tag, :limit => TAG_SEARCH * 3)
     end
     posts.flatten!
   end
 
 
   def from_tumblr  
-    tumblr_search.map do |post|
+    tumbles = tumblr_search.map do |post|
       if post['type'] == 'text'
         body = post['body']
         title = post['title']
@@ -45,24 +45,23 @@ module TumblrHelper
         answer = post['answer']
       end
 
+        NewsItem.new(:published_at => post['date'],
+                      :source => 'Tumblr',
+                      :source_user => post['blog_name'],
+                      :source_url => post['post_url'],
+                      :type => post['type'],
+                      :tags => post['tags'], 
+                      :popularity => popularity(post['note_count'], post['date']),
+                      :body => body,
+                      :title => title,
+                      :photo_urls => photo_urls,
+                      :question => question,
+                      :answer => answer,
+                      :asking_name => asking_name,
+                      :asking_url => asking_url
+                    )
 
-      NewsItem.new(:published_at => post['date'],
-                    :source => 'Tumblr',
-                    :source_user => post['blog_name'],
-                    :source_url => post['post_url'],
-                    :type => post['type'],
-                    :tags => post['tags'], 
-                    :popularity => popularity(post['note_count'], post['date']),
-                    :body => body,
-                    :title => title,
-                    :photo_urls => photo_urls,
-                    :question => question,
-                    :answer => answer,
-                    :asking_name => asking_name,
-                    :asking_url => asking_url
-                  )
     end
-
   end
 
 
