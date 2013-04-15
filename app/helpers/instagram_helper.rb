@@ -33,25 +33,26 @@ module InstagramHelper
   # This could be split into a couple methods, I think.
   def find_by_coords(lat, lng, school_name)
     @id = nil
+
     locations = Instagram.location_search(lat, lng)
 
-    locations.each do |loc|
-      distance = (Levenshtein.normalized_distance(loc.name, school_name) * 100)
-      unless distance < 25
-        puts "Nope! It's #{loc.id}, #{loc.name}!"
-      else
-        puts "Yep! It's #{loc.id}, #{loc.name}!"
-        @id = loc.id
-        images_by_loc(@id)
+    unless locations == nil
+      locations.each do |loc|
+        distance = (Levenshtein.normalized_distance(loc.name, school_name) * 100)
+        unless distance < 25
+          puts "Nope! It's #{loc.id}, #{loc.name}!"
+        else
+          puts "Yep! It's #{loc.id}, #{loc.name}!"
+          @id = loc.id
+          puts "\n***** @id is #{@id}"
+          images_by_loc(@id)
+        end
       end
     end
 
-    puts "\n***** @id is #{@id}"
-
     if @id == nil
-      puts "***** LOCATION NOT FOUND *****"
-      puts "*****  TIME FOR PLAN B   *****"
-      images_by_coords(lat, lng)
+      @location_images = nil
+      puts "***** NO IMAGES FOUND BY LOCATION *****"
     end
   end
 
@@ -65,11 +66,11 @@ module InstagramHelper
   # This is the backup plan for find_by_coords. If no images can be found by
   # a location's Instagram ID (or if there's no matching Instagram ID), this
   # method searches for images within 100 meters of the geo coordinates.
-  def images_by_coords(lat, lng)
-    @location_images = Instagram.media_search(lat, lng, :count => 10,
-                                                        :distance => 100)
-    puts "***** #{@location_images.length} images found by coordinates"
-  end
+  # def images_by_coords(lat, lng)
+  #   @location_images = Instagram.media_search(lat, lng, :count => 10,
+  #                                                       :distance => 100)
+  #   puts "***** #{@location_images.length} images found by coordinates"
+  # end
 
   # Breaks down an Instagram object into easy components for the view.
   def image_url(object)
