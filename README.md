@@ -38,6 +38,6 @@ Postables
 
 MVP
 ---
-- Education.com API and populating the database
+- Education.com API and populating the database 
 - Users can post/like/and reblog with or without tumblr/twitter.
 - Extras: Create a gem wrapper for the education api Add a donor's choose link for each user on the site, so readers can donate.
