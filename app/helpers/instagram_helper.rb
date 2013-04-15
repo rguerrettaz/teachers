@@ -34,7 +34,13 @@ module InstagramHelper
   def find_by_coords(lat, lng, school_name)
     @id = nil
 
-    locations = Instagram.location_search(lat, lng)
+    puts "***** I get this far! *****"
+    begin
+      p locations = Instagram.location_search(lat, lng)
+    rescue
+      puts "***** ERROR. Probably a 500. *****"
+      return
+    end
 
     unless locations == nil
       locations.each do |loc|
