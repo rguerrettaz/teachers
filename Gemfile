@@ -13,11 +13,8 @@ gem 'json'
 gem 'twitter'
 gem 'ruby-oembed'
 gem 'tumblr_client'
-<<<<<<< HEAD
 gem 'dynamic_form'
-=======
 gem 'ruby_reddit_api'
->>>>>>> reddit as newsitems
 
 gem 'instagram'
 
