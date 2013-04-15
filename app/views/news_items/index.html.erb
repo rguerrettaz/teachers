@@ -14,7 +14,7 @@
   <%= image_tag(item.photo_urls[:url]) if item.photo_urls %><br>
   
   <%= item.caption.html_safe if item.caption %>
-
+  Add a comment: <%= link_to item %>
   <hr>
 
 <% end %>        

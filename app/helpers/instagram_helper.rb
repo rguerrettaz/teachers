@@ -11,6 +11,7 @@ module InstagramHelper
       
       unless pic.caption.nil?
       NewsItem.new(:published_at => pic.created_time,
+                    :source_id =>  pic.caption.id,   
                     :source => 'Instagram',
                     :source_user => pic.caption.from.username,
                     :source_url => "http://instagram.com/" + pic.caption.from.username,

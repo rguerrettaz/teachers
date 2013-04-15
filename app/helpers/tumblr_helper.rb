@@ -46,7 +46,8 @@ module TumblrHelper
         answer = post['answer']
       end
 
-        NewsItem.new(:published_at => post['date'],
+        NewsItem.create(:published_at => post['date'],
+                      :source_id => post['id'],
                       :source => 'Tumblr',
                       :source_user => post['blog_name'],
                       :source_url => post['post_url'],
