@@ -5,8 +5,16 @@ TeacherGap::Application.routes.draw do
       post 'search'
     end
   end
+
+  resources :users
+  resources :sessions, :only => [:new, :create, :destroy]
+
   resources :searches
   root :to => 'news_items#index'
+  resources :news_items do
+    get :test
+  end
+
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

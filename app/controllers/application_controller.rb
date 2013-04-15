@@ -4,5 +4,6 @@ class ApplicationController < ActionController::Base
   include TumblrHelper
   include InstagramHelper
   include TweetHelper
-  
+  include AuthHelper
+
 end

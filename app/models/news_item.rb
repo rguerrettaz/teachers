@@ -1,8 +1,10 @@
-class NewsItem
+class NewsItem < ActiveRecord::Base
 
   include ApplicationHelper
   include TumblrHelper
   include TweetHelper
+
+  has_many :comments
 
   attr_reader :published_at, :source, :source_user, :source_url, :type, :tags,
               :vote, :popularity, :body, :title, :caption, :photo_urls, :asking_name,

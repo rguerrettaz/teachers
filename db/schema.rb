@@ -11,19 +11,23 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130412005928) do
+ActiveRecord::Schema.define(:version => 20130415181635) do
+
+  create_table "comments", :force => true do |t|
+    t.integer  "news_item_id"
+    t.string   "content"
+    t.integer  "user_id"
+    t.datetime "created_at",   :null => false
+    t.datetime "updated_at",   :null => false
+  end
 
   create_table "news_items", :force => true do |t|
-    t.string   "headline"
-    t.string   "author"
-    t.string   "url"
-    t.text     "body"
-    t.integer  "stars"
-    t.string   "date_published"
-    t.text     "location"
-    t.string   "avatar_url"
-    t.datetime "created_at",     :null => false
-    t.datetime "updated_at",     :null => false
+    t.string   "popularity"
+    t.string   "source"
+    t.integer  "source_id"
+    t.integer  "comment_id"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
   end
 
   create_table "schools", :force => true do |t|
@@ -50,6 +54,15 @@ ActiveRecord::Schema.define(:version => 20130412005928) do
     t.string   "testrating_year"
     t.datetime "created_at",          :null => false
     t.datetime "updated_at",          :null => false
+  end
+
+  create_table "users", :force => true do |t|
+    t.string   "username"
+    t.string   "email"
+    t.string   "password_digest"
+    t.integer  "comment_id"
+    t.datetime "created_at",      :null => false
+    t.datetime "updated_at",      :null => false
   end
 
 end

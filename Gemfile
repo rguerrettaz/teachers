@@ -13,6 +13,7 @@ gem 'json'
 gem 'twitter'
 gem 'ruby-oembed'
 gem 'tumblr_client'
+gem 'dynamic_form'
 
 gem 'instagram'
 
