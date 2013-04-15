@@ -8,9 +8,10 @@ class NewsItem < ActiveRecord::Base
 
   attr_reader :published_at, :source, :source_user, :source_url, :type, :tags,
               :vote, :popularity, :body, :title, :caption, :photo_urls, :asking_name,
-              :asking_url, :question, :answer, :profile_pic
+              :asking_url, :question, :answer, :profile_pic, :source_id
 
   def initialize(options={})
+    @source_id = options[:source_id]
     @published_at = options[:published_at]
     @source = options[:source]
     @profile_pic = options[:profile_pic]

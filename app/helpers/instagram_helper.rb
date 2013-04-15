@@ -2,14 +2,14 @@ module InstagramHelper
   include ApplicationHelper
 
   def insta_search
-    posts = TAGS.map do |tag|
-      Instagram.tag_recent_media(tag, :limit => TAG_SEARCH)
-    end
-    posts.flatten!
+    Instagram.tag_recent_media('edchat', :limit => TAG_SEARCH*4)
   end
 
   def from_insta
     insta_search.map do |pic|
+      # debugger
+      
+      unless pic.caption.nil?
       NewsItem.new(:published_at => pic.created_time,
                     :source => 'Instagram',
                     :source_user => pic.caption.from.username,
@@ -19,8 +19,9 @@ module InstagramHelper
                     :popularity => popularity((pic.comments.count + pic.likes.count), pic.caption.created_time.to_i ),
                     :caption => pic.caption.text,
                     :photo_urls => {:url => pic.images.standard_resolution.url}
-                  )
-    end
+                    )
+        end
+      end
   end
 
   # Finds a school by coordinates and school name. Fires off a search to images

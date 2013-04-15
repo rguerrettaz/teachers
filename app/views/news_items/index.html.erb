@@ -1,7 +1,8 @@
-
+<%#= @search %>
 <h1>Popular Items</h1>
 <% @news_items.each do |item| %>
   From: <%= item.source %>
+  Created: <%= item.published_at %>
   <%= image_tag(item.profile_pic) if item.profile_pic%><br>
   <%= item.type %>
   <%= item.popularity %><br>
@@ -16,7 +17,4 @@
 
   <hr>
 
-<% end %>
-
-
-
+<% end %>        

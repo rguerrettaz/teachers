@@ -5,5 +5,6 @@ class ApplicationController < ActionController::Base
   include InstagramHelper
   include TweetHelper
   include AuthHelper
+  include RedditHelper
 
 end

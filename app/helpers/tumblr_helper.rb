@@ -2,10 +2,9 @@ module TumblrHelper
   include ApplicationHelper
 
   def tumblr_search
-    client = Tumblr::Client.new
-    
+    client = Tumblr::Client.new 
     posts = TAGS.map do |tag|
-      client.tagged(tag, :limit => TAG_SEARCH * 3)
+      client.tagged(TAGS, :limit => TAG_SEARCH)
     end
     posts.flatten!
   end
@@ -23,7 +22,8 @@ module TumblrHelper
 
       elsif post['type'] == 'chat'
         title = post['title']
-        body = dialogue(post['dialogue'])
+        body = post['dialogue']
+
       elsif post['type'] == 'link'
         body = post['title']
         url = post['url']
@@ -69,21 +69,12 @@ module TumblrHelper
 
   private
 
-  def dialogue(body)
-    dialogue = Hash.new
-
-    body.map do |line|
-      dialogue[:name] = post['dialogue']['name']
-      dialogue[:dialogue] = post['dialogue']['phrase']
-    end
-    dialogue
-  end
 
   def photos(photos)
     url = Hash.new
 
     photos.map do |photo|
-        url[:url] = photo['original_size']['url']
+      url[:url] = photo['original_size']['url']
     end
     url
   end

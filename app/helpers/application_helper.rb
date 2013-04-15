@@ -1,14 +1,21 @@
 module ApplicationHelper
 
   TAG_SEARCH = 3
-  TAGS = ['education', 'edchat', 'k12']
+  TAGS = ['education', 'edchat']
 
 
   def popularity(vote, created_at)
-    created_at = created_at.to_time.to_i unless created_at.class == Fixnum
+    if created_at.class == String
+      created_at = created_at.to_time.utc
+    else
+      created_at = Time.at(created_at.to_i).utc
+    end
 
-    hours = ((Time.now.to_i - created_at) / 60) / 60
-    popularity = (((vote.to_i - 1) / ((hours + 2) ** 1.5))*10).ceil
+    time = Time.now - created_at
+
+    hours = ((time.to_i) / 60) / 60
+
+    (((vote.to_i - 1) / ((hours + 2) ** 1.5))*10).round
   end
 
 
