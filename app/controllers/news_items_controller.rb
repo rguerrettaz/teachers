@@ -11,7 +11,8 @@ class NewsItemsController < ApplicationController
   end
 
   def test
-  	   @api = search = [from_twitter].flatten!
+    # @search = [tumblr_search, twitter_search, insta_search, reddit_education]
+    # search = [from_tumblr, from_twitter, from_insta, from_reddit].flatten!
     # @news_items = search.sort_by { |item| item.popularity }.reverse!
   end
 
