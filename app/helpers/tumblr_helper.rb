@@ -18,7 +18,8 @@ module TumblrHelper
         title = post['title']
 
       elsif post['type'] == 'quote'
-        body = post['body']
+        body = post['text']
+        caption = post['source']
 
       elsif post['type'] == 'chat'
         title = post['title']
@@ -58,7 +59,8 @@ module TumblrHelper
                       :question => question,
                       :answer => answer,
                       :asking_name => asking_name,
-                      :asking_url => asking_url
+                      :asking_url => asking_url,
+                      :caption => caption
                     )
 
     end

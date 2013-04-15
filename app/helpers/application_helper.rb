@@ -1,7 +1,7 @@
 module ApplicationHelper
 
-  TAG_SEARCH = 5
-  TAGS = ['education', 'edchat']
+  TAG_SEARCH = 3
+  TAGS = ['education', 'edchat', 'k12']
 
 
   def popularity(vote, created_at)

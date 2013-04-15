@@ -17,8 +17,8 @@ module InstagramHelper
                     :type => 'photo',
                     :tags => pic.tags,
                     :popularity => popularity((pic.comments.count + pic.likes.count), pic.caption.created_time.to_i ),
-                    :body => pic.caption.text,
-                    :photo_urls => pic.images.standard_resolution.url
+                    :caption => pic.caption.text,
+                    :photo_urls => {:url => pic.images.standard_resolution.url}
                   )
     end
   end
