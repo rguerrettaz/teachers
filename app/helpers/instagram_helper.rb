@@ -15,11 +15,11 @@ module InstagramHelper
                     :source => 'Instagram',
                     :source_user => pic.caption.from.username,
                     :source_url => "http://instagram.com/" + pic.caption.from.username,
-                    :type => 'photo',
+                    :format => 'photo',
                     :tags => pic.tags,
-                    :popularity => popularity((pic.comments.count + pic.likes.count), pic.caption.created_time.to_i ),
+                    :popularity => calculate_popularity((pic.comments.count + pic.likes.count), pic.caption.created_time.to_i ),
                     :caption => pic.caption.text,
-                    :photo_urls => {:url => pic.images.standard_resolution.url}
+                    :photo_urls => pic.images.standard_resolution.url
                     )
         end
       end

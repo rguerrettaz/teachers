@@ -4,7 +4,7 @@ module TumblrHelper
   def tumblr_search
     client = Tumblr::Client.new 
     posts = TAGS.map do |tag|
-      client.tagged(TAGS, :limit => TAG_SEARCH)
+      client.tagged(tag, :limit => TAG_SEARCH)
     end
     posts.flatten!
   end
@@ -30,8 +30,8 @@ module TumblrHelper
         caption = post['description']
 
       elsif post['type'] == 'photo'
-        photo_urls = photos(post['photos'])
         body = post['caption']
+        photo_urls = post['photos'].first['original_size']['url'] if post['photos']
 
       elsif post['type'] == 'audio'
         body = post['player']
@@ -51,9 +51,9 @@ module TumblrHelper
                       :source => 'Tumblr',
                       :source_user => post['blog_name'],
                       :source_url => post['post_url'],
-                      :type => post['type'],
-                      :tags => post['tags'], 
-                      :popularity => popularity(post['note_count'], post['date']),
+                      :format => post['type'],
+                      :tags => post['tags'].join(','), 
+                      :popularity => calculate_popularity(post['note_count'], post['date']),
                       :body => body,
                       :title => title,
                       :photo_urls => photo_urls,
@@ -67,17 +67,8 @@ module TumblrHelper
     end
   end
 
+  
 
-  private
 
-
-  def photos(photos)
-    url = Hash.new
-
-    photos.map do |photo|
-      url[:url] = photo['original_size']['url']
-    end
-    url
-  end
 
 end

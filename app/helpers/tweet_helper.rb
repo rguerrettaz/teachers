@@ -16,10 +16,10 @@ module TweetHelper
 	                    :source_user => tweet.from_user,
 	                    :source_url => "https://twitter.com/#{tweet.from_user}/status/#{tweet.id.to_s}",
 	      							:profile_pic => tweet.profile_image_url,
-	                    :type => 'status',
-	                    :tags => tags(tweet.hashtags), 
-	                    :popularity => popularity((tweet.favorite_count + tweet.retweet_count), tweet.created_at),
-	                    :body => body(tweet.full_text, [tweet.hashtags, tweet.urls, tweet.user_mentions]),
+	                    :format => 'status',
+	                    # :tags => tags(tweet.hashtags), 
+	                    :popularity => calculate_popularity((tweet.favorite_count + tweet.retweet_count), tweet.created_at),
+	                    :body => tweet_body(tweet.full_text, [tweet.hashtags, tweet.urls, tweet.user_mentions]),
 	      							# :location => tweet.coordinates,
                   )			
         end
@@ -44,20 +44,21 @@ module TweetHelper
 
 	end
 
-	def body(text, entities=[])
+	def tweet_body(text, entities=[])
 		entities.map do |entity|
 			entity_to_html(text, entity)
 		end
 		text
 	end
 
-	def tags(hashtags)
-		tags = []
-		hashtags.each do |tag|
-			tags << tag.text
-		end
-		tags
-	end
+	# def tags(hashtags)
+	# 	tags = ''
+	# 	hashtags.each do |tag|
+	# 		tags += tag.text
+	# 	end
+	# 	debugger
+	# 	tags.gsub(' ',',')
+	# end
 
   def embed_tweet(tweet_id)
     @html = Twitter.get("https://api.twitter.com/1/statuses/oembed.json?id=#{tweet_id}")[:body][:html].html_safe

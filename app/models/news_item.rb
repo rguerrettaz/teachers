@@ -6,7 +6,7 @@ class NewsItem < ActiveRecord::Base
 
   has_many :comments
 
-  attr_accessible :published_at, :source, :source_user, :source_url, :type, :tags,
+  attr_accessible :published_at, :source, :source_user, :source_url, :format, :tags,
               :vote, :popularity, :body, :title, :caption, :photo_urls, :asking_name,
               :asking_url, :question, :answer, :profile_pic, :source_id
 
@@ -37,7 +37,7 @@ class NewsItem < ActiveRecord::Base
   #   @question = options[:question]
   #   @answer = options[:answer]
 
-  end
+  # end
 
 
 end

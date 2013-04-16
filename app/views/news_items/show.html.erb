@@ -1,0 +1,29 @@
+<h1>News Item</h1>
+  From: <%= @news_item.source %>
+  Created: <%= @news_item.published_at %>
+  <%= image_tag(@news_item.profile_pic) if @news_item.profile_pic%><br>
+  <%= @news_item.format %>
+  <%= @news_item.popularity %><br>
+  <%= link_to @news_item.source_user, @news_item.source_url %><br>
+  <%= @news_item.tags if @news_item.tags %><br>
+  <h2><%= @news_item.title if @news_item.title %></h2>
+  <%= @news_item.body.html_safe if @news_item.body %>
+
+  <%#= image_tag(@news_item.photo_urls[:url]) if @news_item.photo_urls %><br>
+
+
+  <%= image_tag(@news_item.photo_urls) if @news_item.photo_urls %><br>
+
+
+  
+  <%= @news_item.caption.html_safe if @news_item.caption %>
+  <hr>
+
+<%= render :partial => "news_items/form", :locals => { :news_item => @news_item } %>
+  debugger
+<% unless @news_item.comments.empty? %>
+  <% @news_item.comments.each do [comment] %>
+  <%= render :partial => "comment/comment", :locals => { :comment => comment }%>
+<% end %>
+<% end %>
+

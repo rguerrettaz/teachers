@@ -15,6 +15,10 @@ TeacherGap::Application.routes.draw do
     get :test
   end
 
+  resources :news_items do
+    resources :comments
+  end
+
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

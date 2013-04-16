@@ -5,11 +5,11 @@ class CreateNewsItems < ActiveRecord::Migration
 		t.string :source
 		t.string :source_user
 		t.string :source_url
-		t.string :type
+		t.string :format
 		t.string :tags
 		t.string :vote
 		t.string :popularity
-		t.string :body
+		t.text :body
 		t.string :title
 		t.string :caption
 		t.string :photo_urls
