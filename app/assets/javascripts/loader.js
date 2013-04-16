@@ -9,7 +9,6 @@ var Loader = {
       url: '/news_items',
       dataType: 'json'
     }).done(Loader.appendResults);
-
   },
 
   appendResults: function(data, status) {
@@ -18,7 +17,6 @@ var Loader = {
     $('.items').append(data);
   }
 }
-
 
 $(window).load(function() {
   Loader.init();
