@@ -1,0 +1,10 @@
+<div class ='body'>
+  <%= link_to image_tag(item.photo_urls), item.source_url %>
+  
+</div>
+
+<div class='caption'>
+  <%= link_to item.caption.html_safe, item.source_url if item.caption %>
+</div>
+
+

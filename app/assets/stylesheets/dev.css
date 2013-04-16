@@ -45,31 +45,7 @@ article {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  height: 48px;
-  line-height: 24px;
 }
-
-.source {
-  float: left;
-  width: 180px;
-}
-
-
-  .source .source_name {
-
-  }
-
-
-    .source .source_name li:first-child {
-      font-size: 16px;
-      font-weight: bold;
-    }
-
-  .user_interactions {
-    float: right;
-    width: 140px;
-    text-align: right;
-  }
 
 
 

@@ -7,7 +7,7 @@ class NewsItemsController < ApplicationController
     respond_to do |format|
       format.html
       format.json do
-        search = [from_tumblr, from_twitter, from_insta, from_reddit].flatten!
+        search = [from_insta].flatten!
         @news_items = search.sort_by { |item| item.popularity }.reverse!
         render :json => render_to_string(:partial => 'news_items', :locals => {:news_items => @news_items}).to_json
       end
@@ -20,9 +20,10 @@ class NewsItemsController < ApplicationController
 	end
 
   def test
-    search = [from_tumblr, from_twitter, from_insta, from_reddit].flatten!
+    search = [from_insta].flatten!
     @news_items = search.sort_by { |item| item.popularity }.reverse!
   end
+
 
   def show
     @news_item = NewsItem.find(params[:id])

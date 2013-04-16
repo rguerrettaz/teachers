@@ -25,7 +25,7 @@ module RedditHelper
                         :source => 'reddit',
                         :source_user => comment.author,
                         :source_url => "http://www.reddit.com/#{submission.permalink}",
-                        :format => 'quote',
+                        :format => 'answer',
                         :body => comment.body,
                         :caption => submission.title,
                         :tags => comment.subreddit, 

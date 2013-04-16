@@ -29,7 +29,7 @@ module TumblrHelper
         caption = post['description']
 
       elsif post['type'] == 'photo'
-        body = post['caption']
+        caption = post['caption']
         photo_urls = post['photos'].first['original_size']['url'] if post['photos']
 
       elsif post['type'] == 'audio'

@@ -1,0 +1,13 @@
+    <div class='source_user'>
+      <%= link_to image_tag(item.profile_pic), source_user_url(item) if item.profile_pic%>
+      <ul class='<%=item.source %>'
+
+        <li>Posted by</li>
+        <% if item.source == 'twitter' %>
+        <li>Full Name</li>
+        <li><%= link_to "@#{item.source_user}", source_user_url(item) %></li>
+        <% else %>
+        <li><%= link_to item.source_user, source_user_url(item) %></li>
+        <% end %>
+      </ul>
+    </div>

@@ -1,0 +1,8 @@
+    <div class='source_site'>
+      <%= link_to image_tag("#{item.source}_logo.png"), "http://#{item.source}.com"%>
+      <ul>
+        <li>From</li>
+        <li><%= link_to item.source.capitalize, "http://#{item.source}.com" %></li>
+      </ul>
+      <p><%= link_to time_ago_in_words(published_date(item.published_at)), item.source_url %> </p>
+    </div>
