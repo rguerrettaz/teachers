@@ -3,6 +3,7 @@ class School < ActiveRecord::Base
 	after_create :populate_student_data
   attr_accessible :schoolid, :schoolname, :zip, :address, :city, :districtid, :AYPResultYear, :distance, :enrollment, :gradelevel, :gradesserved, :latitude, :longitude, :phonenumber, :schooldistrictname, :schooltype, :state, :studentteacherratio , :website, :testrating_text, :testrating_year
 
+
 	 def self.find_or_call(zip, state, city)
 	 	 params = {}
    	 params[:state] = state
