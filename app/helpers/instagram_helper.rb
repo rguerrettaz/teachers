@@ -13,8 +13,8 @@ module InstagramHelper
                     :source_id =>  pic.caption.id,   
                     :source => 'instagram',
                     :source_user => pic.caption.from.username,
-                    :source_user_url => "https://instagram.com/#{pic.caption.from.username}"
-                    :source_url => "https://instagram.com/#{pic.caption.from.username}",
+                    :source_user_url => "https://instagram.com/" + pic.caption.from.username,
+                    :source_url => "https://instagram.com/" + pic.caption.from.username,
                     :format => 'photo',
                     :tags => pic.tags,
                     :popularity => calculate_popularity((pic.comments.count + pic.likes.count), pic.caption.created_time.to_i ),

@@ -24,7 +24,7 @@ module RedditHelper
                         :source_id => comment.id,
                         :source => 'reddit',
                         :source_user => comment.author,
-                        :source_user_url => "https://reddit.com/user/#{comment.author}"
+                        :source_user_url => "https://reddit.com/user/#{comment.author}",
                         :source_url => "http://www.reddit.com/#{submission.permalink}",
                         :format => 'answer',
                         :body => comment.body,

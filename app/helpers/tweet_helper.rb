@@ -14,11 +14,10 @@ module TweetHelper
 	                    :source => 'twitter',
 	                    :source_id => tweet.id,
 	                    :source_user => tweet.from_user,
-                      :source_user_url => "https://twitter.com/#{tweet.from_user}"
+                      :source_user_url => "https://twitter.com/#{tweet.from_user}",
 	                    :source_url => "https://twitter.com/#{tweet.from_user}/status/#{tweet.id.to_s}",
 	      							:profile_pic => tweet.profile_image_url,
 	                    :format => 'status',
-	                    # :tags => tags(tweet.hashtags), 
 	                    :popularity => calculate_popularity((tweet.favorite_count + tweet.retweet_count), tweet.created_at),
 	                    :body => tweet_body(tweet.full_text, [tweet.hashtags, tweet.urls, tweet.user_mentions]),
 	      							# :location => tweet.coordinates,
