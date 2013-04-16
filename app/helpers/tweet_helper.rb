@@ -13,7 +13,6 @@ module TweetHelper
 	      NewsItem.create(:published_at => tweet.created_at,
 	                    :source => 'twitter',
 	                    :source_id => tweet.id,
-                      :source_full_name => tweet.from_user_name,
 	                    :source_user => tweet.from_user,
 	                    :source_url => "https://twitter.com/#{tweet.from_user}/status/#{tweet.id.to_s}",
 	      							:profile_pic => tweet.profile_image_url,

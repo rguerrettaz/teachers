@@ -3,12 +3,8 @@ module ApplicationHelper
   TAG_SEARCH = 5
   TAGS = ['education', 'edchat']
 
-<<<<<<< HEAD
 
   def calculate_popularity(vote, created_at)
-=======
-  def popularity(vote, created_at)
->>>>>>> text, quote, photo cards built
     if created_at.class == String
       created_at = created_at.to_time.utc
     else

@@ -9,7 +9,7 @@ class CreateNewsItems < ActiveRecord::Migration
 		t.string :tags
 		t.string :vote
 		t.string :popularity
-		t.text :body
+		t.text   :body
 		t.string :title
 		t.string :caption
 		t.string :photo_urls
