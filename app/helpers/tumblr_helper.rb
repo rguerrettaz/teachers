@@ -50,6 +50,7 @@ module TumblrHelper
                     :source => 'Tumblr',
                     :source_user => post['blog_name'],
                     :source_url => post['post_url'],
+                    :source_user_url => "https://#{post['blog_name']}.tumblr.com"
                     :format => post['type'],
                     :tags => post['tags'].join(','), 
                     :popularity => calculate_popularity(post['note_count'], post['date']),

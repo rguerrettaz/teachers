@@ -5,9 +5,9 @@
         <li>Posted by</li>
         <% if item.source == 'twitter' %>
         <li>Full Name</li>
-        <li><%= link_to "@#{item.source_user}", source_user_url(item) %></li>
+        <li><%= link_to "@#{item.source_user}", item.source_user_url %></li>
         <% else %>
-        <li><%= link_to item.source_user, source_user_url(item) %></li>
+        <li><%= link_to item.source_user, item.source_user_url %></li>
         <% end %>
       </ul>
     </div>

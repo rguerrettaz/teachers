@@ -14,6 +14,7 @@ module TweetHelper
 	                    :source => 'twitter',
 	                    :source_id => tweet.id,
 	                    :source_user => tweet.from_user,
+                      :source_user_url => "https://twitter.com/#{tweet.from_user}"
 	                    :source_url => "https://twitter.com/#{tweet.from_user}/status/#{tweet.id.to_s}",
 	      							:profile_pic => tweet.profile_image_url,
 	                    :format => 'status',

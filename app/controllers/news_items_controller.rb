@@ -7,7 +7,7 @@ class NewsItemsController < ApplicationController
     respond_to do |format|
       format.html
       format.json do
-        search = [from_insta].flatten!
+        search = [from_tumblr].flatten!
         @news_items = search.sort_by { |item| item.popularity }.reverse!
         render :json => render_to_string(:partial => 'news_items', :locals => {:news_items => @news_items}).to_json
       end

@@ -8,7 +8,8 @@ class NewsItem < ActiveRecord::Base
 
   attr_accessible :published_at, :source, :source_user, :source_url, :format, :tags,
               :vote, :popularity, :body, :title, :caption, :photo_urls, :asking_name,
-              :asking_url, :question, :answer, :profile_pic, :source_id, :source_full_name
+              :asking_url, :question, :answer, :profile_pic, :source_id, :source_full_name,
+              :source_user_url
 
   # def initialize(options={})
   #   @source_id = options[:source_id]

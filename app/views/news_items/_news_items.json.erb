@@ -1,10 +1,5 @@
 <% news_items.each do |item| %>
 
-  
-<%= item.published_at %>
-
-<% end %>
-
 
   <article class="news_item_"+item.format>
     <%= item.format %>
@@ -14,7 +9,8 @@
     </div>
     
     <div class='body'>
-      <%= render "#{item.format}", :item => item %>
+      <%= render 'body', :item => item %>
+      <%= render 'read_more', :item => item %>
     </div>
     
     <div class='meta'>
@@ -23,3 +19,5 @@
       <%= render 'source_site', :item => item %>
     </div>
   </article>
+
+<% end %>

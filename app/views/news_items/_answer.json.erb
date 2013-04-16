@@ -3,8 +3,6 @@
 </div>
 
 <div class ='body'>
-  <%= truncate_html(item.body.html_safe, :length => max_post_length, :omission => '...') if item.body %>
-  
-  <%= render 'read_more', :item => item %>
+
 
 </div>
