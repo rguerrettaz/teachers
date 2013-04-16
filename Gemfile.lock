@@ -58,7 +58,6 @@ GEM
     erubis (2.7.0)
     execjs (1.4.0)
       multi_json (~> 1.0)
-<<<<<<< HEAD
     factory_girl (4.2.0)
       activesupport (>= 3.0.0)
     factory_girl_rails (4.2.1)
@@ -68,7 +67,6 @@ GEM
       i18n (~> 0.5)
 =======
     facter (1.6.17)
->>>>>>> start of education api second call and sidekiq redis in gemfile
     faraday (0.8.7)
       multipart-post (~> 1.1)
     faraday_middleware (0.9.0)
@@ -128,7 +126,6 @@ GEM
     rake (10.0.4)
     rdoc (3.12.2)
       json (~> 1.4)
-<<<<<<< HEAD
     rspec-core (2.13.1)
     rspec-expectations (2.13.0)
       diff-lcs (>= 1.1.3, < 2.0)
@@ -144,7 +141,6 @@ GEM
     redis (3.0.3)
     redis-namespace (1.2.1)
       redis (~> 3.0.0)
->>>>>>> start of education api second call and sidekiq redis in gemfile
     ruby-oembed (0.8.8)
     ruby_reddit_api (0.2.6)
       httparty
@@ -153,7 +149,6 @@ GEM
       railties (~> 3.2.0)
       sass (>= 3.1.10)
       tilt (~> 1.3)
-<<<<<<< HEAD
     shoulda-matchers (2.0.0)
       activesupport (>= 3.0.0)
 =======
@@ -163,7 +158,6 @@ GEM
       multi_json (~> 1)
       redis (~> 3)
       redis-namespace
->>>>>>> start of education api second call and sidekiq redis in gemfile
     simple_oauth (0.2.0)
     sprockets (2.2.2)
       hike (~> 1.2)
@@ -210,7 +204,6 @@ DEPENDENCIES
   nokogiri
   pg
   rails (= 3.2.13)
-<<<<<<< HEAD
   rspec-rails
   ruby-oembed
   ruby_reddit_api
@@ -222,7 +215,6 @@ DEPENDENCIES
   ruby_reddit_api
   sass-rails (~> 3.2.3)
   sidekiq
->>>>>>> start of education api second call and sidekiq redis in gemfile
   truncate_html
   tumblr_client
   twitter
