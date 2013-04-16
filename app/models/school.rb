@@ -1,6 +1,6 @@
 class School < ActiveRecord::Base
 	include Api	
-
+	after_create :populate_student_data
   attr_accessible :schoolid, :schoolname, :zip, :address, :city, :districtid, :AYPResultYear, :distance, :enrollment, :gradelevel, :gradesserved, :latitude, :longitude, :phonenumber, :schooldistrictname, :schooltype, :state, :studentteacherratio , :website, :testrating_text, :testrating_year
 
 	 def self.find_or_call(zip, state, city)
@@ -15,4 +15,11 @@ class School < ActiveRecord::Base
  		 end
 		 return @schools	
 	 end
+
+	 private
+
+	 def populate_student_data
+		 SchoolWorker.perform_async(self.id)	
+	 end
+	 
 end
