@@ -8,5 +8,6 @@ class ApplicationController < ActionController::Base
   include TweetHelper
   include AuthHelper
   include RedditHelper
+  include EducationHelper
 
 end

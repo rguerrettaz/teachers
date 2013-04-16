@@ -47,7 +47,7 @@ module TumblrHelper
 
       NewsItem.create(:published_at => post['date'],
                     :source_id => post['id'],
-                    :source => 'Tumblr',
+                    :source => 'tumblr',
                     :source_user => post['blog_name'],
                     :source_url => post['post_url'],
                     :source_user_url => "https://"+post['blog_name']+".tumblr.com",
