@@ -1,3 +1,5 @@
+<%= @school.inspect %>
+
 <h1><%= @school.schoolname %></h1>
 <p><%= @school.address %>, <%= @school.city.capitalize %>, <%= @school.state %>, <%= @school.zip %></p>
 <p><%= @school.schoolname %> is in the <%= @school.schooldistrictname  %></p>
@@ -10,6 +12,8 @@
 	<li><b>schooltype:</b>					<%= @school.schooltype          %></li>
 	<li><b>studentteacherratio:</b>	<%= @school.studentteacherratio %></li>
 	<li><b>testrating_text:</b>			<%= @school.testrating_text     %></li>
+	<li><b>testrating_text:</b>			<%= @school.testrating_text     %></li>
+
 </ul>
 
 

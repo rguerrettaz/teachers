@@ -5,7 +5,9 @@ class SchoolsController < ApplicationController
 	end
 
 	def show
-		@school = School.find(params[:id])
+		# @school = School.find(params[:id])
+		# testing = get_school_data('61325')
+		@school = School.find_by_schoolid('61325')
 	end
 
 	def search

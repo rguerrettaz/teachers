@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130416203049) do
+ActiveRecord::Schema.define(:version => 20130416230013) do
 
   create_table "comments", :force => true do |t|
     t.integer  "news_item_id"
@@ -42,6 +42,17 @@ ActiveRecord::Schema.define(:version => 20130416203049) do
     t.text     "caption"
     t.text     "question"
     t.text     "answer"
+    t.integer  "white"
+    t.integer  "hispanic"
+    t.integer  "black"
+    t.integer  "asian"
+    t.integer  "native_american"
+    t.integer  "male"
+    t.integer  "female"
+    t.integer  "free_lunch"
+    t.integer  "ell"
+    t.integer  "dropout"
+    t.integer  "total_enrolled"
   end
 
   create_table "schools", :force => true do |t|
