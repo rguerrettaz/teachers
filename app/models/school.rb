@@ -1,5 +1,6 @@
 class School < ActiveRecord::Base
-	include Api	
+	include Api
+  include School
 
   attr_accessible :schoolid, :schoolname, :zip, :address, :city, :districtid, 
                   :AYPResultYear, :distance, :enrollment, :gradelevel, 
@@ -27,7 +28,9 @@ class School < ActiveRecord::Base
 	private
 
 	def populate_student_data
-		SchoolWorker.perform_async(self.id)	
+    debugger
+    prepare_school_data(call_education(self.schoolid))
+		# SchoolWorker.perform_async(self.id)	  
 	end
 	 
 end
