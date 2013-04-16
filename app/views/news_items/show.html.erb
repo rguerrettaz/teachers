@@ -1,26 +1,34 @@
-<h1>News Item</h1>
-  From: <%= @news_item.source %>
-  Created: <%= @news_item.published_at %>
-  <%= image_tag(@news_item.profile_pic) if @news_item.profile_pic%><br>
-  <%= @news_item.format %>
-  <%= @news_item.popularity %><br>
-  <%= link_to @news_item.source_user, @news_item.source_url %><br>
-  <%= @news_item.tags if @news_item.tags %><br>
-  <h2><%= @news_item.title if @news_item.title %></h2>
-  <%= @news_item.body.html_safe if @news_item.body %>
+<article class="news_item_">
+    <%= @news_item.format %>
 
-  <%#= image_tag(@news_item.photo_urls[:url]) if @news_item.photo_urls %><br>
-
-
-  <%= image_tag(@news_item.photo_urls) if @news_item.photo_urls %><br>
-
-  <%= @news_item.caption.html_safe if @news_item.caption %>
+    <div class='rating'>
+      <%= @news_item.popularity %>
+    </div>
+    
+    <div class='body'>
+      <%= render 'body', :item => @news_item %>
+      <%= render 'read_more', :item => @news_item %>
+    </div>
+    
+    <div class='meta'>
+      <%= render 'user_interactions', :item => @news_item %>
+      <%= render 'source_user', :item => @news_item %>
+      <%= render 'source_site', :item => @news_item %>
+    </div>
+  </article>
+  
   <hr>
+  
+    <div class='meta'>
+      <%= render "news_items/form", :news_item => @news_item %>
+    </div>
 
-<%= render :partial => "news_items/form", :locals => { :news_item => @news_item } %>
-
-<% if @news_item.comments.count > 0 %>
-  <% @news_item.comments.each do |comment| %>
-    <%= render :partial => "comments/comment", :locals => { :comment => comment }%>
-  <% end %>
-<% end %>
+    <div class='meta'>
+      <% if @news_item.comments.count > 0 %>
+        <% @news_item.comments.each do |comment| %>
+          <% unless comment.id.nil? %>
+            <%= render "news_items/comments", :comment => comment %>
+          <% end %>
+        <% end %>
+      <% end %>
+    </div>

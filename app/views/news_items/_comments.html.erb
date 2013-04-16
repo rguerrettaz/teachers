@@ -1,5 +1,5 @@
   <div class="comment">
+  		<% debugger %>
       <%= comment.content %>
-      Created by: <%= linkto comment.user.username, comment.user %> at: <%= comment.create_at %>
-    <% end %>
+      Created by: <%= link_to comment.user.username, comment.user %> at: <%= comment.created_at %>
   </div>
