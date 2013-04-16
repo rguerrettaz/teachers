@@ -8,13 +8,17 @@ TeacherGap::Application.routes.draw do
 
   resources :users
   resources :sessions, :only => [:new, :create, :destroy]
-
+  resources :news_items
   resources :searches
 
   root :to => 'news_items#index'
 
   resources :news_items do
     get :test
+  end
+
+  resources :news_items do
+    resources :comments
   end
 
 

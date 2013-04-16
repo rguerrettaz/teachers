@@ -6,38 +6,38 @@ class NewsItem < ActiveRecord::Base
 
   has_many :comments
 
-  attr_reader :published_at, :source, :source_user, :source_url, :type, :tags,
+  attr_accessible :published_at, :source, :source_user, :source_url, :format, :tags,
               :vote, :popularity, :body, :title, :caption, :photo_urls, :asking_name,
               :asking_url, :question, :answer, :profile_pic, :source_id
 
-  def initialize(options={})
-    @source_id = options[:source_id]
-    @published_at = options[:published_at]
-    @source = options[:source]
-    @profile_pic = options[:profile_pic]
-    @source_user = options[:source_user]
-    @source_url = options[:source_url]
-    @type = options[:type]
+  # def initialize(options={})
+  #   @source_id = options[:source_id]
+  #   @published_at = options[:published_at]
+  #   @source = options[:source]
+  #   @profile_pic = options[:profile_pic]
+  #   @source_user = options[:source_user]
+  #   @source_url = options[:source_url]
+  #   @type = options[:type]
 
-    @content_url = options[:content_url]
+  #   @content_url = options[:content_url]
 
-    @tags = options[:tags]
-    @popularity = options[:popularity]
+  #   @tags = options[:tags]
+  #   @popularity = options[:popularity]
 
-    @body = options[:body]
-    @title = options[:title]
+  #   @body = options[:body]
+  #   @title = options[:title]
 
-    @caption = options[:caption]
+  #   @caption = options[:caption]
 
-    @photo_urls = options[:photo_urls]
+  #   @photo_urls = options[:photo_urls]
     
-    @asking_name = options[:asking_name]
-    @asking_url = options[:asking_url]
+  #   @asking_name = options[:asking_name]
+  #   @asking_url = options[:asking_url]
 
-    @question = options[:question]
-    @answer = options[:answer]
+  #   @question = options[:question]
+  #   @answer = options[:answer]
 
-  end
+  # end
 
 
 end

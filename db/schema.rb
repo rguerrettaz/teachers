@@ -22,12 +22,26 @@ ActiveRecord::Schema.define(:version => 20130415181635) do
   end
 
   create_table "news_items", :force => true do |t|
-    t.string   "popularity"
+    t.string   "published_at"
     t.string   "source"
-    t.integer  "source_id"
-    t.integer  "comment_id"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
+    t.string   "source_user"
+    t.string   "source_url"
+    t.string   "format"
+    t.string   "tags"
+    t.string   "vote"
+    t.string   "popularity"
+    t.text     "body"
+    t.string   "title"
+    t.string   "caption"
+    t.string   "photo_urls"
+    t.string   "asking_name"
+    t.string   "asking_url"
+    t.string   "question"
+    t.string   "answer"
+    t.string   "profile_pic"
+    t.string   "source_id"
+    t.datetime "created_at",   :null => false
+    t.datetime "updated_at",   :null => false
   end
 
   create_table "schools", :force => true do |t|

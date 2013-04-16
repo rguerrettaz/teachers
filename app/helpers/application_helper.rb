@@ -4,7 +4,7 @@ module ApplicationHelper
   TAGS = ['education', 'edchat']
 
 
-  def popularity(vote, created_at)
+  def calculate_popularity(vote, created_at)
     if created_at.class == String
       created_at = created_at.to_time.utc
     else

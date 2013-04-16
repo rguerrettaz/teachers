@@ -12,20 +12,18 @@ class NewsItemsController < ApplicationController
         render :json => render_to_string(:partial => 'news_items', :locals => {:news_items => @news_items}).to_json
       end
     end
-  end
+
+	def create
+		@news_items = NewsItem.new
+	end
 
   def test
-    # @search = [tumblr_search, twitter_search, insta_search, reddit_education]
-    # search = [from_tumblr, from_twitter, from_insta, from_reddit].flatten!
-    # @news_items = search.sort_by { |item| item.popularity }.reverse!
+    search = [from_tumblr, from_twitter, from_insta, from_reddit].flatten!
+    @news_items = search.sort_by { |item| item.popularity }.reverse!
   end
 
   def show
     @news_item = news_item.find(params[:id])
-  end
-
-  def load
-    render 'layouts/loader'
   end
 
 end

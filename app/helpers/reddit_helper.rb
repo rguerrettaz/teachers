@@ -19,15 +19,16 @@ module RedditHelper
     posts = search.map do |submission|
       submission.comments.map do |comment|
         if submission.score > 0
-          NewsItem.new( :published_at => submission.created_utc,
+          NewsItem.create( :published_at => submission.created_utc,
+                        :source_id => comment.id,
                         :source => 'Reddit',
                         :source_user => comment.author,
                         :source_url => "http://www.reddit.com/#{submission.permalink}",
-                        :type => 'quote',
+                        :format => 'quote',
                         :body => comment.body,
                         :caption => submission.title,
                         :tags => comment.subreddit, 
-                        :popularity => (popularity(submission.score, submission.created_utc))
+                        :popularity => (calculate_popularity(submission.score, submission.created_utc))
                       )
         end
       end
