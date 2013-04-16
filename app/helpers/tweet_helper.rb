@@ -16,7 +16,6 @@ module TweetHelper
 	                    :source_user => tweet.from_user,
                       :source_user_url => "https://twitter.com/"+tweet.from_user,
 	                    :source_url => "https://twitter.com/" + tweet.from_user + "/status/" + tweet.id.to_s,
->>>>>>> school_data
 	      							:profile_pic => tweet.profile_image_url,
 	                    :format => 'status',
 	                    :popularity => calculate_popularity((tweet.favorite_count + tweet.retweet_count), tweet.created_at),
