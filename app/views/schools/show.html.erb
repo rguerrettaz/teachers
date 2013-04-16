@@ -4,6 +4,18 @@
 <p><%= @school.address %>, <%= @school.city.capitalize %>, <%= @school.state %>, <%= @school.zip %></p>
 <p><%= @school.schoolname %> is in the <%= @school.schooldistrictname  %></p>
 
+<script>
+  Morris.Bar({
+    element: 'ratio',
+    data: [
+      { r: 'Student-to-Teacher Ratio', a: $('#ratio').data('ratio'), b: 15.2 }
+    ],
+    xkey:   'r',
+    ykeys:  ['a', 'b'],
+    labels: [$('#ratio').data('schoolname'), 'National Average'],
+    hideHover: 'auto'
+  });
+</script>
 
 <%= content_tag "div", class: "chart",
                        id: "ratio",
