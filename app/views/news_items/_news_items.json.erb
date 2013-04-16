@@ -2,13 +2,14 @@
   From: <%= item.source %>
   Created: <%= item.published_at %>
   <%= image_tag(item.profile_pic) if item.profile_pic%><br>
-  <%= item.type %>
+  <%= item.format %>
   <%= item.popularity %><br>
   <%= link_to item.source_user, item.source_url %><br>
   <%= item.tags if item.tags %><br>
   <h2><%= item.title if item.title %></h2>
   <%= item.body.html_safe if item.body %>
-  <%= image_tag(item.photo_urls[:url]) if item.photo_urls %><br>
+  <%= image_tag(item.photo_urls) if item.photo_urls %><br>
   <%= item.caption.html_safe if item.caption %>
+  <%= link_to "Comments", item %>
   <hr>
 <% end %>

@@ -12,6 +12,7 @@ class NewsItemsController < ApplicationController
         render :json => render_to_string(:partial => 'news_items', :locals => {:news_items => @news_items}).to_json
       end
     end
+  end
 
 	def create
 		@news_items = NewsItem.new
@@ -23,7 +24,7 @@ class NewsItemsController < ApplicationController
   end
 
   def show
-    @news_item = news_item.find(params[:id])
+    @news_item = NewsItem.find(params[:id])
   end
 
 end

@@ -20,10 +20,5 @@
   <hr>
 
 <%= render :partial => "news_items/form", :locals => { :news_item => @news_item } %>
-  debugger
-<% unless @news_item.comments.empty? %>
-  <% @news_item.comments.each do [comment] %>
-  <%= render :partial => "comment/comment", :locals => { :comment => comment }%>
-<% end %>
-<% end %>
+
 
