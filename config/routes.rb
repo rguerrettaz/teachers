@@ -16,7 +16,7 @@ TeacherGap::Application.routes.draw do
   resources :news_items do
     get :test
   end
-
+  match 'load_from_apis' => "news_items#load_from_apis"
   resources :news_items do
     resources :comments
   end

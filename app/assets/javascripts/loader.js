@@ -6,7 +6,7 @@ var Loader = {
   showItems: function() {
     $.ajax({
       type: 'GET',
-      url: '/news_items',
+      url: '/load_from_apis',
       dataType: 'json'
     }).done(Loader.appendResults);
   },
