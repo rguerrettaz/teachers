@@ -16,19 +16,19 @@
       <%= render 'source_site', :item => @news_item %>
     </div>
   </article>
-
-  <%#= image_tag(@news_item.photo_urls[:url]) if @news_item.photo_urls %><br>
-
-
-  <%= image_tag(@news_item.photo_urls) if @news_item.photo_urls %><br>
-
-  <%= @news_item.caption.html_safe if @news_item.caption %>
+  
   <hr>
+  
+    <div class='meta'>
+      <%= render "news_items/form", :news_item => @news_item %>
+    </div>
 
-<%= render "news_items/form", :news_item => @news_item %>
-
-<% if @news_item.comments.count > 0 %>
-  <% @news_item.comments.each do |comment| %>
-    <%= render "comments/comment", :comment => comment %>
-  <% end %>
-<% end %>
+    <div class='meta'>
+      <% if @news_item.comments.count > 0 %>
+        <% @news_item.comments.each do |comment| %>
+          <% unless comment.id.nil? %>
+            <%= render "news_items/comments", :comment => comment %>
+          <% end %>
+        <% end %>
+      <% end %>
+    </div>

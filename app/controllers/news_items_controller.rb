@@ -1,13 +1,11 @@
 class NewsItemsController < ApplicationController
 
   def index
-    
-  end
-
-  def load_from_apis
-    search = [from_twitter].flatten!
-    @news_items = search.sort_by { |item| item.popularity }.reverse!
-    render :json => render_to_string(:partial => 'news_items', :locals => {:news_items => @news_items}).to_json
+    if request.xhr?
+      search = [from_twitter].flatten!
+      @news_items = search.sort_by { |item| item.popularity }.reverse!
+      render :json => render_to_string(:partial => 'news_items', :locals => {:news_items => @news_items}).to_json
+    end
   end
 
 	def create
@@ -25,3 +23,9 @@ class NewsItemsController < ApplicationController
   end
 
 end
+
+# create a sidekiq worker that does this:
+  # make the calls to the apis
+  # populate the database
+  #search = [from_twitter].flatten!
+  #@news_items = search.sort_by { |item| item.popularity }.reverse!
