@@ -1,2 +1,17 @@
-<h1><%= post ['title'] %></h1>
-<%= truncate_html post["body"], :length => 600, :separator => '.' %>
+<div class='body'>
+  <div class='rating'><%= item.popularity %></div>
+  <h2><%= link_to item.title, item.source_url if item.title %></h2>
+  <p><%= truncate_html(item.body.html_safe, :length => 800, 
+                                            :word_boundary => /\S[\.\?\!]/, 
+                                            :omission => "<a href ='#{item.source_url}'>...</a>") if item.body %></p>
+</div>
+
+
+
+
+  
+  <%= render 'meta_info', :item => item %>
+
+
+</div>
+

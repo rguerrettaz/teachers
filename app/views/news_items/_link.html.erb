@@ -1,1 +1,14 @@
-<%= link_to post["title"], post["url"] %>
+  <div class='body'>
+    <div class='rating'><%= item.popularity %></div>
+    <h2><%= link_to item.body, item.source_url %></h2>
+
+    <p class ='caption'>
+      <%= truncate_html(item.caption.html_safe,  :length => 400, 
+                                                 :word_boundary => /\S[\.\?\!]/, 
+                                                 :omission => "<a href ='#{item.source_url}'>...</a>") if item.caption %>    
+    </p>
+  </div>
+
+    <%= render "meta_info", :item => item %>
+
+  </div>

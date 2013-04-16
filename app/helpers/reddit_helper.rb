@@ -19,9 +19,10 @@ module RedditHelper
     posts = search.map do |submission|
       submission.comments.map do |comment|
         if submission.score > 0
+
           NewsItem.create( :published_at => submission.created_utc,
                         :source_id => comment.id,
-                        :source => 'Reddit',
+                        :source => 'reddit',
                         :source_user => comment.author,
                         :source_url => "http://www.reddit.com/#{submission.permalink}",
                         :format => 'quote',

@@ -26,7 +26,6 @@ module TumblrHelper
 
       elsif post['type'] == 'link'
         body = post['title']
-        url = post['url']
         caption = post['description']
 
       elsif post['type'] == 'photo'

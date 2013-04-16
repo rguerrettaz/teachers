@@ -1,5 +1,12 @@
-<p><%= post['question'].html_safe %><br>
-   <%= link_to post['asking_name'], post['asking_url'] %>
-</p>
+  <div class='body'>
+    <div class='rating'><%= item.popularity %></div>
+    <%= truncate_html(item.body.html_safe,  :length => 400, 
+                                            :word_boundary => /\S[\.\?\!]/, 
+                                            :omission => "<a href ='#{item.source_url}'>...</a>") %>    
+    
+  </div>
+  <p class ='caption'> <%= item.caption if item.caption %></p>
 
-<p> <%= post['answer'].html_safe %> </p>
+    <%= render "meta_info", :item => item %>
+
+  </div>

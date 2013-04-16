@@ -12,6 +12,7 @@ class NewsItemsController < ApplicationController
         render :json => render_to_string(:partial => 'news_items', :locals => {:news_items => @news_items}).to_json
       end
     end
+
   end
 
 	def create
