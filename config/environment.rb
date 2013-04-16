@@ -4,7 +4,8 @@ require File.expand_path('../application', __FILE__)
 require 'oembed'
 require 'instagram'
 require 'levenshtein'
-
+require 'sidekiq'
+require 'redis'
 # require 'lib/api'
 
 require 'uri'

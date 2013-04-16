@@ -6,7 +6,8 @@ gem 'rails', '3.2.13'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 gem 'pg'
-
+gem 'redis'
+gem 'sidekiq'
 gem 'bcrypt-ruby'
 gem 'json'
 

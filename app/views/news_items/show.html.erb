@@ -14,11 +14,13 @@
 
   <%= image_tag(@news_item.photo_urls) if @news_item.photo_urls %><br>
 
-
-  
   <%= @news_item.caption.html_safe if @news_item.caption %>
   <hr>
 
 <%= render :partial => "news_items/form", :locals => { :news_item => @news_item } %>
 
-
+<% if @news_item.comments.count > 0 %>
+  <% @news_item.comments.each do |comment| %>
+    <%= render :partial => "comments/comment", :locals => { :comment => comment }%>
+  <% end %>
+<% end %>
