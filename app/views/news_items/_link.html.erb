@@ -5,7 +5,8 @@
     <p class ='caption'>
       <%= truncate_html(item.caption.html_safe,  :length => 400, 
                                                  :word_boundary => /\S[\.\?\!]/, 
-                                                 :omission => "<a href ='#{item.source_url}'>...</a>") if item.caption %>    
+                                                 :omission => "...")  %>   
+                                                 <p> <%=link_to "Read More", item.source_url%> </p>
     </p>
   </div>
 
