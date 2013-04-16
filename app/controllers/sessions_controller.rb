@@ -15,7 +15,8 @@ class SessionsController < ApplicationController
 	end
 
 	def destroy
-		cookies.delete(:id) if params[:id] == cookies[:id]
+		@user = nil
+		cookies.delete(:remember_token)
 		redirect_to :root
 	end
 

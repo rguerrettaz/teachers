@@ -15,8 +15,8 @@ class UsersController < ApplicationController
 	end
 
 	def show
-		if cookies[:id] == params[:id]
-			@user = User.find(params[:id])
+		if cookies[:remember_token] == params[:remember_token]
+			@user = User.find(params[:remember_token])
 		else
 			redirect_to :root
 		end
