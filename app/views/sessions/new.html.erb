@@ -1,11 +1,11 @@
-Login-in
+Log In
 
 <%= form_for :session, :url => sessions_path do |f| %>
-<%= flash[:notice] if flash[:notice] %>
-<%= f.error_messages %>
-<%= f.label :email %>:
-<%= f.email_field :email  %>
-<%= f.label :password %>:
-<%= f.password_field :password  %>
-<%= f.submit "Sign Up!" %>
+  <%= flash[:notice] if flash[:notice] %>
+  <%= f.error_messages %>
+  <%= f.label :email %>:
+  <%= f.email_field :email  %>
+  <%= f.label :password %>:
+  <%= f.password_field :password  %>
+  <%= f.submit "Sign Up!" %>
 <% end %>
