@@ -2,8 +2,9 @@
     <div class='rating'><%= item.popularity %></div>
     <%= truncate_html(item.body.html_safe,  :length => 400, 
                                             :word_boundary => /\S[\.\?\!]/, 
-                                            :omission => "<a href ='#{item.source_url}'>...</a>") %>    
-    
+                                            :omission => "...")    %> 
+                                            <p> <%=link_to "Read More", item.source_url%> </p>
+
   </div>
   <p class ='caption'> <%= item.caption if item.caption %></p>
 

@@ -1,9 +1,10 @@
 <div class='body'>
   <div class='rating'><%= item.popularity %></div>
   <h2><%= link_to item.title, item.source_url if item.title %></h2>
-  <p><%= truncate_html(item.body.html_safe, :length => 800, 
+  <%= truncate_html(item.body.html_safe, :length => 800, 
                                             :word_boundary => /\S[\.\?\!]/, 
-                                            :omission => "<a href ='#{item.source_url}'>...</a>") if item.body %></p>
+                                            :omission => "...") if item.body %>
+                                            <p> <%=link_to "Read More", item.source_url %> </p>
 </div>
 
 
