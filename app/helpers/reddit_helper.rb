@@ -20,7 +20,7 @@ module RedditHelper
       submission.comments.map do |comment|
         if submission.score > 0
           NewsItem.new( :published_at => submission.created_utc,
-                        :source => 'Reddit',
+                        :source => 'reddit',
                         :source_user => comment.author,
                         :source_url => "http://www.reddit.com/#{submission.permalink}",
                         :type => 'quote',

@@ -2,16 +2,15 @@ module InstagramHelper
   include ApplicationHelper
 
   def insta_search
-    Instagram.tag_recent_media('edchat', :limit => TAG_SEARCH*4)
+    Instagram.tag_recent_media('edchat', :limit => TAG_SEARCH*2)
   end
 
   def from_insta
     insta_search.map do |pic|
-      # debugger
       
       unless pic.caption.nil?
       NewsItem.new(:published_at => pic.created_time,
-                    :source => 'Instagram',
+                    :source => 'instagram',
                     :source_user => pic.caption.from.username,
                     :source_url => "http://instagram.com/" + pic.caption.from.username,
                     :type => 'photo',

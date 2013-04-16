@@ -1,3 +1,10 @@
-             
-<%= post['player'][1]['embed_code'].html_safe %><br>
-<p><%= post['caption'].html_safe %></p>
+  <div class='body'>
+    <div class='rating'><%= item.popularity %></div>
+    <%= item.body %>    
+    
+  </div>
+  <p class ='caption'> <%= item.caption if item.caption %></p>
+
+    <%= render "meta_info", :item => item %>
+
+  </div>

@@ -11,7 +11,8 @@ module TweetHelper
 		tweets = twitter_search.map do |tag|
 			tag.statuses.map do |tweet|
 	      NewsItem.new(:published_at => tweet.created_at,
-	                    :source => 'Twitter',
+                      :source_full_name => tweet.from_user_name,
+	                    :source => 'twitter',
 	                    :source_user => tweet.from_user,
 	                    :source_url => "https://twitter.com/#{tweet.from_user}/status/#{tweet.id.to_s}",
 	      							:profile_pic => tweet.profile_image_url,

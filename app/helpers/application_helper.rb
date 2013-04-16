@@ -1,8 +1,7 @@
 module ApplicationHelper
 
-  TAG_SEARCH = 3
+  TAG_SEARCH = 5
   TAGS = ['education', 'edchat']
-
 
   def popularity(vote, created_at)
     if created_at.class == String

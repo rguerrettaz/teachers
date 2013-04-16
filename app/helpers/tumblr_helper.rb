@@ -4,7 +4,7 @@ module TumblrHelper
   def tumblr_search
     client = Tumblr::Client.new 
     posts = TAGS.map do |tag|
-      client.tagged(TAGS, :limit => TAG_SEARCH)
+      client.tagged(tag, :limit => TAG_SEARCH*10)
     end
     posts.flatten!
   end
@@ -26,7 +26,6 @@ module TumblrHelper
 
       elsif post['type'] == 'link'
         body = post['title']
-        url = post['url']
         caption = post['description']
 
       elsif post['type'] == 'photo'
@@ -47,7 +46,7 @@ module TumblrHelper
       end
 
         NewsItem.new(:published_at => post['date'],
-                      :source => 'Tumblr',
+                      :source => 'tumblr',
                       :source_user => post['blog_name'],
                       :source_url => post['post_url'],
                       :type => post['type'],

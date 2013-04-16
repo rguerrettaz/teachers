@@ -1,6 +1,18 @@
-<% post["photos"].each do |photo| %>
-  <%= link_to image_tag(photo["original_size"]["url"]), post["post_url"] %>
-  
-  <p><%= truncate_html post["caption"], :length => 100, :separator => '.' %></p>
+  <div class='body'>
+    <div class='rating'><%= item.popularity %></div>
+    <%= link_to image_tag(item.photo_urls[:url]), item.source_url %>
+    
+    <p class ='caption'> <%= item.body.html_safe if item.body %></p>
+  </div>
+    
+    <%= render "meta_info", :item => item %>
 
-<% end %>
+  </div>
+
+
+
+
+
+
+
+
