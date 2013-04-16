@@ -1,5 +1,5 @@
     <div class='source_user'>
-      <%= link_to image_tag(item.profile_pic), source_user_url(item) if item.profile_pic%>
+      <%= link_to image_tag(item.profile_pic), item.source_user_url if item.profile_pic%>
       <ul class='<%=item.source %>'
 
         <li>Posted by</li>

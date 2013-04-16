@@ -24,12 +24,11 @@ module RedditHelper
                         :source_id => comment.id,
                         :source => 'reddit',
                         :source_user => comment.author,
-                        :source_user_url => "https://reddit.com/user/#{comment.author}"
-                        :source_url => "http://www.reddit.com/#{submission.permalink}",
+                        :source_user_url => "https://reddit.com/user/" + comment.author,
+                        :source_url => "http://www.reddit.com/" + submission.permalink,
                         :format => 'answer',
                         :body => comment.body,
                         :caption => submission.title,
-                        :tags => comment.subreddit, 
                         :popularity => (calculate_popularity(submission.score, submission.created_utc))
                       )
         end
