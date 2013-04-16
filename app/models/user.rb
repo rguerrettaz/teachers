@@ -8,9 +8,11 @@ class User < ActiveRecord::Base
   before_create :downcase_email
   before_save   :create_remember_token
 
-  validates :username, :presence => true, :uniqueness => true
-  validates :email, :presence => true, :uniqueness => true, :format => { :with => EMAIL_REGEX}
-  validates :password, :presence => true 
+  validates :username, :presence => true, :uniqueness => true,
+            :length => { :maximum => 24 }
+  validates :email, :presence => true, :uniqueness => true,
+            :format => { :with => EMAIL_REGEX }
+  validates :password, :presence => true, :length => { :minimum => 6 }
 
   private
 
