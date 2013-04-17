@@ -1,9 +1,9 @@
     <div class='source_site row-fluid'>
       <div class='span2'>
-        <%= link_to image_tag("#{item.source}_logo.png"), "http://#{item.source}.com"%>
+        <%= link_to image_tag("#{item.source}_logo.png"), "http://#{item.source}.com", target: "_blank"%>
       </div>
       <ul class='span10'> 
         <li>From</li>
-        <li><%= link_to item.source.capitalize, "http://#{item.source}.com" %></li>
+        <li><%= link_to item.source.capitalize, "http://#{item.source}.com", target: "_blank" %></li>
       </ul>
     </div>

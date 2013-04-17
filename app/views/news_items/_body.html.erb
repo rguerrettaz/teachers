@@ -4,11 +4,11 @@
 <% elsif item.format == 'answer' %>
   <div class='question'>
     <%= item.question.html_safe if item.question %>
-    <p><%= link_to item.asking_name, item.asking_url %></p>
+    <p><%= link_to item.asking_name, item.asking_url, target: "_blank" %></p>
   </div>
   <div class='answer'>
     <%= item.answer.html_safe if item.answer %>
-    <p><%= link_to item.source_user, item.source_user_url %></p>
+    <p><%= link_to item.source_user, item.source_user_url, target: "_blank" %></p>
   </div>
   
 <% end %>
@@ -19,7 +19,7 @@
 
 <div class='caption'>
   <% if item.source == 'reddit' && item.caption %>
-    <%= link_to item.caption, item.source_url %>
+    <%= link_to item.caption, item.source_url, target: "_blank" %>
   <% end %>
 
   <%= truncate_html(item.caption.html_safe, :length => max_post_length, :omission => '...') if item.caption && item.source != 'reddit' %>
