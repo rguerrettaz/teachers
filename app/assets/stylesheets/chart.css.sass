@@ -1,8 +1,19 @@
 .chart
-  width: 33%
+  width: 29%
   height: 240px
   box-shadow: 0 2px 10px rgba(0,0,0,0.48)
-  margin-bottom: 24px
+  margin: 16px
+  float: left
+  text-align: center
+  display: table
+
 .half_chart
   @extend .chart
   height: 120px
+
+.chart_content
+  display: table-cell
+  vertical-align: middle
+
+#chart_wrapper
+  overflow: auto
