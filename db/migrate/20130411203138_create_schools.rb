@@ -23,7 +23,17 @@ class CreateSchools < ActiveRecord::Migration
 			t.string    :website
 			t.string    :testrating_text
 			t.string    :testrating_year
-	
+	    t.integer		:white
+      t.integer		:hispanic
+      t.integer		:black
+      t.integer		:asian
+      t.integer		:native_american
+      t.integer		:male
+      t.integer		:female
+      t.integer		:free_lunch
+      t.integer		:ell
+      t.integer		:dropout
+      t.integer		:total_enrolled
       t.timestamps
     end
   end
