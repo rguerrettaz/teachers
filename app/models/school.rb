@@ -26,8 +26,7 @@ class School < ActiveRecord::Base
 	 private
 
 	 def populate_student_data
-     get_school_data(self.schoolid)
-		 # SchoolWorker.perform_async(self.id)	
+		  SchoolWorker.perform_async(self.schoolid)	
 	 end
 	 
 end

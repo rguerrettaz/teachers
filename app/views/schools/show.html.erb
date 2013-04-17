@@ -1,18 +1,40 @@
 <h1><%= @school.schoolname %></h1>
 <p><%= @school.address %>, <%= @school.city.capitalize %>, <%= @school.state %>, <%= @school.zip %></p>
-<p><%= @school.schoolname %> is in the <%= @school.schooldistrictname  %></p>
+<p><%= @school.schoolname %> is in the <%= @school.schooldistrictname %></p>
 
 <script>
   $(document).ready(function () {
+    // Student-Teacher Ratio
     Morris.Bar({
       element: 'ratio',
       data: [
-        { r: 'Student-to-Teacher Ratio', a: $('#ratio').data('ratio'), b: 15.2 }
+        { r: 'Students per Teacher (vs. National Average)', a: $('#ratio').data('ratio'), b: 15.2 }
       ],
       xkey:   'r',
       ykeys:  ['a', 'b'],
       labels: [$('#ratio').data('schoolname'), 'National Average'],
       hideHover: 'auto'
+    });
+
+    // Ethnicity
+    Morris.Donut({
+      element: 'ethnicity',
+      data: [
+        { label: "Asian", value: $('#ethnicity').data('asian') || 0 },
+        { label: "Black", value: $('#ethnicity').data('black') || 0 },
+        { label: "Hispanic", value: $('#ethnicity').data('hispanic') || 0 },
+        { label: "Native American", value: $('#ethnicity').data('native_american') || 0 },
+        { label: "White", value: $('#ethnicity').data('white') || 0 }
+      ],
+    });
+
+    // Gender
+    Morris.Donut({
+      element: 'gender',
+      data: [
+        { label: "Male", value: $('#gender').data('male') || 0 },
+        { label: "Female", value: $('#gender').data('female') || 0 }
+      ],
     });
   });
 </script>
@@ -21,6 +43,21 @@
                        id: "ratio",
                        data: { ratio:      @school.studentteacherratio, 
                                schoolname: @school.schoolname } do %>
+<% end %>
+
+<%= content_tag "div", class: "chart",
+                       id: "gender",
+                       data: { female: @school.female,
+                               male:   @school.male } do %>
+<% end %>
+
+<%= content_tag "div", class: "chart",
+                       id: "ethnicity",
+                       data: { white:           @school.white,
+                               hispanic:        @school.hispanic,
+                               black:           @school.black,
+                               asian:           @school.asian,
+                               native_american: @school.native_american } do %>
 <% end %>
 
 <ul>
@@ -65,10 +102,10 @@
 <% end %>
 
 <!-- Twitter business -->
-<h1>Tweets</h1>
-<% tweets_by_coords(@school.latitude,@school.longitude) %>
-<% @coord_tweets.statuses.each do |tweet| %>
+<!-- <h1>Tweets</h1>
+<%# tweets_by_coords(@school.latitude,@school.longitude) %>
+<%# @coord_tweets.statuses.each do |tweet| %>
   <div class="tweet">
-    <%= embed_tweet(tweet.id) %>
+    <%#= embed_tweet(tweet.id) %>
   </div>
-<% end %>
+<%# end %> -->

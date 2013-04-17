@@ -1,19 +1,25 @@
 class NewsItemsController < ApplicationController
+
   def index
     # @news_items = NewsItem.order('popularity DESC').limit(25)
     search = [from_insta, from_tumblr, from_twitter, from_reddit].flatten!
     @news_items = NewsItem.order('popularity DESC').limit(25)
   end
 
-  def create
-    @news_items = NewsItem.new
+  def index
+      @news_items = NewsItem.limit(25)
   end
+
+	def create
+		@news_items = NewsItem.new
+	end
 
   def show
     @news_item = NewsItem.find(params[:id])
   end
 
 end
+
 
 # create a sidekiq worker that does this:
   # make the calls to the apis

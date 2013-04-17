@@ -1,9 +1,10 @@
 class PopularNews
 	include Sidekiq::Worker
   include Api
-  
+
   def perform
-    search = [from_insta, from_tumblr, from_twitter, from_reddit].flatten!
+    search = [from_twitter,from_reddit, from_insta, from_twitter, from_tumblr].flatten!
+
   end 
 
 end
