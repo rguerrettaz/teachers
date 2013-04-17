@@ -3,7 +3,7 @@ class SchoolWorker
   include Education
   include Api
 
-  def perform(school_id)
+  def perform(schoolid)
   	get_school_data(schoolid)
   end
 
