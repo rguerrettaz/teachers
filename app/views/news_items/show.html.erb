@@ -20,7 +20,11 @@
   <hr>
   
     <div class='meta'>
-      <%= render "news_items/form", :news_item => @news_item %>
+      <% if logged_in? %>
+        <%= render "news_items/form", :news_item => @news_item %>
+      <% else %>
+       <p><%= link_to 'Login', new_session_path %> or <%= link_to 'Sign-up', new_user_path %>  to comment</p>
+      <% end %>
     </div>
 
     <div class='meta'>
