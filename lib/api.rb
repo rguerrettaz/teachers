@@ -140,7 +140,7 @@ module Api
 
           NewsItem.create(:published_at => post['date'],
                         :source_id => post['id'],
-                        :source => 'Tumblr',
+                        :source => 'tumblr',
                         :source_user => post['blog_name'],
                         :source_url => post['post_url'],
                         :source_user_url => "https://"+post['blog_name']+".tumblr.com",
@@ -173,7 +173,7 @@ module Api
                         :source => 'twitter',
                         :source_id => tweet.id,
                         :source_user => tweet.from_user,
-                      :source_user_url => "https://twitter.com/"+tweet.from_user,
+                        :source_user_url => "https://twitter.com/"+tweet.from_user,
                         :source_url => "https://twitter.com/" + tweet.from_user + "/status/" + tweet.id.to_s,
                                     :profile_pic => tweet.profile_image_url,
                         :format => 'status',
