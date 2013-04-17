@@ -1,7 +1,7 @@
 class NewsItemsController < ApplicationController
   def index
     if request.xhr?
-      search = [from_tumblr].flatten!
+      search = [from_tumblr, from_twitter, from_reddit, from_insta].flatten!
       @news_items = search.sort_by { |item| item.popularity }.reverse!
 
       # @news_items = NewsItem.order_by_popularity.limit(25)
