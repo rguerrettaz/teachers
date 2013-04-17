@@ -6,13 +6,15 @@
         </div>
 
         <ul class='<%=item.source %> span10'>
+          <li>Posted by</li>
+          <li><%= link_to "@#{item.source_user}", item.source_user_url %></li>
 
       <% else %>
         <ul class='<%=item.source %> span12'>
-      <% end %>
           <li>Posted by</li>
-          <li><%= link_to "@#{item.source_user}", item.source_user_url %></li>
           <li><%= link_to item.source_user, item.source_user_url %></li>
+      <% end %>
+
         </ul>
 
     </div>

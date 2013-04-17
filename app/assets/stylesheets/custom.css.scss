@@ -15,7 +15,7 @@ img {
   }
 
 .popularity {
-  float: right;
+  text-align: center;
 }
 
 .meta {
@@ -28,4 +28,15 @@ img {
     li:first-child {
       font-size: 11px;
     }
+
+    li {
+      font-size: 12px;
+    }
+
+    .user_interactions li {
+      font-size: 11px;
+    }
+
   }
+
+
