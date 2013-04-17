@@ -16,8 +16,6 @@
       hideHover: 'auto'
     });
 
-    debugger;
-
     // Ethnicity
     Morris.Donut({
       element: 'ethnicity',
@@ -38,6 +36,19 @@
         { label: "Male", value: $('#gender').data('male') || 0 }
       ],
     });
+
+    // Dropout Percentage
+    Morris.Bar({
+      element: 'dropout',
+      data: [
+        { r: 'Dropout Percentage (vs. National Average)', a: $('#dropout').data('percentage'), b: 7.4 }
+      ],
+      xkey:   'r',
+      ykeys:  ['a', 'b'],
+      labels: [$('#dropout').data('schoolname'), 'National Average'],
+      hideHover: 'auto'
+    });
+
   });
 </script>
 
@@ -61,6 +72,17 @@
                                asian:           @school.asian,
                                native_american: @school.native_american } do %>
 <% end %>
+
+<%= content_tag "div", class: "chart",
+                       id: "dropout",
+                       data: { percentage: ('%.1f' % ((@school.dropout.to_f / @school.enrollment.to_f) * 100)), 
+                               schoolname: @school.schoolname } do %>
+<% end %>
+
+<div class="half_chart">
+  <h1>Enrollment</h1>
+  <h2><%= number_with_delimiter(@school.enrollment) %></h2>
+</div>
 
 <div class="half_chart">
   <h1>Enrollment</h1>
