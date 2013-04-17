@@ -1,22 +1,8 @@
-<% news_items.each do |item| %>
-
-
-  <article class='news_item_<%= item.format %>' >
-    <%= item.format %>
-
-    <div class='rating'>
-      <%= item.popularity %>
-    </div>
-    
-    <div class='body'>
-      <%= render 'body', :item => item %>
-    </div>
-    
-    <div class='meta'>
-      <%= render 'user_interactions', :item => item %>
-      <%= render 'source_user', :item => item %>
-      <%= render 'source_site', :item => item %>
-    </div>
-  </article>
-
-<% end %>
+  <%= item.format %>
+  <div class='popularity'>
+    <%= item.popularity %>
+  </div>
+  <%= render 'body', :item => item %>
+  <%= render 'user_interactions', :item => item %>
+  <%= render 'source_user', :item => item %>
+  <%= render 'source_site', :item => item %>
