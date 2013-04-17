@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130416203049) do
+ActiveRecord::Schema.define(:version => 20130416173830) do
 
   create_table "comments", :force => true do |t|
     t.integer  "news_item_id"
@@ -25,23 +25,22 @@ ActiveRecord::Schema.define(:version => 20130416203049) do
     t.string   "published_at"
     t.string   "source"
     t.string   "source_user"
+    t.string   "source_user_url"
     t.string   "source_url"
     t.string   "format"
-    t.string   "vote"
     t.string   "popularity"
     t.text     "body"
     t.string   "title"
+    t.text     "caption"
     t.string   "photo_urls"
     t.string   "asking_name"
     t.string   "asking_url"
+    t.text     "question"
+    t.text     "answer"
     t.string   "profile_pic"
     t.string   "source_id"
     t.datetime "created_at",      :null => false
     t.datetime "updated_at",      :null => false
-    t.string   "source_user_url"
-    t.text     "caption"
-    t.text     "question"
-    t.text     "answer"
   end
 
   create_table "schools", :force => true do |t|
