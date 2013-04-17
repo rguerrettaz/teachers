@@ -1,7 +1,7 @@
 class NewsItemsController < ApplicationController
 
   def index
-      @news_items = NewsItem.order('popularity DESC').limit(25)
+      @news_items = NewsItem.order('popularity DESC').limit(24)
   end
 
 	def create

@@ -1,5 +1,5 @@
 <% if item.format == 'photo' && item.photo_urls %>
-  <%= link_to image_tag(item.photo_urls), item.source_url %>
+  <%= link_to image_tag(item.photo_urls), item.source_url, target: "_blank" %>
 
 <% elsif item.format == 'answer' %>
   <div class='question'>
@@ -13,7 +13,7 @@
   
 <% end %>
 
-<%= item.title if item.title %>
+<h2><%= item.title if item.title %></h2>
 
 <%= truncate_html(item.body.html_safe, :length => max_post_length, :omission => '...') if item.body %>
 

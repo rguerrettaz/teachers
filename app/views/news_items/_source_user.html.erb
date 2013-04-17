@@ -1,13 +1,18 @@
-    <div class='source_user'>
-      <%= link_to image_tag(item.profile_pic), item.source_user_url if item.profile_pic%>
-      <ul class='<%=item.source %>'
+    <div class='source_user row-fluid'>
+      
+      <% if item.source == 'twitter' %>
+        <div class='span2'>
+        <%= link_to image_tag(item.profile_pic), item.source_user_url if item.profile_pic%>
+        </div>
 
-        <li>Posted by</li>
-        <% if item.source == 'twitter' %>
-        <li>Full Name</li>
-        <li><%= link_to "@#{item.source_user}", item.source_user_url %></li>
-        <% else %>
-        <li><%= link_to item.source_user, item.source_user_url %></li>
-        <% end %>
-      </ul>
+        <ul class='<%=item.source %> span10'>
+
+      <% else %>
+        <ul class='<%=item.source %> span12'>
+      <% end %>
+          <li>Posted by</li>
+          <li><%= link_to "@#{item.source_user}", item.source_user_url %></li>
+          <li><%= link_to item.source_user, item.source_user_url %></li>
+        </ul>
+
     </div>
