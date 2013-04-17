@@ -13,3 +13,9 @@ class NewsItemsController < ApplicationController
   end
 
 end
+
+
+# create a sidekiq worker that does this:
+  # make the calls to the apis
+  # populate the database
+  #@news_items = search.sort_by { |item| item.popularity }.reverse!
