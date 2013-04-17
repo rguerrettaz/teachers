@@ -1,13 +1,13 @@
-<% if item.format == 'photo' %>
+<% if item.format == 'photo' && item.photo_urls %>
   <%= link_to image_tag(item.photo_urls), item.source_url %>
 
 <% elsif item.format == 'answer' %>
   <div class='question'>
-    <%= item.question.html_safe %>
+    <%= item.question.html_safe if item.question %>
     <p><%= link_to item.asking_name, item.asking_url %></p>
   </div>
   <div class='answer'>
-    <%= item.answer.html_safe %>
+    <%= item.answer.html_safe if item.answer %>
     <p><%= link_to item.source_user, item.source_user_url %></p>
   </div>
   
@@ -18,7 +18,7 @@
 <%= truncate_html(item.body.html_safe, :length => max_post_length, :omission => '...') if item.body %>
 
 <div class='caption'>
-  <% if item.source == 'reddit' %>
+  <% if item.source == 'reddit' && item.caption %>
     <%= link_to item.caption, item.source_url %>
   <% end %>
 
