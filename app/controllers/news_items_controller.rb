@@ -1,23 +1,13 @@
 class NewsItemsController < ApplicationController
   def index
-    if request.xhr?
-      search = [from_twitter].flatten!
-      @news_items = search.sort_by { |item| item.popularity }.reverse!
-
-      # @news_items = NewsItem.order_by_popularity.limit(25)
-      render :json => render_to_string(:partial => 'news_items', :locals => {:news_items => @news_items}).to_json
-    end
+    # @news_items = NewsItem.order('popularity DESC').limit(25)
+    search = [from_insta, from_tumblr, from_twitter, from_reddit].flatten!
+    @news_items = NewsItem.order('popularity DESC').limit(25)
   end
 
-	def create
-		@news_items = NewsItem.new
-	end
-
-  def test
-    search = [from_insta].flatten!
-    @news_items = search.sort_by { |item| item.popularity }.reverse!
+  def create
+    @news_items = NewsItem.new
   end
-
 
   def show
     @news_item = NewsItem.find(params[:id])
@@ -28,5 +18,4 @@ end
 # create a sidekiq worker that does this:
   # make the calls to the apis
   # populate the database
-  #search = [from_twitter].flatten!
   #@news_items = search.sort_by { |item| item.popularity }.reverse!

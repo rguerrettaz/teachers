@@ -1,10 +1,16 @@
 
 
 <h1>Popular Items</h1>
-<%= render 'layouts/loader' %>
-<div class="items hidden">
 
+<% @news_items.each do |item| %>
+<article class="news_item<%=item.format%>" >
+  <%= item.format %>
+  <div class='popularity'>
+    <%= item.popularity %>
+  </div>
+  <%= render 'body', :item => item %>
+  <%= render 'source_user', :item => item %>
+  <%= render 'source_site', :item => item %>
+</article>
+<% end %>
 
-
-
-</div>

@@ -76,21 +76,23 @@ module Api
 
   def from_insta
     insta_search.map do |pic|
-      
-      unless pic.caption.nil?
-      NewsItem.create(:published_at => pic.created_time,
-                    :source_id =>  pic.caption.id,   
-                    :source => 'instagram',
-                    :source_user => pic.caption.from.username,
-                    :source_user_url => "https://instagram.com/"+ pic.caption.from.username,
-                    :source_url => "https://instagram.com/"+ pic.caption.from.username,
-                    :format => 'photo',
-                    :popularity => calculate_popularity((pic.comments.count + pic.likes.count), pic.caption.created_time.to_i ),
-                    :caption => pic.caption.text,
-                    :photo_urls => pic.images.standard_resolution.url
-                    )
+    
+      unless NewsItem.find_by_source_id(pic.caption.id.to_s)
+        unless pic.caption.nil?
+        NewsItem.create(:published_at => pic.created_time,
+                      :source_id =>  pic.caption.id,   
+                      :source => 'instagram',
+                      :source_user => pic.caption.from.username,
+                      :source_user_url => "https://instagram.com/"+ pic.caption.from.username,
+                      :source_url => "https://instagram.com/"+ pic.caption.from.username,
+                      :format => 'photo',
+                      :popularity => calculate_popularity((pic.comments.count + pic.likes.count), pic.caption.created_time.to_i ),
+                      :caption => pic.caption.text,
+                      :photo_urls => pic.images.standard_resolution.url
+                      )
+          end
         end
-      end
+    end
   end
 
   # Tumblr Search
@@ -137,25 +139,25 @@ module Api
             question = post['question']
             answer = post['answer']
           end
-
-          NewsItem.create(:published_at => post['date'],
-                        :source_id => post['id'],
-                        :source => 'tumblr',
-                        :source_user => post['blog_name'],
-                        :source_url => post['post_url'],
-                        :source_user_url => "https://"+post['blog_name']+".tumblr.com",
-                        :format => post['type'],
-                        :popularity => calculate_popularity(post['note_count'], post['date']),
-                        :body => body,
-                        :title => title,
-                        :photo_urls => photo_urls,
-                        :question => question,
-                        :answer => answer,
-                        :asking_name => asking_name,
-                        :asking_url => asking_url,
-                        :caption => caption
-                      )
-
+          unless NewsItem.find_by_source_id(post['id'].to_s)
+            NewsItem.create(:published_at => post['date'],
+                          :source_id => post['id'],
+                          :source => 'tumblr',
+                          :source_user => post['blog_name'],
+                          :source_url => post['post_url'],
+                          :source_user_url => "https://"+post['blog_name']+".tumblr.com",
+                          :format => post['type'],
+                          :popularity => calculate_popularity(post['note_count'], post['date']),
+                          :body => body,
+                          :title => title,
+                          :photo_urls => photo_urls,
+                          :question => question,
+                          :answer => answer,
+                          :asking_name => asking_name,
+                          :asking_url => asking_url,
+                          :caption => caption
+                        )
+          end
         end
     end
 
@@ -177,21 +179,23 @@ module Api
     def from_twitter
         tweets = twitter_search.map do |tag|
             tag.statuses.map do |tweet|
-          NewsItem.create(:published_at => tweet.created_at,
-                        :source => 'twitter',
-                        :source_id => tweet.id,
-                        :source_user => tweet.from_user,
-                        :source_user_url => "https://twitter.com/"+tweet.from_user,
-                        :source_url => "https://twitter.com/" + tweet.from_user + "/status/" + tweet.id.to_s,
-                                    :profile_pic => tweet.profile_image_url,
-                        :format => 'status',
-                        :popularity => calculate_popularity((tweet.favorite_count + tweet.retweet_count), tweet.created_at),
-                        :body => tweet_body(tweet.full_text, [tweet.hashtags, tweet.urls, tweet.user_mentions]),
-                                    # :location => tweet.coordinates,
-                  )         
+            unless NewsItem.find_by_source_id(tweet.id.to_s)
+              NewsItem.create(:published_at => tweet.created_at,
+                            :source => 'twitter',
+                            :source_id => tweet.id,
+                            :source_user => tweet.from_user,
+                            :source_user_url => "https://twitter.com/"+tweet.from_user,
+                            :source_url => "https://twitter.com/" + tweet.from_user + "/status/" + tweet.id.to_s,
+                                        :profile_pic => tweet.profile_image_url,
+                            :format => 'status',
+                            :popularity => calculate_popularity((tweet.favorite_count + tweet.retweet_count), tweet.created_at),
+                            :body => tweet_body(tweet.full_text, [tweet.hashtags, tweet.urls, tweet.user_mentions]),
+                                        # :location => tweet.coordinates,
+                      )         
+            end
+          end
         end
-        end
-    tweets.flatten!
+        tweets.flatten!
     end
 
     def entity_to_html(text, entity)
@@ -233,10 +237,10 @@ module Api
 
   def from_reddit  
 
-    search = [reddit_teachers].flatten!
+    search = [reddit_teachers, reddit_education].flatten!
     posts = search.map do |submission|
       submission.comments.map do |comment|
-        if submission.score > 0
+        unless submission.score < 0 || NewsItem.find_by_source_id(comment.id.to_s) 
 
           NewsItem.create( :published_at => submission.created_utc,
                         :source_id => comment.id,
