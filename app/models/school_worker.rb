@@ -1,8 +1,10 @@
 class SchoolWorker
   include Sidekiq::Worker
+  include Education
+  include Api
 
   def perform(school_id)
-  	  #call to api school populate goes here
+  	get_school_data(schoolid)
   end
 
 end
