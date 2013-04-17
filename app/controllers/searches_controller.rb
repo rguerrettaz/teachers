@@ -1,6 +1,8 @@
 class SearchesController < ApplicationController
 
-  def new
-    @school = School.new
-  end
+	def new
+		@skip_header_search = true
+		@school = School.new	
+	end
+
 end

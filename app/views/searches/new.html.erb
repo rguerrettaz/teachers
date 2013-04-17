@@ -11,6 +11,13 @@
 		<%= submit_tag 'Submit' %> 
 	<% end %>
 </div>
-<div class = 'results'></div>
 
-
+	<div class = 'results'>
+		<% if @schools %>	
+			<ul>	
+			<% @schools.each do |school| %>
+				<li><%= link_to school.schoolname.capitalize, school %></li>
+			<% end %>
+	    </ul>
+	  <% end %>
+  </div>
