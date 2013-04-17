@@ -5,7 +5,38 @@
   margin: auto;
 }
 
+img {
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+}
 
 .navbar-search {
   width: 500px;
   }
+
+.popularity {
+  text-align: center;
+}
+
+.meta {
+  ul {
+    list-style-type: none;
+    padding:0;
+    margin:0;
+    }
+
+    li:first-child {
+      font-size: 11px;
+    }
+
+    li {
+      font-size: 12px;
+    }
+
+    .user_interactions li {
+      font-size: 11px;
+    }
+
+  }
+
+

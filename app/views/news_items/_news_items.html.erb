@@ -1,8 +1,11 @@
-  <%= item.format %>
-  <div class='popularity'>
+<div class='row-fluid'>
+  <div class='meta span11'>
+    <%= render 'body', :item => item %>
+    <%= render 'user_interactions', :item => item %>
+    <%= render 'source_user', :item => item %>
+    <%= render 'source_site', :item => item %>
+  </div>
+  <div class='popularity span1'>
     <%= item.popularity %>
   </div>
-  <%= render 'body', :item => item %>
-  <%= render 'user_interactions', :item => item %>
-  <%= render 'source_user', :item => item %>
-  <%= render 'source_site', :item => item %>
+</div>
