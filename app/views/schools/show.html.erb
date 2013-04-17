@@ -8,7 +8,7 @@
     Morris.Bar({
       element: 'ratio',
       data: [
-        { r: 'Students per Teacher', a: $('#ratio').data('ratio'), b: 15.2 }
+        { r: 'Students per Teacher (vs. National Average)', a: $('#ratio').data('ratio'), b: 15.2 }
       ],
       xkey:   'r',
       ykeys:  ['a', 'b'],
@@ -27,6 +27,15 @@
         { label: "White", value: $('#ethnicity').data('white') || 0 }
       ],
     });
+
+    // Gender
+    Morris.Donut({
+      element: 'gender',
+      data: [
+        { label: "Male", value: $('#gender').data('male') || 0 },
+        { label: "Female", value: $('#gender').data('female') || 0 }
+      ],
+    });
   });
 </script>
 
@@ -37,12 +46,18 @@
 <% end %>
 
 <%= content_tag "div", class: "chart",
+                       id: "gender",
+                       data: { female: @school.female,
+                               male:   @school.male } do %>
+<% end %>
+
+<%= content_tag "div", class: "chart",
                        id: "ethnicity",
                        data: { white:           @school.white,
                                hispanic:        @school.hispanic,
                                black:           @school.black,
                                asian:           @school.asian,
-                               native_american: @school.native_american.to_s } do %>
+                               native_american: @school.native_american } do %>
 <% end %>
 
 <ul>
