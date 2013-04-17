@@ -16,6 +16,8 @@
       hideHover: 'auto'
     });
 
+    debugger;
+
     // Ethnicity
     Morris.Donut({
       element: 'ethnicity',
@@ -32,8 +34,8 @@
     Morris.Donut({
       element: 'gender',
       data: [
-        { label: "Male", value: $('#gender').data('male') || 0 },
-        { label: "Female", value: $('#gender').data('female') || 0 }
+        { label: "Female", value: $('#gender').data('female') || 0 },
+        { label: "Male", value: $('#gender').data('male') || 0 }
       ],
     });
   });
@@ -59,6 +61,11 @@
                                asian:           @school.asian,
                                native_american: @school.native_american } do %>
 <% end %>
+
+<div class="half_chart">
+  <h1>Enrollment</h1>
+  <h2><%= number_with_delimiter(@school.enrollment) %></h2>
+</div>
 
 <ul>
 	<li><b>enrollment:</b>			    <%= @school.enrollment          %></li>
