@@ -7,5 +7,5 @@ class PopularNews
   end 
 
 end
-
-# PopularNews.perform_async
+ 
+# PopularNews.perform_async to refresh manually or rake admin:refresh

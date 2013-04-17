@@ -1,8 +1,6 @@
 
 
 <h1>Popular Items</h1>
-<%= render :partial => 'news_items', :locals => {:news_items => @news_items} %>
-
 <% @news_items.each do |item| %>
 <article class="news_item<%=item.format%>" >
   <%= item.format %>
@@ -10,6 +8,7 @@
     <%= item.popularity %>
   </div>
   <%= render 'body', :item => item %>
+  <%= render 'user_interactions', :item => item %>
   <%= render 'source_user', :item => item %>
   <%= render 'source_site', :item => item %>
 </article>
