@@ -1,1 +1,15 @@
+
+<% if item.format == 'text' %>
   <%= truncate_html(item.body.html_safe, :length => max_post_length, :omission => '...') if item.body %>
+
+<% elsif item.format == 'photo' %>
+  <%= link_to image_tag(item.photo_urls), item.source_url %>
+
+<% end %>
+
+
+<%= truncate_html(item.caption.html_safe, :length => max_post_length, :omission => '...') if item.caption %>
+
+<% if item.body && item.body.length > max_post_length %>
+    <%= render 'read_more', :item => item %>
+<% end %>
