@@ -4,6 +4,7 @@
     <title>Grit in the Gap</title>
     <%= stylesheet_link_tag    "application", :media => "all" %>
     <%= javascript_include_tag "application" %>
+    <%= javascript_include_tag "//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/js/bootstrap.min.js" %>
     <%= csrf_meta_tags %>
   </head>
   <body>
@@ -11,5 +12,6 @@
     	<%= render 'layouts/header' %>
       <%= yield %>
     </div>
+    <%= render 'layouts/footer' %>
   </body>
 </html>
