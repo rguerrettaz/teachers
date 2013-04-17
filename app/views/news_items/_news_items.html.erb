@@ -1,7 +1,7 @@
 <% news_items.each do |item| %>
 
 
-  <article class="news_item_"+item.format>
+  <article class='news_item_<%= item.format %>' >
     <%= item.format %>
 
     <div class='rating'>

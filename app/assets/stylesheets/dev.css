@@ -15,11 +15,11 @@ a {
 }
 
 img {
-  max-width: 320px;
+  max-width: 500px;
 }
 
 article {
-  width: 320px;
+  width: 500px;
   margin-bottom: 50px;
   clear: both;
   float: left;
@@ -27,6 +27,8 @@ article {
   padding: 12px;
   overflow: hidden;
 }
+
+
 
 .rating {
   text-align: right;

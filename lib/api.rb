@@ -115,7 +115,7 @@ module Api
 
           elsif post['type'] == 'chat'
             title = post['title']
-            body = post['dialogue']
+            body = dialogue(post['dialogue'])
 
           elsif post['type'] == 'link'
             body = post['title']
@@ -129,11 +129,11 @@ module Api
             body = post['player']
 
           elsif post['type'] == 'video'
-            body = post['embed_code']
+            body = post['player'][1]['embed_code']
 
           elsif post['type'] == 'answer'
-            asking_name = post['asking_url']
-            asking_url = post['asking_name']
+            asking_name = post['asking_name']
+            asking_url = post['asking_url']
             question = post['question']
             answer = post['answer']
           end
@@ -157,6 +157,14 @@ module Api
                       )
 
         end
+    end
+
+    def dialogue(raw)
+      dialogue = ""
+      raw.each do |line|
+        dialogue += "<p>#{line['label']}<span>#{line['phrase']}</span></p>"
+      end
+      dialogue
     end
 
     #Twitter Search
@@ -236,7 +244,7 @@ module Api
                         :source_user => comment.author,
                         :source_user_url => "https://reddit.com/user/" + comment.author,
                         :source_url => "http://www.reddit.com/" + submission.permalink,
-                        :format => 'answer',
+                        :format => 'quote',
                         :body => comment.body,
                         :caption => submission.title,
                         :popularity => (calculate_popularity(submission.score, submission.created_utc))
