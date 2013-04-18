@@ -15,6 +15,7 @@ module Api
         end
           p "I'm in the API!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
           p query
+          debugger
         query.each do |s| School.create(:schoolid          =>  s['school']["schoolid"],
                                         :schoolname           =>  s['school']["schoolname"],              
                                         :zip                  =>  s['school']["zip"],

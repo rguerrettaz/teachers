@@ -10,9 +10,17 @@
 
         <li class="divider-vertical"></li>
 
+        <li><%= link_to 'About', about_path %></li>
+        <li class="divider-vertical"></li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" href="#" data-toggle="dropdown">By School <strong class="caret"></strong></a>
+            <div class="dropdown-menu" style="padding: 15px; padding-bottom: 0px;">
+              <%= render 'layouts/search' %>
+            </div>
+        </li>
       </ul>
 
-      <%= render 'layouts/search' %>
+      
 
       <ul class ='nav pull-right'>
         <li><%= render 'layouts/login_signup' %></li>
@@ -21,3 +29,6 @@
     </div>
   </div>
 </div>
+
+
+

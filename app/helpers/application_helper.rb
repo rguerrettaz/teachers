@@ -1,7 +1,7 @@
 module ApplicationHelper
 
   def max_post_length
-    600
+    400
   end
 
 end

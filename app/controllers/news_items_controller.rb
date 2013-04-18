@@ -1,7 +1,13 @@
 class NewsItemsController < ApplicationController
 
   def index
-      @news_items = NewsItem.order('popularity DESC').limit(24)
+    if current_user
+      @user = User.find_by_remember_token(cookies[:remember_token])
+    else
+      @user = User.new
+    end
+    @news_items = NewsItem.order("popularity DESC").limit(24)
+    
   end
 
 	def create
