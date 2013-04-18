@@ -2,6 +2,11 @@
 
 body {
   background-image: url('/assets/debut_light.png');
+  font-family: 'Arvo', serif;
+}
+
+.chart tspan {
+  font-family: 'Arvo', serif;
 }
 
 .container {
@@ -46,9 +51,9 @@ article {
 /* taken from .lead */
 article.status .body, article.photo .caption {
   margin-bottom: 20px;
-  font-size: 21px;
+  font-size: 16px;
   font-weight: 200;
-  line-height: 30px;
+  line-height: 24px;
 }
 
 .meta {
