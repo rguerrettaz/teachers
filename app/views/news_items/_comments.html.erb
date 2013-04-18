@@ -1,4 +1,4 @@
-  <div class="comment span8">
-      <p><%= comment.content %></p>
-      Created by: <%= link_to comment.user.username, comment.user %> at: <%= comment.created_at %>
-  </div>
+    <p><%= comment.content %></p>
+    <p>Created by:<br>
+      <%= link_to comment.user.username, comment.user %></p>
+    <p><%= time_ago_in_words(comment.created_at) %> ago</p>
