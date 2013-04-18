@@ -1,5 +1,5 @@
 TeacherGap::Application.configure do
-  ENV["REDISTOGO_URL"] = 'redis://redistogo:cf2a6f0a9cf7a5f109ebac183910fbe9@squawfish.redistogo.com:9400'
+  # ENV["REDISTOGO_URL"] = 'redis://redistogo:cf2a6f0a9cf7a5f109ebac183910fbe9@squawfish.redistogo.com:9400'
   # Settings specified here will take precedence over those in config/application.rb
 
   # In the development environment your application's code is reloaded on

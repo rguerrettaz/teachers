@@ -4,32 +4,47 @@
   .navbar-inner {
     background-image: none;
     height: 100%;
+    background-color: #fafafa;
+    background-image: none;
+    background-repeat: repeat-x;
+    border: 1px solid #d4d4d4;
+      -webkit-border-radius: 0px;
+         -moz-border-radius: 0px;
+              border-radius: 0px;
+    *zoom: 1;
+    -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.065);
+        -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.065);
+            box-shadow: 0 1px 4px rgba(0, 0, 0, 0.065);
+    }
+
+
     .container {
       width: 80%;
       margin: auto;
       padding-top: 14px;
-      ul {
 
-      }
     }
-  }
 }
 
-ul.nav {
+ul.nav.pull-right, ul.nav.span10 {
   margin: 10px 0;
   font-family: inherit;
   font-weight: bold;
   line-height: 20px;
   color: inherit;
   text-rendering: optimizelegibility;
+  font-size: 17.5px; /* h3 size */
 }
 
 .navbar-search {
   width: 500px;
   }
 
-.nav-pills {
+.nav-pills, .nav-pills > li > a  {
   padding-top: 14px;
+    -webkit-border-radius: 1px;
+     -moz-border-radius: 1px;
+          border-radius: 1px;
 }
 
 select,

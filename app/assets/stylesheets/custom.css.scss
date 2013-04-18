@@ -1,5 +1,6 @@
 @import "bootstrap";
 
+
 .container {
   width: 80%;
   margin: auto;
@@ -21,7 +22,9 @@ article {
   box-shadow: 0px 0px 8px rgba(0,0,0,0.4);
 }
 
-
+.tag_line {
+  font-weight:none;
+}
 
 .popularity {
   text-align: center;
@@ -34,6 +37,14 @@ article {
 
 .body {
   margin-bottom: 14px;
+}
+
+/* taken from .lead */
+article.status .body, article.photo .caption {
+  margin-bottom: 20px;
+  font-size: 21px;
+  font-weight: 200;
+  line-height: 30px;
 }
 
 .meta {
@@ -52,7 +63,7 @@ article {
     }
 
     .user_interactions {
-      border-bottom: 1px solid #eee;
+      border-bottom: 1px solid #ccc;
       margin-bottom: 7px;
       li {
         font-size: 11px;
@@ -98,5 +109,7 @@ input[type=textarea] {
 
 .footer {
   background-color:black;
-
+  padding-top: 50px;
+  padding-bottom: 30px;
+  line-height: 0px;
 }
