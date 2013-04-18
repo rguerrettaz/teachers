@@ -21,7 +21,9 @@ TeacherGap::Application.routes.draw do
     resources :comments
   end
 
-
+  match 'signup' => 'users#create', :as => :signup
+  match 'login' => 'sessions#create', :as => :login
+  match 'about', :controller => "static"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

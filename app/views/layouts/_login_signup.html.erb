@@ -1,13 +1,27 @@
 <% if current_user %>       
   <li><%= link_to "Log out", session_path(current_user), :method => :delete %></li>
 <% else %>
-  <li><%= link_to "Sign up", new_user_path %></li>
+  <li class="dropdown">
+    <a class="dropdown-toggle" href="#" data-toggle="dropdown">Sign Up <strong class="caret"></strong></a>
+      <div class="dropdown-menu" style="padding: 15px; padding-bottom: 0px;">
+        <%= render 'users/sign_up' , :user => @user %>
+      </div>
+  </li>
   <li class="divider-vertical"></li>
-  <li><%= link_to "Log in", new_session_path %></li>
+  
+  <li class="dropdown">
+    <a class="dropdown-toggle" href="#" data-toggle="dropdown">Log In <strong class="caret"></strong></a>
+      <div class="dropdown-menu" style="padding: 15px; padding-bottom: 0px;">
+        <%= render 'sessions/login' , :user => @user %>
+      </div>
+  </li>
 <% end %>
 
 
-          
-          
-           
-        
+
+
+
+
+
+
+

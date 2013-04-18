@@ -7,7 +7,7 @@
     t.string :source_user_url
 		t.string :source_url
 		t.string :format
-		t.string :popularity
+		t.integer :popularity
 		t.text   :body
 		t.string :title
 		t.text   :caption

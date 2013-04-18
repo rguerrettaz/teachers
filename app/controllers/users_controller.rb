@@ -5,12 +5,12 @@ class UsersController < ApplicationController
 	end
 
 	def create
-		@user = User.new(email: params[:user][:email], username: params[:user][:username], password: params[:user][:password])
+		@user = User.new(email: params[:email], username: params[:username], password: params[:password])
 		if @user.save
 			sign_in(@user)
 			redirect_to @user
 		else 
-			render :new
+			redirect_to root_url
 		end
 	end
 
