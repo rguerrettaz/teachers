@@ -6,7 +6,7 @@ class NewsItemsController < ApplicationController
     else
       @user = User.new
     end
-    @news_items = NewsItem.order("popularity DESC").limit(24)
+    @news_items = NewsItem.order("popularity DESC").limit(36)
     
   end
 
