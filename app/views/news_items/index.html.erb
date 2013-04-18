@@ -32,7 +32,7 @@ $(function ($) {
 <% @news_items.each_with_index do |item, count| %>
 
 	<div class="news_item_wrapper">
-    <article class="news_item <%=item.format%> hidden">
+    <article class="news_item <%=item.format%> <%=item.source%> hidden">
       <%= render 'news_items', :item => item %>
     </article>
   </div>
