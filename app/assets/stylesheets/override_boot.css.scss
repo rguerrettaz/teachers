@@ -1,10 +1,22 @@
+a {
+  color: #0952B8;
+}
+
+a:hover {
+  color: #074191;
+}
+
+body {
+  color: #383838;
+}
+
 .navbar {
   height:100px;
 
   .navbar-inner {
     background-image: none;
     height: 100%;
-    background-color: #fafafa;
+    background-color: #F2F2F2;
     background-image: none;
     background-repeat: repeat-x;
     border: 1px solid #d4d4d4;
@@ -45,6 +57,14 @@ ul.nav.pull-right, ul.nav.span9 {
     -webkit-border-radius: 1px;
      -moz-border-radius: 1px;
           border-radius: 1px;
+}
+
+.nav-pills > li.active > a {
+  background-color: #0952B8;
+}
+
+.nav-pills > li.active > a:hover {
+  background-color: #074191;
 }
 
 select,
