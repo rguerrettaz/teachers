@@ -1,3 +1,125 @@
+<style>
+.media-item-wrapper {
+  width: 33%;
+}
+
+.media-item {
+  -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+  float: left;
+  padding: 5px;
+  margin: 10px;
+  background-color: white;
+
+}
+
+.media-item.tweet {
+  padding: 0px;
+}
+
+.media-item.instagram {
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.4);
+  border: 1px solid #ddd;
+}
+
+.instagram .profile_picture {
+  height: 2em; margin-right: 10px; margin-bottom: 10px;
+}
+
+.media-item-wrapper {
+}
+
+.media-item-wrapper ul li {
+ list-style-type: none;
+}
+
+/* Start: Recommended Isotope styles */
+
+/**** Isotope Filtering ****/
+
+.isotope-item {
+  z-index: 2;
+}
+
+.isotope-hidden.isotope-item {
+  pointer-events: none;
+  z-index: 1;
+}
+
+/**** Isotope CSS3 transitions ****/
+
+.isotope,
+.isotope .isotope-item {
+  -webkit-transition-duration: 0.8s;
+     -moz-transition-duration: 0.8s;
+      -ms-transition-duration: 0.8s;
+       -o-transition-duration: 0.8s;
+          transition-duration: 0.8s;
+}
+
+.isotope {
+  -webkit-transition-property: height, width;
+     -moz-transition-property: height, width;
+      -ms-transition-property: height, width;
+       -o-transition-property: height, width;
+          transition-property: height, width;
+}
+
+.isotope .isotope-item {
+  -webkit-transition-property: -webkit-transform, opacity;
+     -moz-transition-property:    -moz-transform, opacity;
+      -ms-transition-property:     -ms-transform, opacity;
+       -o-transition-property:      -o-transform, opacity;
+          transition-property:         transform, opacity;
+}
+
+/**** disabling Isotope CSS3 transitions ****/
+
+.isotope.no-transition,
+.isotope.no-transition .isotope-item,
+.isotope .isotope-item.no-transition {
+  -webkit-transition-duration: 0s;
+     -moz-transition-duration: 0s;
+      -ms-transition-duration: 0s;
+       -o-transition-duration: 0s;
+          transition-duration: 0s;
+}
+
+/* End: Recommended Isotope styles */
+
+
+
+/* disable CSS transitions for containers with infinite scrolling*/
+.isotope.infinite-scrolling {
+  -webkit-transition: none;
+     -moz-transition: none;
+      -ms-transition: none;
+       -o-transition: none;
+          transition: none;
+}
+
+/* The Magnificent Clearfix: nicolasgallagher.com/micro-clearfix-hack/ */
+.clearfix:before, .clearfix:after { content: ""; display: table; }
+.clearfix:after { clear: both; }
+.clearfix { zoom: 1; }
+.hidden{ opacity: 0; }
+</style>
+<script type="text/javascript">
+$(function ($) {
+  var $grid = $('.media-container');
+
+  $grid.isotope({
+    itemSelector: '.media-item-wrapper',
+    layoutMode: 'masonry'
+  });
+
+  $grid.imagesLoaded(function () {
+    $grid.isotope('reLayout');
+    $('.media-item').removeClass('hidden');
+  });
+});
+</script>
+
+
 <h1><%= @school.schoolname %></h1>
 <p><%= @school.address %>, <%= @school.city.capitalize %>, <%= @school.state %>, <%= @school.zip %></p>
 <p><%= @school.schoolname %> is in the <%= @school.schooldistrictname %></p>
@@ -98,13 +220,47 @@
 
 </div>
 
+
+<div class='media-container'>
+  <!-- Instagram business -->
+  <% find_by_coords(@school.latitude, @school.longitude, @school.schoolname) %>
+
+  <% if @location_images.nil? %>
+    <!-- <p>No Instagram photos!</p> -->
+  <% else %>
+    <% @location_images.each do |i| %>
+      <% image_url(i) %>
+      <div class='media-item-wrapper' >
+      <ul class="instagram media-item">
+        <li class="name">
+          <img class="profile_picture" src="<%= @profile_picture %>"><a href="http://instagram.com/<%= @username %>"><span><%= @username %></span></a>
+        </li>
+        <li class="image"><img src="<%= @url %>"></img></li>
+        <li class="caption"><%= @caption %></li>
+      </ul>
+    </div>
+    <% end %>
+  <% end %>
+
+  <!-- Twitter business -->
+  <!-- <h1>Tweets</h1> -->
+  <% tweets_by_coords(@school.latitude,@school.longitude) %>
+  <% @coord_tweets.statuses.each do |tweet| %>
+    <div class='media-item-wrapper'>
+    <div class="tweet media-item">
+      <%= embed_tweet(tweet.id) %>
+    </div>
+  </div>
+  <% end %>
+</div>
+
 <ul>
-	<li><b>enrollment:</b>			    <%= @school.enrollment          %></li>
-	<li><b>gradelevel:</b>			    <%= @school.gradelevel          %></li>
-	<li><b>gradesserved:</b>		    <%= @school.gradesserved        %></li>
-	<li><b>schooltype:</b>					<%= @school.schooltype          %></li>
-	<li><b>studentteacherratio:</b>	<%= @school.studentteacherratio %></li>
-	<li><b>testrating_text:</b>			<%= @school.testrating_text     %></li>
+  <li><b>enrollment:</b>          <%= @school.enrollment          %></li>
+  <li><b>gradelevel:</b>          <%= @school.gradelevel          %></li>
+  <li><b>gradesserved:</b>        <%= @school.gradesserved        %></li>
+  <li><b>schooltype:</b>          <%= @school.schooltype          %></li>
+  <li><b>studentteacherratio:</b> <%= @school.studentteacherratio %></li>
+  <li><b>testrating_text:</b>     <%= @school.testrating_text     %></li>
   <li><b>schoolid:</b>            <%= @school.schoolid            %></li>
   <li><b>schoolname:</b>          <%= @school.schoolname          %></li>
   <li><b>zip:</b>                 <%= @school.zip                 %></li>
@@ -120,30 +276,3 @@
   <li><b>state:</b>               <%= @school.state               %></li>
   <li><b>website:</b>             <%= @school.website             %></li>
 </ul>
-
-<!-- Instagram business -->
-<% find_by_coords(@school.latitude, @school.longitude, @school.schoolname) %>
-
-<% if @location_images.nil? %>
-  <p>No Instagram photos!</p>
-<% else %>
-  <% @location_images.each do |i| %>
-    <% image_url(i) %>
-    <ul class="instagram">
-      <li class="name">
-        <img class="profile_picture" src="<%= @profile_picture %>"><a href="http://instagram.com/<%= @username %>"><span><%= @username %></span></a>
-      </li>
-      <li class="image"><img src="<%= @url %>"></img></li>
-      <li class="caption"><%= @caption %></li>
-    </ul>
-  <% end %>
-<% end %>
-
-<!-- Twitter business -->
-<h1>Tweets</h1>
-<% tweets_by_coords(@school.latitude,@school.longitude) %>
-<% @coord_tweets.statuses.each do |tweet| %>
-  <div class="tweet">
-    <%= embed_tweet(tweet.id) %>
-  </div>
-<% end %>
