@@ -3,9 +3,9 @@
     <div class = 'container'>
       <ul class="nav span3">
       <% if current_user %>
-        <li><h1><%= link_to 'SchoolSay', user_path(current_user) %><br></h1> </li>
+        <h1><li><%= link_to 'SchoolSay', user_path(current_user) %><br><span class='tag_line'></span> </li></h1>
       <% else %>
-        <li class ='active'><%= link_to 'Grit In The Gap', root_url, :class => 'brand' %> </li>
+        <h1><li class ='active'><%= link_to 'SchoolSay', root_url %> </li></h1>
       <% end %>
       </ul>
       <ul class='nav span10'>
