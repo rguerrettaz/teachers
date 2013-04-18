@@ -197,7 +197,7 @@ module Api
         entity.map do |entity|
 
             if entity.respond_to?('text')
-                text.gsub!("##{entity.text}", "<a href='https://twitter.com/search?q=%#{entity.text}'>##{entity.text}</a>")
+                text.gsub!("##{entity.text}", "<a href='https://twitter.com/search?q=#{entity.text}'>##{entity.text}</a>")
 
             elsif entity.respond_to?('url')
                 text.gsub!("#{entity.url}", "<a href ='#{entity.url}'>#{entity.url}</a>")
