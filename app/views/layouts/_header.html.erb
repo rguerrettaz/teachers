@@ -1,17 +1,14 @@
 <div class="navbar">
   <div class="navbar-inner">
     <div class = 'container'>
-      <ul class="nav">
+      <ul class="nav span3">
       <% if current_user %>
-        <li><%= link_to 'Grit In The Gap', user_path(current_user), :class => 'brand' %> </li>
+        <li><h1><%= link_to 'SchoolSay', user_path(current_user) %><br></h1> </li>
       <% else %>
         <li class ='active'><%= link_to 'Grit In The Gap', root_url, :class => 'brand' %> </li>
       <% end %>
-
-        <li class="divider-vertical"></li>
-
-        <li><%= link_to 'About', about_path %></li>
-        <li class="divider-vertical"></li>
+      </ul>
+      <ul class='nav span10'>
         <li class="dropdown">
           <a class="dropdown-toggle" href="#" data-toggle="dropdown">Search News By School <strong class="caret"></strong></a>
             <div class="dropdown-menu" style="padding: 15px; padding-bottom: 0px;">
