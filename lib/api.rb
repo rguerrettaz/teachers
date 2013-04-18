@@ -5,13 +5,13 @@ module Api
   module ClassMethods  
       def call_api(zip,state,city) 
         if zip.blank? && city.blank?
-            query = JSON.parse(open("http://api.education.com/service/service.php?resf=json&f=schoolSearch&key=410e1967497cd724f524a35879ffc078&sn=sf&v=4&state=#{state}").read)
+            query = JSON.parse(open("http://api.education.com/service/service.php?resf=json&f=schoolSearch&key=ab36733a1680018da860196bac81ff58&sn=sf&v=4&state=#{state}").read)
         elsif zip.blank?
-            query = JSON.parse(open("http://api.education.com/service/service.php?resf=json&f=schoolSearch&key=410e1967497cd724f524a35879ffc078&sn=sf&v=4&state=#{state}&city=#{URI::encode(city).downcase}").read)
+            query = JSON.parse(open("http://api.education.com/service/service.php?resf=json&f=schoolSearch&key=ab36733a1680018da860196bac81ff58&sn=sf&v=4&state=#{state}&city=#{URI::encode(city).downcase}").read)
         elsif city.blank?
-            query = JSON.parse(open("http://api.education.com/service/service.php?resf=json&f=schoolSearch&key=410e1967497cd724f524a35879ffc078&sn=sf&v=4&state=#{state}&zip=#{zip.to_i}").read)
+            query = JSON.parse(open("http://api.education.com/service/service.php?resf=json&f=schoolSearch&key=ab36733a1680018da860196bac81ff58&sn=sf&v=4&state=#{state}&zip=#{zip.to_i}").read)
         else 
-            query = JSON.parse(open("http://api.education.com/service/service.php?resf=json&f=schoolSearch&key=410e1967497cd724f524a35879ffc078&sn=sf&v=4&state=#{state}&zip=#{zip.to_i}&city=#{URI::encode(city).downcase}").read)
+            query = JSON.parse(open("http://api.education.com/service/service.php?resf=json&f=schoolSearch&key=ab36733a1680018da860196bac81ff58&sn=sf&v=4&state=#{state}&zip=#{zip.to_i}&city=#{URI::encode(city).downcase}").read)
         end
           p "I'm in the API!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
           p query
