@@ -17,6 +17,17 @@ article {
   box-shadow: 0px 0px 8px rgba(0,0,0,0.4);
 }
 
+.navbar {
+  .navbar-inner {
+    background-image: none;
+
+    .container {
+      width: 80%;
+      margin: auto;
+    }
+  }
+}
+
 .navbar-search {
   width: 500px;
   }
