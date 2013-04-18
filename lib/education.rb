@@ -23,7 +23,7 @@ module Education
     private
 
     def call_education(schoolid)
-        school_data = JSON.parse(open("http://api.education.com/service/service.php?resf=json&f=getStudentStats&key=ab36733a1680018da860196bac81ff58&sn=sf&v=4&schoolid=#{schoolid.to_i}").read)
+        school_data = JSON.parse(open("http://api.education.com/service/service.php?resf=json&f=getStudentStats&key=410e1967497cd724f524a35879ffc078&sn=sf&v=4&schoolid=#{schoolid.to_i}").read)
         school_data['school']
     end
 
