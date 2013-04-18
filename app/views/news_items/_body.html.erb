@@ -1,4 +1,5 @@
-<% if item.format == 'photo' && item.photo_urls %>
+<div class='body'>
+  <% if item.format == 'photo' && item.photo_urls %>
   <%= link_to image_tag(item.photo_urls), item.source_url, target: "_blank" %>
 
 <% elsif item.format == 'answer' %>
@@ -28,3 +29,4 @@
 <% if item.body && item.body.length > max_post_length %>
     <%= render 'read_more', :item => item %>
 <% end %>
+</div>
