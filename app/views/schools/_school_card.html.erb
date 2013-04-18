@@ -1,0 +1,24 @@
+        <li>
+          <h4><%= school.schooldistrictname.capitalize %></h4>
+          <h3><%= link_to school.schoolname.capitalize, school %></h3>
+          
+          <p class='school_info'>
+            <span class='bold'>Type:</span> <%= school.schooltype %><br>
+            <span class='bold'>Grade Level:</span> <%= school.gradelevel %><br>
+            <span class='bold'>Grades Served:</span> <%= school.gradesserved %>
+          </p>
+          
+          <div class='address'><%= school.address %><br>
+            <p><%= school.city.capitalize %>, <%= school.state.capitalize %> <%= school.zip %></p>
+
+            <p><span class='bold'>Phone: </span><%= school.phonenumber %><br>
+            <% if school.website %>
+              <span class='bold'>Website: </span><%= link_to school.website, school.website %>
+            <% end %>
+            </p>
+
+          </div>
+
+
+
+        </li> 

@@ -16,7 +16,7 @@
 		<% if @schools %>	
 			<ul>	
 			<% @schools.each do |school| %>
-				<li><%= link_to school.schoolname.capitalize, school %></li>
+				<%= render 'schools/school_card', :school => school %>		
 			<% end %>
 	    </ul>
 	  <% end %>

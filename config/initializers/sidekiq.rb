@@ -14,8 +14,10 @@
 #   end
 # end
 
+
 # Sidekiq.configure_server do |config|
 #   config.server_middleware do |chain|
 #     chain.add(Autoscaler::Sidekiq::Server, Autoscaler::HerokuScaler.new, 60)
 #   end
 # end
+
