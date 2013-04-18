@@ -1,38 +1,22 @@
-<article class="news_item_">
-    <%= @news_item.format %>
-
-    <div class='rating'>
-      <%= @news_item.popularity %>
-    </div>
-    
-    <div class='body'>
-      <%= render 'body', :item => @news_item %>
-      <%= render 'read_more', :item => @news_item %>
-    </div>
-    
-    <div class='meta'>
-      <%= render 'user_interactions', :item => @news_item %>
-      <%= render 'source_user', :item => @news_item %>
-      <%= render 'source_site', :item => @news_item %>
-    </div>
-  </article>
+  <div class='row-fluid'>
+    <article class="news_item <%=@news_item.format%> span8">
+      <%= render 'news_items', :item => @news_item %>
+    </article>
+  </div
   
-  <hr>
-  
-    <div class='meta'>
+    <div class='row-fluid'>
       <% if logged_in? %>
         <%= render "news_items/form", :news_item => @news_item %>
       <% else %>
        <p><%= link_to 'Login', new_session_path %> or <%= link_to 'Sign-up', new_user_path %>  to comment</p>
       <% end %>
-    </div>
 
-    <div class='meta'>
       <% if @news_item.comments.count > 0 %>
         <% @news_item.comments.each do |comment| %>
           <% unless comment.id.nil? %>
-            <%= render "news_items/comments", :comment => comment %>
+            <div class='row-fluid'><%= render "news_items/comments", :comment => comment %></div>
           <% end %>
         <% end %>
       <% end %>
     </div>
+

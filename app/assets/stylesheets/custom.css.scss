@@ -1,5 +1,8 @@
 @import "bootstrap";
 
+
+
+
 .container {
   width: 80%;
   margin: auto;
@@ -32,8 +35,21 @@ article {
   width: 500px;
   }
 
+.nav-pills {
+  padding-top: 14px;
+}
+
 .popularity {
   text-align: center;
+
+  .star {
+    color:yellow;
+    background-color: black;
+  }
+}
+
+.body {
+  margin-bottom: 14px;
 }
 
 .meta {
@@ -51,10 +67,23 @@ article {
       font-size: 14px;
     }
 
-    .user_interactions li {
-      font-size: 11px;
+    .user_interactions {
+      border-bottom: 1px solid #eee;
+      margin-bottom: 7px;
+      li {
+        font-size: 11px;
+      }
+    }
+    .source_user {
+      padding-bottom: 14px;
+      padding-top: 7px;
+
     }
 
+    .source_site {
+      border-top: 1px solid #eee;
+      padding-top: 14px;
+    }
   }
 
 .results {
@@ -76,6 +105,11 @@ article {
   .bold {
     font-weight: bold;
   }
+
+}
+
+input[type=textarea] {
+  max-height:300px;
 }
 
 .footer {

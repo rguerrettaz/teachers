@@ -1,8 +1,10 @@
-<div class="comment-form">
-  <%= form_for [@news_item, @news_item.comments.build], :remote => true do |f| %>
+<div class="comment-form row-fluid">
+  <h4>Comment:</h4>
+  <%= form_for [@news_item, @news_item.comments.build],:class => 'span8', :size => "20x30", :remote => true do |f| %>
     <%= f.error_messages %>
-    <%= f.text_area :content, :placeholder => "Comment" %>
-    <%= f.submit "Submit" %>
+    <%= f.text_area(:content,:class => 'span8', :placeholder => "Comment") %><br>
+    <%= f.submit "Submit", :class => 'btn' %>
   <% end %>
 </div>
-<div class='comments'></div>
+
+<div class='comments span8'></div>
