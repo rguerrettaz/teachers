@@ -4,10 +4,11 @@
 </script>
 
 
-<h1><%= @school.schoolname %></h1>
-<p><%= @school.address %>, <%= @school.city.capitalize %>, <%= @school.state %>, <%= @school.zip %></p>
-<p><%= @school.schoolname %> is in the <%= @school.schooldistrictname %></p>
-
+<div id="school_title">
+  <h1 class="school_name"><%= @school.schoolname %></h1>
+  <p><%= @school.address %>, <%= @school.city.capitalize %>, <%= @school.state %>, <%= @school.zip %></p>
+  <p><%= @school.schooldistrictname %></p>
+</div>
 
 <script>
   $(document).ready(function () {
@@ -128,12 +129,5 @@
 
   <!-- Twitter business -->
   <!-- <h1>Tweets</h1> -->
-  <% tweets_by_coords(@school.latitude,@school.longitude) %>
-  <% @coord_tweets.statuses.each do |tweet| %>
-    <div class='media-item-wrapper'>
-    <div class="tweet media-item">
-      <%= embed_tweet(tweet.id) %>
-    </div>
-  </div>
-  <% end %>
+
 </div>

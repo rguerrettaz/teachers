@@ -126,3 +126,18 @@ input[type=textarea] {
   padding-bottom: 30px;
   line-height: 0px;
 }
+
+#school_title {
+  margin: 0 auto;
+  width: 75%;
+  padding: 8px 36px;
+  text-align: center;
+}
+
+#school_title h1 {
+  text-shadow: 0 1px 0 rgba(255,255,255,0.5);
+}
+
+.school_name {
+  // text-align: center;
+}
