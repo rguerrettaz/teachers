@@ -1,5 +1,5 @@
-heroku_config = YAML.load_file("#{Rails.root}/config/heroku.yml")
-ENV['HEROKU_API_KEY'], ENV['HEROKU_APP']  = heroku_config["key"], heroku_confing["app_name"]
+# heroku_config = YAML.load_file("#{Rails.root}/config/heroku.yml")
+# ENV['HEROKU_API_KEY'], ENV['HEROKU_APP']  = heroku_config["key"], heroku_confing["app_name"]
 
 require 'autoscaler/sidekiq'
 require 'autoscaler/heroku_scaler'
