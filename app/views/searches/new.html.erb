@@ -12,12 +12,18 @@
 	<% end %>
 </div>
 
-	<div class = 'results'>
+	<div class='results'>
+		<div class='media-container'>	
 		<% if @schools %>	
-			<ul>	
 			<% @schools.each do |school| %>
-				<%= render 'schools/school_card', :school => school %>		
+				<div class='media-item-wrapper' >
+					<div class='media-item'>
+						<article>	
+						<%= render 'schools/school_card', :school => school %>		
+						</article>
+					</div>
+				</div>	
 			<% end %>
-	    </ul>
 	  <% end %>
+		</div>
   </div>

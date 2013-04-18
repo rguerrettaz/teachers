@@ -18,27 +18,25 @@ $(function ($) {
 <div class='row-fluid'>
   <h2 class='span2'>Trending</h2>
 
-  <ul class="nav nav-pills ">
-
+  <ul class="nav nav-pills">
     <li class="active"><a href="#">All</a></li>
-    <li id='type'><a class="dropdown-toggle" href="#" data-toggle="dropdown">Type<strong class="caret"></strong></a></li>
-    <li id='source'><a class="dropdown-toggle" href="#" data-toggle="dropdown">Source<strong class="caret"></strong></a></li>
-
+    <li><a href="#">Reddit</a></li>
+    <li><a href="#">Twitter</a></li>
+    <li><a href="#">Tumblr</a></li>
+    <li><a href="#">Instagram</a></li>
   </ul>
       
 </div>
 
-   <div id="news_item_grid" class='row-fluid'>
-<% @news_items.each_with_index do |item, count| %>
 
-	<div class="news_item_wrapper">
-    <article class="news_item <%=item.format%> <%=item.source%> hidden">
-      <%= render 'news_items', :item => item %>
-    </article>
+<div id="news_item_grid" class='row-fluid'>
+  <div class='row-fluid'>
+    <% @news_items.each_with_index do |item, count| %>
+    	<div class="news_item_wrapper <%=item.source%>">
+        <article class="news_item <%=item.format%> hidden">
+          <%= render 'news_items', :item => item %>
+        </article>
+      </div>
+    <% end %>
   </div>
-
-
-
-
-<% end %>
-  </div>
+</div>
