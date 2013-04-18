@@ -10,7 +10,7 @@ var Search = {
 		}
 		else {
 			for (var i = 0; i < data.length; i++) {
-				$('.results').append('<h1><li><a href="/schools/'+data[i].id+'">'+data[i].schoolname+'</a></li></h1>');
+				$('.results').append('<h4><li><a href="/schools/'+data[i].id+'">'+data[i].schoolname+'</a></li></h4>');
 			}
 		}
 	}

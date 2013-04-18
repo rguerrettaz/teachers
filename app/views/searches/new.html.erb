@@ -8,7 +8,7 @@
 		<%= text_field_tag(:zip, nil, :placeholder => "Enter Zip") %>
 		<%= text_field_tag(:city, nil, :placeholder => "Enter City") %>
 		<%= select_tag :state, options_for_select(@states.map{ |s| [s.last, s.first] }) %>
-		<%= submit_tag 'Submit' %> 
+		<%= submit_tag 'Submit', :class => 'btn' %> 
 	<% end %>
 </div>
 

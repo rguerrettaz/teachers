@@ -1,5 +1,8 @@
 @import "bootstrap";
 
+body {
+  background-image: url('/assets/debut_light.png');
+}
 
 .container {
   width: 80%;
@@ -9,6 +12,7 @@
 a:hover {
   text-decoration: none;
 }
+
 
 img {
   -webkit-border-radius: 2px;
