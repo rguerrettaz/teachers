@@ -10,7 +10,7 @@ var Search = {
 		}
 		else {
 			for (var i = 0; i < data.length; i++) {
-				$('.results').append("<%= render 'schools/school_card', :school => school %>");
+				$('.results').append('<li>hello</li>');
 			}
 		}
 	}
@@ -19,3 +19,4 @@ var Search = {
 $(document).ready(function() {
 	Search.init();
 });
+
