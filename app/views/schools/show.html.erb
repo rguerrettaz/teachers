@@ -129,5 +129,12 @@
 
   <!-- Twitter business -->
   <!-- <h1>Tweets</h1> -->
-
+  <% tweets_by_coords(@school.latitude,@school.longitude) %>
+  <% @coord_tweets.statuses.each do |tweet| %>
+    <div class='media-item-wrapper'>
+    <div class="tweet media-item">
+      <%= embed_tweet(tweet.id) %>
+    </div>
+  </div>
+  <% end %>
 </div>
