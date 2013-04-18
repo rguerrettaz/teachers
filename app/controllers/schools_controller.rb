@@ -12,7 +12,6 @@ class SchoolsController < ApplicationController
 		# if params[:zip].blank? && params[:city].blank?
 		@schools = School.find_or_call(params[:zip], params[:state], params[:city])
 		if params[:header] == 'true'
-		  @skip_header_search = true
 			render 'searches/new'
 		else	
 			render :json => @schools.to_json
