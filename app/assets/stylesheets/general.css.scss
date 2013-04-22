@@ -1,0 +1,37 @@
+body {
+  background-image: url('/assets/debut_light.png');
+  font-family: 'Arvo', serif;
+  color: #383838;
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+}
+
+a {
+  color: #0952B8;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #074191;
+}
+
+
+img {
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+}
+
+.tag_line {
+  font-weight:none;
+  font-size: 14px;
+}
+
+.footer {
+  background-color: #383838;
+  padding-top: 50px;
+  padding-bottom: 30px;
+  line-height: 0px;
+}
