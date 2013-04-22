@@ -1,15 +1,11 @@
-
-<script type="text/javascript">
-
-</script>
-
-
+<!-- School identity and location -->
 <div id="school_title">
   <h1 class="school_name"><%= @school.schoolname %></h1>
   <p><%= @school.address %>, <%= @school.city.capitalize %>, <%= @school.state %>, <%= @school.zip %></p>
   <p><%= @school.schooldistrictname %></p>
 </div>
 
+<!-- School demographics -->
 <script>
   $(document).ready(function () {
     // Student-Teacher Ratio
@@ -105,13 +101,11 @@
 
 </div>
 
-
+<!-- School social media -->
 <div class='media-container'>
-  <!-- Instagram business -->
+  <!-- Instagram  -->
   <% find_by_coords(@school.latitude, @school.longitude, @school.schoolname) %>
-
   <% if @location_images.nil? %>
-    <!-- <p>No Instagram photos!</p> -->
   <% else %>
     <% @location_images.each do |i| %>
       <% image_url(i) %>
@@ -127,8 +121,7 @@
     <% end %>
   <% end %>
 
-  <!-- Twitter business -->
-  <!-- <h1>Tweets</h1> -->
+  <!-- Twitter  -->
   <% tweets_by_coords(@school.latitude,@school.longitude) %>
   <% @coord_tweets.statuses.each do |tweet| %>
     <div class='media-item-wrapper'>
