@@ -4,14 +4,13 @@ var Search = {
 	},
 
 	search: function(event, data) {
-		$('.results').empty();
+		
+		debugger
 		if (data.length == 0) {
 			$('.results').append('<p>Your search did not return any schools, try again.</p>');
 		}
 		else {
-			for (var i = 0; i < data.length; i++) {
-				$('.results').append('<h4><li><a href="/schools/'+data[i].id+'">'+data[i].schoolname+'</a></li></h4>');
-			}
+			$('.results').append(data);
 		}
 	}
 }

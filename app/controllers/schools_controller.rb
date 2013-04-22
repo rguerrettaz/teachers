@@ -14,7 +14,7 @@ class SchoolsController < ApplicationController
 		if params[:header] == 'true'
 			render 'searches/new'
 		else	
-			render :json => @schools.to_json
+				render :json => render_to_string(:partial => 'searches/results', :locals => {:schools => @schools}).to_json
 		end
 	end
 end
