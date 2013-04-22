@@ -6,6 +6,51 @@
 </div>
 
 <!-- School demographics -->
+<div id="chart_wrapper">
+
+  <%= content_tag "div", class: "chart",
+                         id: "ratio",
+                         data: { ratio:      @school.studentteacherratio, 
+                                 schoolname: @school.schoolname } do %>
+  <% end %>
+
+  <%= content_tag "div", class: "chart",
+                         id: "gender",
+                         data: { female: @school.female,
+                                 male:   @school.male } do %>
+  <% end %>
+
+  <%= content_tag "div", class: "chart",
+                         id: "ethnicity",
+                         data: { white:           @school.white,
+                                 hispanic:        @school.hispanic,
+                                 black:           @school.black,
+                                 asian:           @school.asian,
+                                 native_american: @school.native_american } do %>
+  <% end %>
+
+  <div class="chart">
+    <div class="chart_content">
+      <h1>Enrollment</h1>
+      <h2 class="text-info"><%= number_with_delimiter(@school.enrollment) %></h2>
+    </div>
+  </div>
+
+  <div class="chart">
+    <div class="chart_content">
+      <h1>Grades Served</h1>
+      <h2 class="text-info"><%= @school.gradesserved %></h2>
+    </div>
+  </div>
+  
+  <%= content_tag "div", class: "chart",
+                         id: "dropout",
+                         data: { percentage: ('%.1f' % ((@school.dropout.to_f / @school.enrollment.to_f) * 100)), 
+                                 schoolname: @school.schoolname } do %>
+  <% end %>
+
+</div>
+
 <script>
   $(document).ready(function () {
     // Student-Teacher Ratio
@@ -55,51 +100,6 @@
 
   });
 </script>
-
-<div id="chart_wrapper">
-
-  <%= content_tag "div", class: "chart",
-                         id: "ratio",
-                         data: { ratio:      @school.studentteacherratio, 
-                                 schoolname: @school.schoolname } do %>
-  <% end %>
-
-  <%= content_tag "div", class: "chart",
-                         id: "gender",
-                         data: { female: @school.female,
-                                 male:   @school.male } do %>
-  <% end %>
-
-  <%= content_tag "div", class: "chart",
-                         id: "ethnicity",
-                         data: { white:           @school.white,
-                                 hispanic:        @school.hispanic,
-                                 black:           @school.black,
-                                 asian:           @school.asian,
-                                 native_american: @school.native_american } do %>
-  <% end %>
-
-  <div class="chart">
-    <div class="chart_content">
-      <h1>Enrollment</h1>
-      <h2 class="text-info"><%= number_with_delimiter(@school.enrollment) %></h2>
-    </div>
-  </div>
-
-  <div class="chart">
-    <div class="chart_content">
-      <h1>Grades Served</h1>
-      <h2 class="text-info"><%= @school.gradesserved %></h2>
-    </div>
-  </div>
-  
-  <%= content_tag "div", class: "chart",
-                         id: "dropout",
-                         data: { percentage: ('%.1f' % ((@school.dropout.to_f / @school.enrollment.to_f) * 100)), 
-                                 schoolname: @school.schoolname } do %>
-  <% end %>
-
-</div>
 
 <!-- School social media -->
 <div class='media-container'>
