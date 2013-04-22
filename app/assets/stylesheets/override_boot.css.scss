@@ -1,14 +1,4 @@
-a {
-  color: #0952B8;
-}
 
-a:hover {
-  color: #074191;
-}
-
-body {
-  color: #383838;
-}
 
 .navbar {
   height:100px;
@@ -31,20 +21,17 @@ body {
 
 
     .container {
-      width: 80%;
+      width: 90%;
       margin: auto;
       padding-top: 14px;
 
     }
 }
 
-ul.nav.pull-right, ul.nav.span9 {
+ul.nav.pull-right, ul.search-bar {
   margin: 10px 0;
-  font-family: inherit;
   font-weight: bold;
   line-height: 20px;
-  color: inherit;
-  text-rendering: optimizelegibility;
   font-size: 17.5px; /* h3 size */
 }
 

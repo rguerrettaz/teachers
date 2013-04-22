@@ -1,3 +1,27 @@
+
+.results {
+  ul {
+    list-style-type:none;
+    margin:0;
+    padding:0;
+  }
+
+  h4 {
+    line-height: 0;
+  }
+
+  li {
+    border: 1px solid #ccc;
+    width: 25%;
+  }
+
+  .bold {
+    font-weight: bold;
+  }
+
+}
+
+
 .media-item-wrapper {
   width: 33%;
 }

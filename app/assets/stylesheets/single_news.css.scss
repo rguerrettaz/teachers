@@ -1,0 +1,36 @@
+.comment {
+  margin-bottom: 28px;
+  p:nth-of-type(2) {
+
+  }
+
+}
+
+article.single_news {
+  padding:20px;
+  margin-bottom: 14px;
+  li:first-child {
+    font-size: 14px;  
+  }
+
+  li:nth-child(2) {
+    font-size: 14px;  
+    line-height: 28px;
+  }
+  .source_user {
+    
+  }
+
+}
+
+  article.single_news.status {
+    .body {
+      font-size: 35px;
+      line-height: 56px;
+    }
+  }
+
+.comment-form input[type='textarea'] {
+  height: 115px;
+  max-height:300px;
+}

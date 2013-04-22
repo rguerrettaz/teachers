@@ -1,7 +1,8 @@
 <div class="navbar">
   <div class="navbar-inner">
     <div class = 'container'>
-      <ul class="nav span4">
+
+      <ul class="nav span3">
       <% if current_user %>
         <h1><li><%= link_to 'SchoolSay', user_path(current_user) %>
            </li></h1>
@@ -11,7 +12,8 @@
         <span class='tag_line'>What schools are saying</span>
       <% end %>
       </ul>
-      <ul class='nav span9'>
+
+      <ul class='nav span4 search-bar'>
         <li class="dropdown">
           <a class="dropdown-toggle" href="#" data-toggle="dropdown">Search News By School <strong class="caret"></strong></a>
             <div class="dropdown-menu" style="padding: 15px; padding-bottom: 0px;">
@@ -20,9 +22,8 @@
         </li>
       </ul>
 
-      
 
-      <ul class ='nav pull-right'>
+      <ul class ='nav pull-right span4'>
         <li><%= render 'layouts/login_signup' %></li>
       </ul>
 
