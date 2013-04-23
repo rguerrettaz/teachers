@@ -1,6 +1,6 @@
         
-          <h3><%= link_to school.schoolname.titleize, school %></h3>
-          <h5><%= school.schooldistrictname.titleize if school.schooldistrictname  %></h5>
+          <h3><%= link_to school.schoolname.titleize, school if school.schoolname %></h3>
+          <h5><%= school.schooldistrictname.titleize if school.schooldistrictname %></h5>
           
           <p class='school_info'>
             <span class='bold'>Type:</span> <%= school.schooltype if school.schooltype %><br>

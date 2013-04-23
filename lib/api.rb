@@ -2,7 +2,8 @@ require 'json'
 require 'open-uri'
 
 module Api
-  module ClassMethods  
+  module ClassMethods
+
     def call_api(zip,state,city) 
       results = 
         if zip.blank? && city.blank?
@@ -18,14 +19,15 @@ module Api
       results.each do |result| 
         School.create(parse_result_to_school_attrs(result))
       end
+    end
 
       def parse_result_to_school_attrs(result)
         school = result['school']
         school_attrs = school.extract!(
           "schoolid",
           "schoolname",
-          "schoolname",
-          "zip""address",
+          "zip",
+          "address",
           "districtid",
           "AYPResultYear",
           "distance",
@@ -47,9 +49,6 @@ module Api
         )
         school_attrs
       end
-
-
-    end
   end
 
   def self.included(receiver)

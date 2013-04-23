@@ -18,9 +18,8 @@ gem 'ruby-oembed'
 gem 'tumblr_client'
 gem 'dynamic_form'
 gem 'ruby_reddit_api'
-
+gem 'nokogiri'
 gem 'instagram'
-
 gem 'levenshtein'
 
 gem "nokogiri"
