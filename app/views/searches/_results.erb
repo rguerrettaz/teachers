@@ -1,4 +1,15 @@
-<h3>School Search Results<h3>
-<% @schools.each do |s| %>
-	<%= link_to s.schoolname, s %>
-<% end %>
+	<div class='results'>
+		<div class='media-container'>	
+		<% if @schools %>	
+			<% @schools.each do |school| %>
+				<div class='media-item-wrapper' >
+					<div class='media-item'>
+						<article>	
+						<%= render 'schools/school_card', :school => school %>		
+						</article>
+					</div>
+				</div>	
+			<% end %>
+	  <% end %>
+		</div>
+  </div>

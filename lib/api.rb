@@ -3,41 +3,53 @@ require 'open-uri'
 
 module Api
   module ClassMethods  
-      def call_api(zip,state,city) 
+    def call_api(zip,state,city) 
+      results = 
         if zip.blank? && city.blank?
-            query = JSON.parse(open("http://api.education.com/service/service.php?resf=json&f=schoolSearch&key=410e1967497cd724f524a35879ffc078&sn=sf&v=4&state=#{state}").read)
+          JSON.parse(open("http://api.education.com/service/service.php?resf=json&f=schoolSearch&key=410e1967497cd724f524a35879ffc078&sn=sf&v=4&state=#{state}").read)
         elsif zip.blank?
-            query = JSON.parse(open("http://api.education.com/service/service.php?resf=json&f=schoolSearch&key=410e1967497cd724f524a35879ffc078&sn=sf&v=4&state=#{state}&city=#{URI::encode(city).downcase}").read)
+          JSON.parse(open("http://api.education.com/service/service.php?resf=json&f=schoolSearch&key=410e1967497cd724f524a35879ffc078&sn=sf&v=4&state=#{state}&city=#{URI::encode(city).downcase}").read)
         elsif city.blank?
-            query = JSON.parse(open("http://api.education.com/service/service.php?resf=json&f=schoolSearch&key=410e1967497cd724f524a35879ffc078&sn=sf&v=4&state=#{state}&zip=#{zip.to_i}").read)
+          JSON.parse(open("http://api.education.com/service/service.php?resf=json&f=schoolSearch&key=410e1967497cd724f524a35879ffc078&sn=sf&v=4&state=#{state}&zip=#{zip.to_i}").read)
         else 
-            query = JSON.parse(open("http://api.education.com/service/service.php?resf=json&f=schoolSearch&key=410e1967497cd724f524a35879ffc078&sn=sf&v=4&state=#{state}&zip=#{zip.to_i}&city=#{URI::encode(city).downcase}").read)
+          JSON.parse(open("http://api.education.com/service/service.php?resf=json&f=schoolSearch&key=410e1967497cd724f524a35879ffc078&sn=sf&v=4&state=#{state}&zip=#{zip.to_i}&city=#{URI::encode(city).downcase}").read)
         end
-          p "I'm in the API!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
-          p query
-        query.each do |s| School.create(:schoolid          =>  s['school']["schoolid"],
-                                        :schoolname           =>  s['school']["schoolname"],              
-                                        :zip                  =>  s['school']["zip"],
-                                        :address              =>  s['school']["address"],
-                                        :city                 =>  s['school']["city"].downcase,
-                                        :districtid           =>  s['school']["districtid"],
-                                        :AYPResultYear        =>  s['school']["AYPResultYear"],
-                                        :distance             =>  s['school']["distance"],
-                                        :enrollment           =>  s['school']["enrollment"]['total'],
-                                        :gradelevel           =>  s['school']["gradelevel"],
-                                        :gradesserved         =>  s['school']["gradesserved"],
-                                        :latitude             =>  s['school']["latitude"],
-                                        :longitude            =>  s['school']["longitude"],
-                                        :phonenumber          =>  s['school']["phonenumber"],
-                                        :schooldistrictname   =>  s['school']["schooldistrictname"],
-                                        :schooltype           =>  s['school']["schooltype"],
-                                        :state                =>  s['school']["state"],
-                                        :studentteacherratio  =>  s['school']["studentteacherratio"]['total'],
-                                        :website              =>  s['school']["website"],
-                                        :testrating_text      =>  s['school']["testrating_text"],
-                                        :testrating_year      =>  s['school']["testrating_year"])
-          end
-        end
+
+      results.each do |result| 
+        School.create(parse_result_to_school_attrs(result))
+      end
+
+      def parse_result_to_school_attrs(result)
+        school = result['school']
+        school_attrs = school.extract!(
+          "schoolid",
+          "schoolname",
+          "schoolname",
+          "zip""address",
+          "districtid",
+          "AYPResultYear",
+          "distance",
+          "gradelevel",
+          "gradesserved",
+          "latitude",
+          "longitude",
+          "phonenumber",
+          "schooldistrictname",
+          "schooltype",
+          "state",
+          "website",
+          "testrating_text",
+          "testrating_year")
+        school_attrs.merge!(
+          :city                 =>  school["city"].downcase,
+          :studentteacherratio  =>  school["studentteacherratio"]['total'],
+          :enrollment           =>  school["enrollment"]['total']
+        )
+        school_attrs
+      end
+
+
+    end
   end
 
   def self.included(receiver)
