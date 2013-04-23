@@ -15,28 +15,30 @@ module Api
           JSON.parse(open("http://api.education.com/service/service.php?resf=json&f=schoolSearch&key=410e1967497cd724f524a35879ffc078&sn=sf&v=4&state=#{state}&zip=#{zip.to_i}&city=#{URI::encode(city).downcase}").read)
         end
 
-      results.each do |s| School.create(
-        :schoolid             =>  s['school']["schoolid"],
-        :schoolname           =>  s['school']["schoolname"],              
-        :zip                  =>  s['school']["zip"],
-        :address              =>  s['school']["address"],
-        :city                 =>  s['school']["city"].downcase,
-        :districtid           =>  s['school']["districtid"],
-        :AYPResultYear        =>  s['school']["AYPResultYear"],
-        :distance             =>  s['school']["distance"],
-        :enrollment           =>  s['school']["enrollment"]['total'],
-        :gradelevel           =>  s['school']["gradelevel"],
-        :gradesserved         =>  s['school']["gradesserved"],
-        :latitude             =>  s['school']["latitude"],
-        :longitude            =>  s['school']["longitude"],
-        :phonenumber          =>  s['school']["phonenumber"],
-        :schooldistrictname   =>  s['school']["schooldistrictname"],
-        :schooltype           =>  s['school']["schooltype"],
-        :state                =>  s['school']["state"],
-        :studentteacherratio  =>  s['school']["studentteacherratio"]['total'],
-        :website              =>  s['school']["website"],
-        :testrating_text      =>  s['school']["testrating_text"],
-        :testrating_year      =>  s['school']["testrating_year"])
+      results.each do |result| 
+        school = result['school']
+        School.create(
+          :schoolid             =>  school["schoolid"],
+          :schoolname           =>  school["schoolname"],              
+          :zip                  =>  school["zip"],
+          :address              =>  school["address"],
+          :city                 =>  school["city"].downcase,
+          :districtid           =>  school["districtid"],
+          :AYPResultYear        =>  school["AYPResultYear"],
+          :distance             =>  school["distance"],
+          :enrollment           =>  school["enrollment"]['total'],
+          :gradelevel           =>  school["gradelevel"],
+          :gradesserved         =>  school["gradesserved"],
+          :latitude             =>  school["latitude"],
+          :longitude            =>  school["longitude"],
+          :phonenumber          =>  school["phonenumber"],
+          :schooldistrictname   =>  school["schooldistrictname"],
+          :schooltype           =>  school["schooltype"],
+          :state                =>  school["state"],
+          :studentteacherratio  =>  school["studentteacherratio"]['total'],
+          :website              =>  school["website"],
+          :testrating_text      =>  school["testrating_text"],
+          :testrating_year      =>  school["testrating_year"])
       end
     end
   end
