@@ -16,30 +16,39 @@ module Api
         end
 
       results.each do |result| 
-        school = result['school']
-        School.create(
-          :schoolid             =>  school["schoolid"],
-          :schoolname           =>  school["schoolname"],              
-          :zip                  =>  school["zip"],
-          :address              =>  school["address"],
-          :city                 =>  school["city"].downcase,
-          :districtid           =>  school["districtid"],
-          :AYPResultYear        =>  school["AYPResultYear"],
-          :distance             =>  school["distance"],
-          :enrollment           =>  school["enrollment"]['total'],
-          :gradelevel           =>  school["gradelevel"],
-          :gradesserved         =>  school["gradesserved"],
-          :latitude             =>  school["latitude"],
-          :longitude            =>  school["longitude"],
-          :phonenumber          =>  school["phonenumber"],
-          :schooldistrictname   =>  school["schooldistrictname"],
-          :schooltype           =>  school["schooltype"],
-          :state                =>  school["state"],
-          :studentteacherratio  =>  school["studentteacherratio"]['total'],
-          :website              =>  school["website"],
-          :testrating_text      =>  school["testrating_text"],
-          :testrating_year      =>  school["testrating_year"])
+        School.create(parse_result_to_school_attrs(result))
       end
+
+      def parse_result_to_school_attrs(result)
+        school = result['school']
+        school_attrs = school.extract!(
+          "schoolid",
+          "schoolname",
+          "schoolname",
+          "zip""address",
+          "districtid",
+          "AYPResultYear",
+          "distance",
+          "gradelevel",
+          "gradesserved",
+          "latitude",
+          "longitude",
+          "phonenumber",
+          "schooldistrictname",
+          "schooltype",
+          "state",
+          "website",
+          "testrating_text",
+          "testrating_year")
+        school_attrs.merge!(
+          :city                 =>  school["city"].downcase,
+          :studentteacherratio  =>  school["studentteacherratio"]['total'],
+          :enrollment           =>  school["enrollment"]['total']
+        )
+        school_attrs
+      end
+
+
     end
   end
 
