@@ -1,86 +1,39 @@
-
-<script type="text/javascript">
-
-</script>
-
-
+<!-- School identity and location -->
 <div id="school_title">
   <h1 class="school_name"><%= @school.schoolname %></h1>
   <p><%= @school.address %>, <%= @school.city.capitalize %>, <%= @school.state %>, <%= @school.zip %></p>
   <p><%= @school.schooldistrictname %></p>
 </div>
 
-<script>
-  $(document).ready(function () {
-    // Student-Teacher Ratio
-    Morris.Bar({
-      element: 'ratio',
-      data: [
-        { r: 'Students per Teacher (vs. National Average)', a: $('#ratio').data('ratio'), b: 15.2 }
-      ],
-      xkey:   'r',
-      ykeys:  ['a', 'b'],
-      labels: [$('#ratio').data('schoolname'), 'National Average'],
-      hideHover: 'auto'
-    });
-
-    // Ethnicity
-    Morris.Donut({
-      element: 'ethnicity',
-      data: [
-        { label: "Asian", value: $('#ethnicity').data('asian') || 0 },
-        { label: "Black", value: $('#ethnicity').data('black') || 0 },
-        { label: "Hispanic", value: $('#ethnicity').data('hispanic') || 0 },
-        { label: "Native American", value: $('#ethnicity').data('native_american') || 0 },
-        { label: "White", value: $('#ethnicity').data('white') || 0 }
-      ],
-    });
-
-    // Gender
-    Morris.Donut({
-      element: 'gender',
-      data: [
-        { label: "Female", value: $('#gender').data('female') || 0 },
-        { label: "Male", value: $('#gender').data('male') || 0 }
-      ],
-    });
-
-    // Dropout Percentage
-    Morris.Bar({
-      element: 'dropout',
-      data: [
-        { r: 'Dropout Percentage (vs. National Average)', a: $('#dropout').data('percentage'), b: 7.4 }
-      ],
-      xkey:   'r',
-      ykeys:  ['a', 'b'],
-      labels: [$('#dropout').data('schoolname'), 'National Average'],
-      hideHover: 'auto'
-    });
-
-  });
-</script>
-
+<!-- School demographics -->
 <div id="chart_wrapper">
 
-  <%= content_tag "div", class: "chart",
-                         id: "ratio",
-                         data: { ratio:      @school.studentteacherratio, 
-                                 schoolname: @school.schoolname } do %>
+  <%= content_tag "div", class: "chart", id: "ratio",
+    data: { title: 'Students per Teacher (vs. National Average)',
+            school_ratio: @school.studentteacherratio,
+            national_ratio: '15.2',
+            school_label: @school.schoolname,
+            average_label: 'National Average' } do %>
   <% end %>
 
-  <%= content_tag "div", class: "chart",
-                         id: "gender",
-                         data: { female: @school.female,
-                                 male:   @school.male } do %>
+  <%= content_tag "div", class: "chart", id: "gender",
+    data: { female: @school.female,
+            male: @school.male,
+            f_label: 'Female',
+            m_label: 'Male' } do %>
   <% end %>
 
-  <%= content_tag "div", class: "chart",
-                         id: "ethnicity",
-                         data: { white:           @school.white,
-                                 hispanic:        @school.hispanic,
-                                 black:           @school.black,
-                                 asian:           @school.asian,
-                                 native_american: @school.native_american } do %>
+  <%= content_tag "div", class: "chart", id: "ethnicity",
+    data: { white:           @school.white,
+            white_label:     'White',
+            hispanic:        @school.hispanic,
+            hispanic_label:  'Hispanic',
+            black:           @school.black,
+            black_label:     'Black',
+            asian:           @school.asian,
+            asian_label:     'Asian',
+            native_american: @school.native_american,
+            native_american_label: 'Native American' } do %>
   <% end %>
 
   <div class="chart">
@@ -100,18 +53,76 @@
   <%= content_tag "div", class: "chart",
                          id: "dropout",
                          data: { percentage: ('%.1f' % ((@school.dropout.to_f / @school.enrollment.to_f) * 100)), 
-                                 schoolname: @school.schoolname } do %>
+                                 school_name: @school.schoolname,
+                                 national_average: '7.4',
+                                 national_avg_label: 'National Average',
+                                 title: 'Dropout Percentage (vs. National Average)' } do %>
   <% end %>
 
 </div>
 
+<script>
+  $(document).ready(function () {
 
+    // Student-Teacher Ratio
+    Morris.Bar({
+      element: 'ratio',
+      data: [
+        { r: $('#ratio').data('title'), a: $('#ratio').data('school-ratio'), b: $('#ratio').data('national-ratio') }
+      ],
+      xkey:   'r',
+      ykeys:  ['a', 'b'],
+      labels: [$('#ratio').data('school-label'), $('#ratio').data('average-label')],
+      hideHover: 'auto'
+    });
+
+    // Gender
+    Morris.Donut({
+      element: 'gender',
+      data: [
+        { label: $('#gender').data('f-label'), value: $('#gender').data('female') || 0 },
+        { label: $('#gender').data('m-label'), value: $('#gender').data('male') || 0 }
+      ],
+    });
+
+    // Ethnicity
+    Morris.Donut({
+      element: 'ethnicity',
+      data: [
+        { label: $('#ethnicity').data('asian-label'),
+          value: $('#ethnicity').data('asian') || 0 },
+        { label: $('#ethnicity').data('black-label'),
+          value: $('#ethnicity').data('black') || 0 },
+        { label: $('#ethnicity').data('hispanic-label'),
+          value: $('#ethnicity').data('hispanic') || 0 },
+        { label: $('#ethnicity').data('native-american-label'),
+          value: $('#ethnicity').data('native-american') || 0 },
+        { label: $('#ethnicity').data('white-label'),
+          value: $('#ethnicity').data('white') || 0 }
+      ],
+    });
+
+    // Dropout Percentage
+    Morris.Bar({
+      element: 'dropout',
+      data: [
+        { r: $('#dropout').data('title'), a: $('#dropout').data('percentage'),
+          b: $('#dropout').data('national-average') }
+      ],
+      xkey:   'r',
+      ykeys:  ['a', 'b'],
+      labels: [$('#dropout').data('school-name'), $('#dropout').data('national-avg-label')],
+      hideHover: 'auto'
+    });
+
+  });
+</script>
+
+<!-- School social media -->
 <div class='media-container'>
-  <!-- Instagram business -->
+  <!-- Instagram  -->
   <% find_by_coords(@school.latitude, @school.longitude, @school.schoolname) %>
-
   <% if @location_images.nil? %>
-    <!-- <p>No Instagram photos!</p> -->
   <% else %>
     <% @location_images.each do |i| %>
       <% image_url(i) %>
@@ -127,8 +138,7 @@
     <% end %>
   <% end %>
 
-  <!-- Twitter business -->
-  <!-- <h1>Tweets</h1> -->
+  <!-- Twitter  -->
   <% tweets_by_coords(@school.latitude,@school.longitude) %>
   <% @coord_tweets.statuses.each do |tweet| %>
     <div class='media-item-wrapper'>

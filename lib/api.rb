@@ -4,19 +4,19 @@ require 'open-uri'
 module Api
   module ClassMethods
 
-    def call_api(zip,state,city) 
-      results = 
+    def call_api(zip,state,city)
+      results =
         if zip.blank? && city.blank?
           JSON.parse(open("http://api.education.com/service/service.php?resf=json&f=schoolSearch&key=410e1967497cd724f524a35879ffc078&sn=sf&v=4&state=#{state}").read)
         elsif zip.blank?
           JSON.parse(open("http://api.education.com/service/service.php?resf=json&f=schoolSearch&key=410e1967497cd724f524a35879ffc078&sn=sf&v=4&state=#{state}&city=#{URI::encode(city).downcase}").read)
         elsif city.blank?
           JSON.parse(open("http://api.education.com/service/service.php?resf=json&f=schoolSearch&key=410e1967497cd724f524a35879ffc078&sn=sf&v=4&state=#{state}&zip=#{zip.to_i}").read)
-        else 
+        else
           JSON.parse(open("http://api.education.com/service/service.php?resf=json&f=schoolSearch&key=410e1967497cd724f524a35879ffc078&sn=sf&v=4&state=#{state}&zip=#{zip.to_i}&city=#{URI::encode(city).downcase}").read)
         end
 
-      results.each do |result| 
+      results.each do |result|
         School.create(parse_result_to_school_attrs(result))
       end
     end
@@ -89,7 +89,7 @@ module Api
     insta_search.map do |pic|
       next if NewsItem.find_by_source_id(pic.caption.id.to_s).present? || pic.caption.blank?
       NewsItem.create(:published_at => pic.created_time,
-                  :source_id =>  pic.caption.id,   
+                  :source_id =>  pic.caption.id,
                   :source => 'instagram',
                   :source_user => pic.caption.from.username,
                   :source_user_url => "https://instagram.com/"+ pic.caption.from.username,
@@ -177,7 +177,7 @@ module Api
     end
 
     #Twitter Search
-    def twitter_search    
+    def twitter_search
     posts = TAGS.map do |tag|
       Twitter.search(tag, :result_type => 'popular', :include_entities => true )
     end
@@ -198,7 +198,7 @@ module Api
                         :popularity => calculate_popularity((tweet.favorite_count + tweet.retweet_count), tweet.created_at),
                         :body => tweet_body(tweet.full_text, [tweet.hashtags, tweet.urls, tweet.user_mentions]),
                                     # :location => tweet.coordinates,
-                  )         
+                  )
         end
       end
       tweets.flatten!
@@ -212,12 +212,12 @@ module Api
 
             elsif entity.respond_to?('url')
                 text.gsub!("#{entity.url}", "<a href ='#{entity.url}'>#{entity.url}</a>")
-            
+
             elsif entity.respond_to?('screen_name')
-                text.gsub!("@#{entity.screen_name}","<a href ='https://twitter.com/#{entity.screen_name}'>@#{entity.screen_name}</a>")          
+                text.gsub!("@#{entity.screen_name}","<a href ='https://twitter.com/#{entity.screen_name}'>@#{entity.screen_name}</a>")
             end
             text
-        end 
+        end
 
     end
 
@@ -241,13 +241,13 @@ module Api
     reddit_client.browse('teachers', :limit => TAG_SEARCH)
   end
 
-  def from_reddit  
+  def from_reddit
 
     search = [reddit_teachers, reddit_education].flatten!
     posts = search.map do |submission|
       submission.comments.map do |comment|
 
-        next unless submission.score < 0 || NewsItem.find_by_source_id(comment.id.to_s).present? 
+        next unless submission.score < 0 || NewsItem.find_by_source_id(comment.id.to_s).present?
 
         NewsItem.create( :published_at => submission.created_utc,
                       :source_id => comment.id,

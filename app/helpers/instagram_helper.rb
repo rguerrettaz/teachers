@@ -13,7 +13,6 @@ module InstagramHelper
   def find_by_coords(lat, lng, school_name)
     @id = nil
 
-    puts "***** I get this far! *****"
     begin
       p locations = Instagram.location_search(lat, lng)
     rescue
@@ -25,11 +24,8 @@ module InstagramHelper
       locations.each do |loc|
         distance = (Levenshtein.normalized_distance(loc.name, school_name) * 100)
         unless distance < 25
-          puts "Nope! It's #{loc.id}, #{loc.name}!"
         else
-          puts "Yep! It's #{loc.id}, #{loc.name}!"
           @id = loc.id
-          puts "\n***** @id is #{@id}"
           images_by_loc(@id)
         end
       end
