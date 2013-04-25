@@ -1,5 +1,4 @@
 module Education
-
   module ClassMethods
     def call_api(zip,state,city)
       results =
@@ -49,28 +48,28 @@ module Education
 
   end
 
-    def self.included(receiver)
-      receiver.extend ClassMethods
-    end
+  def self.included(receiver)
+    receiver.extend ClassMethods
+  end
 
-    def get_school_data(schoolid)
-      data = prepare_school_data(call_education(schoolid))
-	    school = School.find_by_schoolid(schoolid)
+  def get_school_data(schoolid)
+    data = prepare_school_data(call_education(schoolid))
+    school = School.find_by_schoolid(schoolid)
 
-      school.update_attributes( :white => data['white'].to_i,
-                                  :hispanic => data['hispanic'].to_i,
-                                  :black => data['black'].to_i, 
-                                  :asian => data['asian'].to_i,
-                                  :native_american => data['native_american'].to_i,
-                                  :male => data['male'].to_i,
-                                  :female => data['female'],
-                                  :free_lunch => data['free_lunch'].to_i,
-                                  :ell => data['white'].to_i,
-                                  :dropout => data['white'].to_i,
-                                  :total_enrolled => data['total_enrolled'].to_i)
-    end
+    school.update_attributes( :white => data['white'].to_i,
+                                :hispanic => data['hispanic'].to_i,
+                                :black => data['black'].to_i, 
+                                :asian => data['asian'].to_i,
+                                :native_american => data['native_american'].to_i,
+                                :male => data['male'].to_i,
+                                :female => data['female'],
+                                :free_lunch => data['free_lunch'].to_i,
+                                :ell => data['white'].to_i,
+                                :dropout => data['white'].to_i,
+                                :total_enrolled => data['total_enrolled'].to_i)
+  end
 
-    private
+  private
 
     def call_education(schoolid)
         school_data = JSON.parse(open("http://api.education.com/service/service.php?resf=json&f=getStudentStats&key=410e1967497cd724f524a35879ffc078&sn=sf&v=4&schoolid=#{schoolid.to_i}").read)
