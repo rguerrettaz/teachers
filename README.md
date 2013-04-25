@@ -1,5 +1,5 @@
-Grit in the Gap
-===============
+SchoolSay
+=========
 
 We are the front page of public education.
 
@@ -15,7 +15,7 @@ Epics
 -----
 - A user can come to the site and see information about education pulled from many online sources.
 - A teacher can sign up for our service and are then able to publish/broadcast out from our site out to other platforms.
-- Signed in users can vote and help curate resources and news. 
+- Signed in users can vote and help curate resources and news.
 - Set up profile pages with hard data for each school.
 - Be able to comment on all aspects of schools' statistics.
 - Ability for teachers to comment and discuss topics, trends and specific schools.
@@ -32,12 +32,12 @@ Models
 - Districts
 - State
 
-Postables 
+Postables
 ---------
 - Comments
 
 MVP
 ---
-- Education.com API and populating the database 
+- Education.com API and populating the database
 - Users can post/like/and reblog with or without tumblr/twitter.
 - Extras: Create a gem wrapper for the education api Add a donor's choose link for each user on the site, so readers can donate.
