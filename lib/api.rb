@@ -87,8 +87,9 @@ module Api
   end
 
   def from_insta
-    insta_search.map do |pic|
-      next if NewsItem.find_by_source_id(pic.caption.id.to_s).present? || pic.caption.blank?
+    insta_search.each do |pic|
+      next if pic.caption.blank? # nil for weird instagram results
+      NewsItem.find_by_source_id(pic.caption.id.to_s) or
       NewsItem.create(:published_at => pic.created_time,
                   :source_id =>  pic.caption.id,
                   :source => 'instagram',
