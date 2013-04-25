@@ -1,3 +1,6 @@
+# Job to be done:
+# Relationships:
+
 class NewsItem < ActiveRecord::Base
 
   include ApplicationHelper
@@ -31,7 +34,7 @@ class NewsItem < ActiveRecord::Base
   #   @caption = options[:caption]
 
   #   @photo_urls = options[:photo_urls]
-    
+
   #   @asking_name = options[:asking_name]
   #   @asking_url = options[:asking_url]
 

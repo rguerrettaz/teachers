@@ -3,9 +3,12 @@ class PopularNews
 	include Sidekiq::Worker
 
   def perform
-    search = [from_twitter, from_reddit, from_insta, from_tumblr].flatten!
-  end 
+    from_twitter
+    from_reddit
+    from_tumblr
+    from_insta
+  end
 
 end
- 
+
 # PopularNews.perform_async to refresh manually or rake admin:refresh
