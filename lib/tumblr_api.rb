@@ -3,14 +3,14 @@ module TumblrApi
 
   def tumblr_search
     client = Tumblr::Client.new
-    posts = ApiSearchCriteria.tags.each do |tag|
+    posts = ApiSearchCriteria.tags.map do |tag|
       client.tagged(tag, :limit => ApiSearchCriteria.item_limit)
     end
     posts.flatten!
   end
 
   def from_tumblr
-    tumbles = tumblr_search.map do |post|
+    tumbles = tumblr_search.each do |post|
       next if NewsItem.find_by_source_id(post['id'].to_s).present?
 
       if post['type'] == 'text'
