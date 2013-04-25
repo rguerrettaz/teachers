@@ -21,7 +21,7 @@ module TeacherGap
     # config.autoload_paths += Dir["#{config.root}/lib/**/"]
     config.autoload_paths += %W(#{config.root}/lib)
     EDUCATION_API_KEY = '410e1967497cd724f524a35879ffc078'
-
+    config.assets.initialize_on_precompile = false
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration should go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded.
