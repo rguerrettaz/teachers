@@ -3,10 +3,15 @@ require 'open-uri'
 
 module ApiSearchCriteria
 
-  #NewsItem Popularity
+  extend self
 
-  ITEM_LIMIT = 5
-  TAGS = ['education', 'edchat']
+  def item_limit
+    5
+  end
+
+  def tags
+    ['education', 'edchat']
+  end
 
   def calculate_popularity(vote, created_at)
     created_at = published_date(created_at)

@@ -1,7 +1,7 @@
 module InstagramApi
   extend self
   def insta_search
-    Instagram.tag_recent_media('edchat', :limit => TAG_SEARCH*2)
+    Instagram.tag_recent_media('edchat', :limit => ApiSearchCriteria.item_limit*2)
   end
 
   def from_insta
@@ -15,7 +15,7 @@ module InstagramApi
                   :source_user_url => "https://instagram.com/" + pic.caption.from.username,
                   :source_url => "https://instagram.com/" + pic.caption.from.username,
                   :format => 'photo',
-                  :popularity => calculate_popularity((pic.comments.count + pic.likes.count), pic.caption.created_time.to_i ),
+                  :popularity => ApiSearchCriteria.calculate_popularity((pic.comments.count + pic.likes.count), pic.caption.created_time.to_i ),
                   :caption => pic.caption.text,
                   :photo_urls => pic.images.standard_resolution.url
       )

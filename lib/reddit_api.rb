@@ -5,11 +5,11 @@ module RedditApi
   end
 
   def reddit_education
-    reddit_client.browse('education', :limit => TAG_SEARCH)
+    reddit_client.browse('education', :limit => ApiSearchCriteria.item_limit)
   end
 
   def reddit_teachers
-    reddit_client.browse('teachers', :limit => TAG_SEARCH)
+    reddit_client.browse('teachers', :limit => ApiSearchCriteria.item_limit)
   end
 
   def from_reddit
@@ -29,7 +29,7 @@ module RedditApi
                       :format => 'quote',
                       :body => comment.body,
                       :caption => submission.title,
-                      :popularity => (calculate_popularity(submission.score, submission.created_utc))
+                      :popularity => (ApiSearchCriteria.calculate_popularity(submission.score, submission.created_utc))
                     )
       end
     end

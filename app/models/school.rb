@@ -1,5 +1,5 @@
 class School < ActiveRecord::Base
-	include Api	
+	include ApiSearchCriteria	
   include Education
 	after_create :populate_student_data
   attr_accessible :schoolid, :schoolname, :zip, :address, :city, :districtid, 

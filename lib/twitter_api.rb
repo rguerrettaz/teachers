@@ -1,7 +1,7 @@
 module TwitterApi
   extend self
   def twitter_search
-    posts = TAGS.map do |tag|
+    posts = ApiSearchCriteria.tags.map do |tag|
       Twitter.search(tag, :result_type => 'popular', :include_entities => true )
     end
   end
@@ -19,7 +19,7 @@ module TwitterApi
           :source_url => "https://twitter.com/" + tweet.from_user + "/status/" + tweet.id.to_s,
           :profile_pic => tweet.profile_image_url,
           :format => 'status',
-          :popularity => calculate_popularity((tweet.favorite_count + tweet.retweet_count), tweet.created_at),
+          :popularity => ApiSearchCriteria.calculate_popularity((tweet.favorite_count + tweet.retweet_count), tweet.created_at),
           :body => tweet_body(tweet.full_text, [tweet.hashtags, tweet.urls, tweet.user_mentions]),
                 )
       end

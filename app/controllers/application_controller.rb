@@ -9,7 +9,4 @@ class ApplicationController < ActionController::Base
   include AuthHelper
   include RedditHelper
 
-
-  include Api
-
 end

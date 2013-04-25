@@ -1,9 +1,10 @@
 module TumblrApi
   extend self
+
   def tumblr_search
     client = Tumblr::Client.new
-    posts = TAGS.map do |tag|
-      client.tagged(tag, :limit => TAG_SEARCH)
+    posts = ApiSearchCriteria.tags.each do |tag|
+      client.tagged(tag, :limit => ApiSearchCriteria.item_limit)
     end
     posts.flatten!
   end
@@ -52,7 +53,7 @@ module TumblrApi
         :source_url => post['post_url'],
         :source_user_url => "https://"+post['blog_name']+".tumblr.com",
         :format => post['type'],
-        :popularity => calculate_popularity(post['note_count'], post['date']),
+        :popularity => ApiSearchCriteria.calculate_popularity(post['note_count'], post['date']),
         :body => body,
         :title => title,
         :photo_urls => photo_urls,
