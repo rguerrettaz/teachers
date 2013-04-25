@@ -1,20 +1,20 @@
-        
-          <h3><%= link_to school.schoolname.titleize, school %></h3>
+
+          <h3><%= link_to school.schoolname.titleize, school if school.schoolname%></h3>
           <h5><%= school.schooldistrictname.titleize if school.schooldistrictname  %></h5>
-          
+
           <p class='school_info'>
             <span class='bold'>Type:</span> <%= school.schooltype if school.schooltype %><br>
             <span class='bold'>Grade Level:</span> <%= school.gradelevel  if school.gradelevel%><br>
             <span class='bold'>Grades Served:</span> <%= school.gradesserved if school.gradesserved%><br>
             <span class='bold'>Total Enrollment:</span> <%= school.enrollment if school.enrollment%>
           </p>
-          
+
           <div class='address'><%= school.address if school.address %><br>
-            <p><%= school.city.capitalize  if school.city %>, 
-              <%= school.state.upcase  if school.state %> 
+            <p><%= school.city.capitalize  if school.city %>,
+              <%= school.state.upcase  if school.state %>
               <%= school.zip if school.zip %></p>
 
-            <p><span class='bold'>Phone: </span><%= school.phonenumber %><br>
+            <p><span class='bold'>Phone: </span><%= school.phonenumber if school.phonenumber%><br>
             </p>
 
           </div>
